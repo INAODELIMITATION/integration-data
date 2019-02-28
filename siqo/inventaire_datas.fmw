@@ -1,0 +1,260 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command-line to run this workspace:
+#        "C:\Program Files\FME\fme.exe" \\srv-34db\data2\BDDC\@_martin\1_integration-data\siqo\inventaire_datas.fmw
+#    
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="1386.13 414.337"
+#!   DOC_TOP_LEFT="-1780.59 613.679"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="18312"
+#!   FME_DOCUMENT_GUID="5c9e4c74-7b12-478b-91af-cf849e89e146"
+#!   FME_DOCUMENT_PRIORGUID="cf8cfa3c-dece-489a-8162-8d2561fa1ad7,a3c1921b-2992-427c-ba14-3a1f0fb633cb,aae1cd94-3c0d-4ae0-8fdc-8abbf3ac2f82"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2018.0.1.1 (20180615 - Build 18312 - WIN64)"
+#!   LAST_SAVE_DATE="2019-02-20T17:59:30"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="2or3"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="-2756.2 1033.96"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="81"
+#! >
+#! <DATASETS>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="7"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;requete les denomination dans la base SIQO&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-1780.5940403539837 1028.0156179956862"
+#!   TOP_LEFT="-1780.5940403539837 1028.0156179956862"
+#!   BOTTOM_RIGHT="-1308.5940403539837 1029.0156179956862"
+#!   BOUNDING_RECT="-1780.5940403539837 1028.0156179956862 472 -1"
+#!   ORDER="500000000000010"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.78431372549019607,0.19607843137254902"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="2"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="2"
+#!   TYPE="SQLCreator"
+#!   VERSION="3"
+#!   POSITION="-1738.5976328899092 678.49443926537992"
+#!   BOUNDING_RECT="-1738.5976328899092 678.49443926537992 -1 -1"
+#!   ORDER="500000000000001"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18312"
+#! >
+#!     <OUTPUT_FEAT NAME="RESULT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="code_insee" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="nom_com" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id_app" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="appellation" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id_denom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="denomination" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="zon_libelle" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="centre" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="_reader_error" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="code_insee" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="nom_com" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="id_app" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="appellation" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="id_denom" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="denomination" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="zon_libelle" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="centre" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="bsi&lt;space&gt;inao"/>
+#!     <XFORM_PARM PARM_NAME="DB_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="EXPOSED_ATTRIBUTE_LIST" PARM_VALUE="code_insee,nom_com,id_app,appellation,id_denom,denomination,zon_libelle,centre"/>
+#!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="MYSQL"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="MYSQL_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;IGNORE TEXT&quot;,MYSQL&lt;space&gt;,MYSQL_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,MYSQL&lt;space&gt;Connection:"/>
+#!     <XFORM_PARM PARM_NAME="MYSQL_NAMED_CONNECTION" PARM_VALUE="bsi&lt;space&gt;inao"/>
+#!     <XFORM_PARM PARM_NAME="MYSQL_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SQL_STATEMENT" PARM_VALUE="SELECT&lt;space&gt;DISTINCT&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;t_commune.COM_CCOM&lt;space&gt;AS&lt;space&gt;&lt;quote&gt;code_insee&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;lf&gt;&lt;tab&gt;t_commune.COM_NCC&lt;space&gt;AS&lt;space&gt;&lt;quote&gt;nom_com&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;lf&gt;&lt;tab&gt;t_appellation.ID_APPELLATION&lt;space&gt;AS&lt;space&gt;&lt;quote&gt;id_app&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;lf&gt;&lt;tab&gt;t_appellation.app_libelle&lt;space&gt;AS&lt;space&gt;&lt;quote&gt;appellation&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;lf&gt;&lt;tab&gt;t_denomination_geo.id_denomination_geo&lt;space&gt;AS&lt;space&gt;&lt;quote&gt;id_denom&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;lf&gt;&lt;tab&gt;t_denomination_geo.DEN_GEO_LIBELLE&lt;space&gt;AS&lt;space&gt;&lt;quote&gt;denomination&lt;quote&gt;&lt;space&gt;&lt;comma&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;t_zone.zon_libelle&lt;comma&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;t_centre_inao.CEN_INA_NOM&lt;space&gt;as&lt;space&gt;&lt;quote&gt;centre&lt;quote&gt;&lt;lf&gt;FROM&lt;space&gt;&lt;lf&gt;&lt;tab&gt;t_produit&lt;space&gt;&lt;lf&gt;&lt;tab&gt;JOIN&lt;space&gt;l_produit_centre_inao&lt;space&gt;ON&lt;space&gt;t_produit.ID_PRODUIT&lt;space&gt;=&lt;space&gt;l_produit_centre_inao.ID_PRODUIT&lt;space&gt;&lt;lf&gt;&lt;tab&gt;JOIN&lt;space&gt;t_centre_inao&lt;space&gt;ON&lt;space&gt;l_produit_centre_inao.ID_CENTRE_INAO&lt;space&gt;=&lt;space&gt;t_centre_inao.ID_CENTRE_INAO&lt;space&gt;&lt;lf&gt;&lt;tab&gt;JOIN&lt;space&gt;t_statut&lt;space&gt;ON&lt;space&gt;&lt;space&gt;t_produit.id_statut&lt;space&gt;=&lt;space&gt;t_statut.id_statut&lt;space&gt;&lt;lf&gt;&lt;tab&gt;JOIN&lt;space&gt;t_denomination_geo&lt;space&gt;ON&lt;space&gt;t_produit.ID_DENOMINATION_GEO&lt;space&gt;=&lt;space&gt;t_denomination_geo.ID_DENOMINATION_GEO&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;tab&gt;JOIN&lt;space&gt;t_appellation&lt;space&gt;ON&lt;space&gt;t_appellation.id_appellation&lt;space&gt;=&lt;space&gt;t_produit.id_appellation&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;tab&gt;JOIN&lt;space&gt;t_categorie_produit&lt;space&gt;ON&lt;space&gt;t_produit.ID_CATEGORIE_PRODUIT&lt;space&gt;=&lt;space&gt;&lt;space&gt;t_categorie_produit.ID_CATEGORIE_PRODUIT&lt;space&gt;&lt;lf&gt;&lt;tab&gt;JOIN&lt;space&gt;t_type_produit&lt;space&gt;ON&lt;space&gt;t_categorie_produit.ID_TYPE_PRODUIT&lt;space&gt;=&lt;space&gt;t_type_produit.ID_TYPE_PRODUIT&lt;space&gt;&lt;lf&gt;&lt;tab&gt;JOIN&lt;space&gt;t_aire_geographique&lt;space&gt;ON&lt;space&gt;t_produit.ID_AIRE_GEOGRAPHIQUE&lt;space&gt;=&lt;space&gt;t_aire_geographique.ID_AIRE_GEOGRAPHIQUE&lt;space&gt;&lt;lf&gt;&lt;tab&gt;JOIN&lt;space&gt;t_zone&lt;space&gt;ON&lt;space&gt;t_aire_geographique.ID_AIRE_GEOGRAPHIQUE&lt;space&gt;=&lt;space&gt;t_zone.ID_AIRE_GEO&lt;space&gt;&lt;lf&gt;&lt;tab&gt;JOIN&lt;space&gt;l_commune_zone&lt;space&gt;ON&lt;space&gt;t_zone.ID_ZONE&lt;space&gt;=&lt;space&gt;l_commune_zone.ID_ZONE&lt;space&gt;&lt;lf&gt;&lt;tab&gt;JOIN&lt;space&gt;t_commune&lt;space&gt;ON&lt;space&gt;l_commune_zone.ID_COMMUNE&lt;space&gt;=&lt;space&gt;t_commune.ID_COMMUNE&lt;space&gt;&lt;lf&gt;WHERE&lt;space&gt;&lt;lf&gt;&lt;tab&gt;t_produit.PRO_DATE_ARCHIVAGE&lt;space&gt;=&lt;space&gt;0&lt;space&gt;&lt;lf&gt;&lt;tab&gt;and&lt;space&gt;t_produit.PRO_ETAT&lt;space&gt;=&lt;space&gt;2&lt;space&gt;&lt;lf&gt;&lt;tab&gt;and&lt;space&gt;t_type_produit.TYP_PRO_LIBELLE&lt;space&gt;=&lt;space&gt;&lt;apos&gt;Vins&lt;apos&gt;&lt;space&gt;&lt;lf&gt;&lt;tab&gt;and&lt;space&gt;LEFT&lt;openparen&gt;t_statut.STA_LIBELLE&lt;comma&gt;3&lt;closeparen&gt;&lt;space&gt;=&lt;space&gt;&lt;apos&gt;AOC&lt;apos&gt;&lt;space&gt;&lt;lf&gt;ORDER&lt;space&gt;BY&lt;space&gt;&lt;lf&gt;&lt;tab&gt;1&lt;comma&gt;&lt;space&gt;6"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SQLCreator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="3"
+#!   TYPE="Inspector"
+#!   VERSION="5"
+#!   POSITION="-394.46627478620485 613.67897629593563"
+#!   BOUNDING_RECT="-394.46627478620485 613.67897629593563 -1 -1"
+#!   ORDER="500000000000015"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18312"
+#! >
+#!     <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
+#!     <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SQLCreator_Result"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="4"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 0 RESULT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+FME_PYTHON_VERSION 2or3
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+
+WRITER_TYPE NULL
+WRITER_KEYWORD NULL_DEST
+NULL_DEST_DATASET null
+#! END_WB_HEADER
+
+#! START_WB_HEADER
+#! END_WB_HEADER
+
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)inventaire_datas.log"
+LOG_APPEND NO
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+LOG_FILTER_MASK -1
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME inventaire_datas
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+INCLUDE [ if {[info exists env(FME_TEMP)] && [file isdirectory $env(FME_TEMP)]} {set gVisualizerTemp $env(FME_TEMP)}  elseif {[info exists env(TEMP)] && [file isdirectory $env(TEMP)]}  {set gVisualizerTemp $env(TEMP)}  elseif { $tcl_platform(platform) == "unix" } {set gVisualizerTemp "/tmp"} else {set gVisualizerTemp c:};  regsub -all {[ ,&]} {$(WORKSPACE_NAME)} {_} wsname; set gVisualizerTemp $gVisualizerTemp/${wsname}_[clock format [clock seconds] -format %H%M%S];  puts "MACRO WORKSPACE_TEMP_DIR $gVisualizerTemp"; 
+MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
+MACRO VISUALIZER_SCHEMA_FILE $(WORKSPACE_TEMP_DIR)/inspector.fsc
+MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+MACRO SQLCreator_DIRECTIVES QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS Yes NAMED_CONNECTION bsi<space>inao
+
+FACTORY_DEF * CreationFactory    FACTORY_NAME SQLCreator_Creator    OUTPUT FEATURE_TYPE _____CREATED______
+FACTORY_DEF * QueryFactory    FACTORY_NAME SQLCreator    INPUT FEATURE_TYPE _____CREATED______    QUERY_SQL            SELECT<space>DISTINCT<space><lf><space><space><space><space>t_commune.COM_CCOM<space>AS<space><quote>code_insee<quote><comma><space><lf><tab>t_commune.COM_NCC<space>AS<space><quote>nom_com<quote><comma><space><lf><tab>t_appellation.ID_APPELLATION<space>AS<space><quote>id_app<quote><comma><space><lf><tab>t_appellation.app_libelle<space>AS<space><quote>appellation<quote><comma><space><lf><tab>t_denomination_geo.id_denomination_geo<space>AS<space><quote>id_denom<quote><comma><space><lf><tab>t_denomination_geo.DEN_GEO_LIBELLE<space>AS<space><quote>denomination<quote><space><comma><lf><space><space><space><space>t_zone.zon_libelle<comma><lf><space><space><space><space>t_centre_inao.CEN_INA_NOM<space>as<space><quote>centre<quote><lf>FROM<space><lf><tab>t_produit<space><lf><tab>JOIN<space>l_produit_centre_inao<space>ON<space>t_produit.ID_PRODUIT<space>=<space>l_produit_centre_inao.ID_PRODUIT<space><lf><tab>JOIN<space>t_centre_inao<space>ON<space>l_produit_centre_inao.ID_CENTRE_INAO<space>=<space>t_centre_inao.ID_CENTRE_INAO<space><lf><tab>JOIN<space>t_statut<space>ON<space><space>t_produit.id_statut<space>=<space>t_statut.id_statut<space><lf><tab>JOIN<space>t_denomination_geo<space>ON<space>t_produit.ID_DENOMINATION_GEO<space>=<space>t_denomination_geo.ID_DENOMINATION_GEO<space><space><lf><tab>JOIN<space>t_appellation<space>ON<space>t_appellation.id_appellation<space>=<space>t_produit.id_appellation<space><space><lf><tab>JOIN<space>t_categorie_produit<space>ON<space>t_produit.ID_CATEGORIE_PRODUIT<space>=<space><space>t_categorie_produit.ID_CATEGORIE_PRODUIT<space><lf><tab>JOIN<space>t_type_produit<space>ON<space>t_categorie_produit.ID_TYPE_PRODUIT<space>=<space>t_type_produit.ID_TYPE_PRODUIT<space><lf><tab>JOIN<space>t_aire_geographique<space>ON<space>t_produit.ID_AIRE_GEOGRAPHIQUE<space>=<space>t_aire_geographique.ID_AIRE_GEOGRAPHIQUE<space><lf><tab>JOIN<space>t_zone<space>ON<space>t_aire_geographique.ID_AIRE_GEOGRAPHIQUE<space>=<space>t_zone.ID_AIRE_GEO<space><lf><tab>JOIN<space>l_commune_zone<space>ON<space>t_zone.ID_ZONE<space>=<space>l_commune_zone.ID_ZONE<space><lf><tab>JOIN<space>t_commune<space>ON<space>l_commune_zone.ID_COMMUNE<space>=<space>t_commune.ID_COMMUNE<space><lf>WHERE<space><lf><tab>t_produit.PRO_DATE_ARCHIVAGE<space>=<space>0<space><lf><tab>and<space>t_produit.PRO_ETAT<space>=<space>2<space><lf><tab>and<space>t_type_produit.TYP_PRO_LIBELLE<space>=<space><apos>Vins<apos><space><lf><tab>and<space>LEFT<openparen>t_statut.STA_LIBELLE<comma>3<closeparen><space>=<space><apos>AOC<apos><space><lf>ORDER<space>BY<space><lf><tab>1<comma><space>6    COMBINE_ATTRIBUTES   RESULT_ONLY    COMBINE_GEOMETRY     RESULT_ONLY    READER_TYPE          MYSQL    READER_DATASET       "bsi<space>inao"    READER_PARAMS        $(SQLCreator_DIRECTIVES)    QUERYFCT_PROPAGATE_IDS_ON_SQL_EXECUTE YES    CONTINUE_ON_READER_ERROR YES    OUTPUT RESULT FEATURE_TYPE SQLCreator_RESULT        @SupplyAttributes(fme_feature_type,SQLCreator)    OUTPUT READER_ERROR FEATURE_TYPE SQLCreator_<REJECTED>
+
+FACTORY_DEF * BranchingFactory   FACTORY_NAME "SQLCreator_RESULT Brancher -1 4"   INPUT FEATURE_TYPE SQLCreator_RESULT   TARGET_FACTORY "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   MAXIMUM_COUNT None   OUTPUT PASSED FEATURE_TYPE *
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME SQLCreator_<Rejected> INPUT FEATURE_TYPE SQLCreator_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, SQLCreator<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   INPUT FEATURE_TYPE *  OUTPUT FEATURE_TYPE *
+# -------------------------------------------------------------------------
+
+# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
+DEFAULT_MACRO WORKSPACE_TEMP_DIR
+INCLUDE [    set safeName "[regsub -all {[^a-zA-Z0-9]} {SQLCreator_Result} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";    puts "MACRO SAFE_FFS_NAME $safeName"; ]
+FACTORY_DEF {*} InspectorFactory    FACTORY_NAME SQLCreator_Result_Prepper    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE SQLCreator_RESULT    GROUP_ATTRIBUTE __inspector_feature_type_attr__    GROUP_BY {  }    GROUP_ATTRIBUTE_PREFIX { SQLCreator_Result }    RASTER_REDUCTION NoReduction    POINT_CLOUD_REDUCTION NO_THINNING    OUTPUT RESULT FEATURE_TYPE __viewme__
+# Now route all the features into the recorder, changing their
+# feature type to the transformer name so that they view nicely
+
+DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
+DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
+# [PR#45549] The Data Inspector will limit the maximum number of features
+# it reads on WIN32, so we will correspondingly limit the number of
+# features we record here using the MAX_FEATURES_TO_RECORD directive.
+
+FACTORY_DEF * RecorderFactory    FACTORY_NAME SQLCreator_Result_Recorder    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    STORE_SCANNED_SCHEMA YES    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA code_insee,varchar<openparen>255<closeparen>,nom_com,varchar<openparen>255<closeparen>,id_app,varchar<openparen>255<closeparen>,appellation,varchar<openparen>255<closeparen>,id_denom,varchar<openparen>255<closeparen>,denomination,varchar<openparen>255<closeparen>,zon_libelle,varchar<openparen>255<closeparen>,centre,varchar<openparen>255<closeparen>    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * CreationFactory   CREATE_AT_END   OUTPUT FEATURE_TYPE __NUKEME__   @TCL("if [file exists {$(WORKSPACE_TEMP_DIR)}] {set files [glob -nocomplain -directory  {$(WORKSPACE_TEMP_DIR)} -tails *.ffs];   if {[llength $files] == 1} {    set theFile {$(WORKSPACE_TEMP_DIR)/};   append theFile [lindex $files 0];   eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -f FFS \042$theFile\042 & \175;  } elseif { [llength $files] == 0 } {  catch { file delete -force {$(WORKSPACE_TEMP_DIR)} };  } else {  set filesNoExt {}; set lastfile {}; foreach {fileName} [lsort $files] { set fileNoExt [string trimright $fileName {.ffs}]; if [regexp {(.*)_[0-9]*$} $fileNoExt wholething fileNoExtBase] {  if { $fileNoExtBase == $lastfile } { continue } }; set lastfile $fileNoExt; lappend filesNoExt $fileNoExt };  eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -d {$(WORKSPACE_TEMP_DIR)} -a ffs -f FFS $filesNoExt & \175; }; }; ")
+FACTORY_DEF * TeeFactory   INPUT FEATURE_TYPE __NUKEME__
