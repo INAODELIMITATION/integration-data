@@ -10,14 +10,14 @@
 #!   DESCRIPTION=""
 #!   DESTINATION="NONE"
 #!   DESTINATION_ROUTING_FILE=""
-#!   DOC_EXTENTS="4464.15 1191.76"
-#!   DOC_TOP_LEFT="-2257.35 -366.444"
+#!   DOC_EXTENTS="4895.15 1262.76"
+#!   DOC_TOP_LEFT="-2257.35 -437.444"
 #!   END_PYTHON=""
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
-#!   FME_BUILD_NUM="18312"
-#!   FME_DOCUMENT_GUID="958187d6-385f-4db0-a30c-b5eb4733e9d0"
-#!   FME_DOCUMENT_PRIORGUID="1e020865-4978-4466-bdc0-af45ae56e1b8,411656a7-5a26-4455-8822-d6bb895c6f64,c8bbd452-a237-4566-8ce5-3898edcbe482,3e07335b-32e6-4715-baea-5ed18bf60baa,cd93dcfd-06b7-4d16-897e-d3806256ae39,0c3a9185-4e67-4001-a6ba-8098485f8876,342677fe-b777-4163-98fa-09cae3a67404,e88cfeed-2c55-4189-a391-9d7603a21ad6,f8daf766-58b2-4510-8744-a9d8bd291b8e,6a39d0be-654c-4ea4-8240-731cb9effe8b,76a248cf-363a-45b1-b13b-d19717289d04"
+#!   FME_BUILD_NUM="19238"
+#!   FME_DOCUMENT_GUID="d9aa0fb8-f8df-4442-90c8-df522b8da9a6"
+#!   FME_DOCUMENT_PRIORGUID="1e020865-4978-4466-bdc0-af45ae56e1b8,411656a7-5a26-4455-8822-d6bb895c6f64,c8bbd452-a237-4566-8ce5-3898edcbe482,3e07335b-32e6-4715-baea-5ed18bf60baa,cd93dcfd-06b7-4d16-897e-d3806256ae39,0c3a9185-4e67-4001-a6ba-8098485f8876,342677fe-b777-4163-98fa-09cae3a67404,e88cfeed-2c55-4189-a391-9d7603a21ad6,f8daf766-58b2-4510-8744-a9d8bd291b8e,6a39d0be-654c-4ea4-8240-731cb9effe8b,76a248cf-363a-45b1-b13b-d19717289d04,958187d6-385f-4db0-a30c-b5eb4733e9d0,a2221f9c-fdac-4f62-82b6-58bcac999bcd,207cb359-004b-4d4f-b8b9-db1b1e93354c"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_REPROJECTION_ENGINE="FME"
@@ -25,8 +25,8 @@
 #!   FME_STROKE_MAX_DEVIATION="0"
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
-#!   LAST_SAVE_BUILD="FME(R) 2018.0.1.1 (20180615 - Build 18312 - WIN64)"
-#!   LAST_SAVE_DATE="2019-02-22T16:14:08"
+#!   LAST_SAVE_BUILD="FME(R) 2019.0.0.0 (20190328 - Build 19238 - WIN64)"
+#!   LAST_SAVE_DATE="2019-06-21T15:38:28"
 #!   LOG_FILE=""
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -34,8 +34,9 @@
 #!   MAX_LOG_FEATURES="200"
 #!   MULTI_WRITER_DATASET_ORDER="BY_ID"
 #!   PASSWORD=""
-#!   PYTHON_COMPATIBILITY="2or3"
+#!   PYTHON_COMPATIBILITY="37"
 #!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
 #!   SHOW_ANNOTATIONS="true"
 #!   SHOW_INFO_NODES="true"
 #!   SOURCE="NONE"
@@ -44,7 +45,7 @@
 #!   TITLE=""
 #!   USAGE=""
 #!   USE_MARKDOWN=""
-#!   VIEW_POSITION="-2729.19 1194.46"
+#!   VIEW_POSITION="-2857.67 1121.54"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
 #!   ZOOM_SCALE="72"
@@ -72,7 +73,8 @@
 #!   ORDER="500000000000016"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
-#!   COLOUR="1,1,0.78431372549019607,0.19607843137254902"
+#!   CUSTOM_USER_COLOR="false"
+#!   COLOUR="0.28627450980392155,0.29803921568627451,0.0078431372549019607,0.78431372549019607"
 #!   SIZE_POLICY="10"
 #!   ANCHORED_NODE="5"
 #! />
@@ -86,7 +88,8 @@
 #!   ORDER="500000000000036"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
-#!   COLOUR="1,1,0.78431372549019607,0.19607843137254902"
+#!   CUSTOM_USER_COLOR="false"
+#!   COLOUR="0.28627450980392155,0.29803921568627451,0.0078431372549019607,0.78431372549019607"
 #!   SIZE_POLICY="10"
 #!   ANCHORED_NODE="18"
 #! />
@@ -100,7 +103,8 @@
 #!   ORDER="500000000000044"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
-#!   COLOUR="1,1,0.78431372549019607,0.19607843137254902"
+#!   CUSTOM_USER_COLOR="false"
+#!   COLOUR="0.28627450980392155,0.29803921568627451,0.0078431372549019607,0.78431372549019607"
 #!   SIZE_POLICY="10"
 #!   ANCHORED_NODE="16"
 #! />
@@ -114,7 +118,8 @@
 #!   ORDER="500000000000045"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
-#!   COLOUR="1,1,0.78431372549019607,0.19607843137254902"
+#!   CUSTOM_USER_COLOR="false"
+#!   COLOUR="0.28627450980392155,0.29803921568627451,0.0078431372549019607,0.78431372549019607"
 #!   SIZE_POLICY="10"
 #!   ANCHORED_NODE="17"
 #! />
@@ -128,7 +133,8 @@
 #!   ORDER="500000000000046"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
-#!   COLOUR="1,1,0.78431372549019607,0.19607843137254902"
+#!   CUSTOM_USER_COLOR="false"
+#!   COLOUR="0.28627450980392155,0.29803921568627451,0.0078431372549019607,0.78431372549019607"
 #!   SIZE_POLICY="10"
 #!   ANCHORED_NODE="25"
 #! />
@@ -142,7 +148,8 @@
 #!   ORDER="500000000000048"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
-#!   COLOUR="1,1,0.78431372549019607,0.19607843137254902"
+#!   CUSTOM_USER_COLOR="false"
+#!   COLOUR="0.28627450980392155,0.29803921568627451,0.0078431372549019607,0.78431372549019607"
 #!   SIZE_POLICY="10"
 #!   ANCHORED_NODE="0"
 #! />
@@ -156,7 +163,8 @@
 #!   ORDER="500000000000055"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
-#!   COLOUR="1,1,0.78431372549019607,0.19607843137254902"
+#!   CUSTOM_USER_COLOR="false"
+#!   COLOUR="0.28627450980392155,0.29803921568627451,0.0078431372549019607,0.78431372549019607"
 #!   SIZE_POLICY="10"
 #!   ANCHORED_NODE="0"
 #! />
@@ -171,11 +179,11 @@
 #!   TYPE="SQLCreator"
 #!   VERSION="3"
 #!   POSITION="-2215.3514743480773 -153.10962031232509"
-#!   BOUNDING_RECT="-2215.3514743480773 -153.10962031232509 -1 -1"
+#!   BOUNDING_RECT="-2215.3514743480773 -153.10962031232509 431 71"
 #!   ORDER="500000000000008"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="18312"
+#!   LAST_PARM_EDIT="19238"
 #! >
 #!     <OUTPUT_FEAT NAME="RESULT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -193,15 +201,16 @@
 #!     <XFORM_ATTR ATTR_NAME="nomcom" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="id_zone" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="srv_sig_1"/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="srv_sig"/>
 #!     <XFORM_PARM PARM_NAME="DB_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="EXPOSED_ATTRIBUTE_LIST" PARM_VALUE="id_aire,lbl_aire,insee,nomcom,id_zone"/>
 #!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="POSTGRES"/>
-#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="POSTGRES_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Connection:,POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_SCHEMAS_FOR_TABLE_LISTING,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Schemas&lt;space&gt;for&lt;space&gt;Table&lt;space&gt;Listing:,POSTGRES_READ_TIME_WITH_TIMEZONE,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_READ_TIME_WITH_TIMEZONE,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_SCHEMAS_FOR_TABLE_LISTING,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Schemas&lt;space&gt;for&lt;space&gt;Table&lt;space&gt;Listing:,POSTGRES_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Connection:,POSTGRES_CREATE_FEATURE_TABLES_FROM_DATA,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;"/>
 #!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="POSTGRES_NAMED_CONNECTION" PARM_VALUE="srv_sig_1"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_CREATE_FEATURE_TABLES_FROM_DATA" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_NAMED_CONNECTION" PARM_VALUE="srv_sig"/>
 #!     <XFORM_PARM PARM_NAME="POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
 #!     <XFORM_PARM PARM_NAME="POSTGRES_READ_TIME_WITH_TIMEZONE" PARM_VALUE="Yes"/>
 #!     <XFORM_PARM PARM_NAME="POSTGRES_SCHEMAS_FOR_TABLE_LISTING" PARM_VALUE="edigeo ign_bd_cadastre ign_bd_carto ign_bd_topo mae metier_inao work cvi etalab"/>
@@ -290,11 +299,11 @@
 #!   TYPE="SQLExecutor"
 #!   VERSION="8"
 #!   POSITION="-313.7864556423342 472.22574447966673"
-#!   BOUNDING_RECT="-313.7864556423342 472.22574447966673 -1 -1"
+#!   BOUNDING_RECT="-313.7864556423342 472.22574447966673 431 71"
 #!   ORDER="500000000000027"
 #!   PARMS_EDITED="true"
 #!   ENABLED="false"
-#!   LAST_PARM_EDIT="18312"
+#!   LAST_PARM_EDIT="19238"
 #! >
 #!     <OUTPUT_FEAT NAME="RESULT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -328,15 +337,16 @@
 #!     <XFORM_PARM PARM_NAME="COMBINE_ATTRS" PARM_VALUE="Keep Initiator Attributes if Conflict"/>
 #!     <XFORM_PARM PARM_NAME="COMBINE_GEOM" PARM_VALUE="Initiator Geometry Only"/>
 #!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="srv_sig_1"/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="srv_sig"/>
 #!     <XFORM_PARM PARM_NAME="DB_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="EXPOSED_ATTRIBUTE_LIST" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="POSTGRES"/>
-#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="POSTGRES_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Connection:,POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_SCHEMAS_FOR_TABLE_LISTING,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Schemas&lt;space&gt;for&lt;space&gt;Table&lt;space&gt;Listing:,POSTGRES_READ_TIME_WITH_TIMEZONE,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="POSTGRES_CREATE_FEATURE_TABLES_FROM_DATA,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_READ_TIME_WITH_TIMEZONE,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_SCHEMAS_FOR_TABLE_LISTING,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Schemas&lt;space&gt;for&lt;space&gt;Table&lt;space&gt;Listing:,POSTGRES_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Connection:,POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;"/>
 #!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="POSTGRES_NAMED_CONNECTION" PARM_VALUE="srv_sig_1"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_CREATE_FEATURE_TABLES_FROM_DATA" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_NAMED_CONNECTION" PARM_VALUE="srv_sig"/>
 #!     <XFORM_PARM PARM_NAME="POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
 #!     <XFORM_PARM PARM_NAME="POSTGRES_READ_TIME_WITH_TIMEZONE" PARM_VALUE="Yes"/>
 #!     <XFORM_PARM PARM_NAME="POSTGRES_SCHEMAS_FOR_TABLE_LISTING" PARM_VALUE="edigeo ign_bd_cadastre ign_bd_carto ign_bd_topo mae metier_inao work cvi etalab"/>
@@ -349,11 +359,11 @@
 #!   TYPE="SQLExecutor"
 #!   VERSION="8"
 #!   POSITION="663.134440233291 230.33349356325812"
-#!   BOUNDING_RECT="663.134440233291 230.33349356325812 -1 -1"
+#!   BOUNDING_RECT="663.134440233291 230.33349356325812 431 71"
 #!   ORDER="500000000000029"
 #!   PARMS_EDITED="true"
 #!   ENABLED="false"
-#!   LAST_PARM_EDIT="18312"
+#!   LAST_PARM_EDIT="19238"
 #! >
 #!     <OUTPUT_FEAT NAME="RESULT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -389,15 +399,16 @@
 #!     <XFORM_PARM PARM_NAME="COMBINE_ATTRS" PARM_VALUE="Keep Result Attributes if Conflict"/>
 #!     <XFORM_PARM PARM_NAME="COMBINE_GEOM" PARM_VALUE="Initiator Geometry Only"/>
 #!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="srv_sig_1"/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="srv_sig"/>
 #!     <XFORM_PARM PARM_NAME="DB_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="EXPOSED_ATTRIBUTE_LIST" PARM_VALUE="id_zone"/>
 #!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="POSTGRES"/>
-#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="POSTGRES_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Connection:,POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_SCHEMAS_FOR_TABLE_LISTING,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Schemas&lt;space&gt;for&lt;space&gt;Table&lt;space&gt;Listing:,POSTGRES_READ_TIME_WITH_TIMEZONE,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_READ_TIME_WITH_TIMEZONE,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_SCHEMAS_FOR_TABLE_LISTING,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Schemas&lt;space&gt;for&lt;space&gt;Table&lt;space&gt;Listing:,POSTGRES_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Connection:,POSTGRES_CREATE_FEATURE_TABLES_FROM_DATA,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;"/>
 #!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="POSTGRES_NAMED_CONNECTION" PARM_VALUE="srv_sig_1"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_CREATE_FEATURE_TABLES_FROM_DATA" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_NAMED_CONNECTION" PARM_VALUE="srv_sig"/>
 #!     <XFORM_PARM PARM_NAME="POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
 #!     <XFORM_PARM PARM_NAME="POSTGRES_READ_TIME_WITH_TIMEZONE" PARM_VALUE="Yes"/>
 #!     <XFORM_PARM PARM_NAME="POSTGRES_SCHEMAS_FOR_TABLE_LISTING" PARM_VALUE="edigeo ign_bd_cadastre ign_bd_carto ign_bd_topo mae metier_inao work cvi etalab"/>
@@ -410,11 +421,11 @@
 #!   TYPE="SQLCreator"
 #!   VERSION="3"
 #!   POSITION="-2215.3514743480773 586.81022365779199"
-#!   BOUNDING_RECT="-2215.3514743480773 586.81022365779199 -1 -1"
+#!   BOUNDING_RECT="-2215.3514743480773 586.81022365779199 431 71"
 #!   ORDER="500000000000035"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="18312"
+#!   LAST_PARM_EDIT="19238"
 #! >
 #!     <OUTPUT_FEAT NAME="RESULT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -432,19 +443,20 @@
 #!     <XFORM_ATTR ATTR_NAME="lbl_aire" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="geometry" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="srv_sig_1"/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="srv_sig"/>
 #!     <XFORM_PARM PARM_NAME="DB_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="EXPOSED_ATTRIBUTE_LIST" PARM_VALUE="aoc,id_aire,insee,lbl_aire,geometry"/>
 #!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="POSTGRES"/>
-#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="POSTGRES_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Connection:,POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_SCHEMAS_FOR_TABLE_LISTING,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Schemas&lt;space&gt;for&lt;space&gt;Table&lt;space&gt;Listing:,POSTGRES_READ_TIME_WITH_TIMEZONE,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_READ_TIME_WITH_TIMEZONE,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_SCHEMAS_FOR_TABLE_LISTING,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Schemas&lt;space&gt;for&lt;space&gt;Table&lt;space&gt;Listing:,POSTGRES_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Connection:,POSTGRES_CREATE_FEATURE_TABLES_FROM_DATA,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;"/>
 #!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="POSTGRES_NAMED_CONNECTION" PARM_VALUE="srv_sig_1"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_CREATE_FEATURE_TABLES_FROM_DATA" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_NAMED_CONNECTION" PARM_VALUE="srv_sig"/>
 #!     <XFORM_PARM PARM_NAME="POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
 #!     <XFORM_PARM PARM_NAME="POSTGRES_READ_TIME_WITH_TIMEZONE" PARM_VALUE="Yes"/>
 #!     <XFORM_PARM PARM_NAME="POSTGRES_SCHEMAS_FOR_TABLE_LISTING" PARM_VALUE="edigeo ign_bd_cadastre ign_bd_carto ign_bd_topo mae metier_inao work cvi etalab"/>
-#!     <XFORM_PARM PARM_NAME="SQL_STATEMENT" PARM_VALUE="UPDATE&lt;space&gt;work.live_result&lt;space&gt;lr&lt;lf&gt;SET&lt;space&gt;lbl_aire&lt;space&gt;=&lt;space&gt;ta.lbl_aire&lt;lf&gt;FROM&lt;space&gt;metier_inao.t_aire&lt;space&gt;ta&lt;lf&gt;WHERE&lt;space&gt;lr.id_aire&lt;space&gt;=&lt;space&gt;ta.id_aire&lt;semicolon&gt;&lt;lf&gt;&lt;lf&gt;SELECT&lt;space&gt;insee&lt;comma&gt;&lt;space&gt;id_aire&lt;comma&gt;&lt;space&gt;lbl_aire&lt;comma&gt;&lt;space&gt;dataset&lt;comma&gt;&lt;space&gt;st_astext&lt;openparen&gt;geom&lt;closeparen&gt;&lt;space&gt;geometry&lt;lf&gt;FROM&lt;space&gt;work.live_result&lt;semicolon&gt;"/>
+#!     <XFORM_PARM PARM_NAME="SQL_STATEMENT" PARM_VALUE="UPDATE&lt;space&gt;work.live_result&lt;space&gt;lr&lt;lf&gt;SET&lt;space&gt;lbl_aire&lt;space&gt;=&lt;space&gt;ta.lbl_aire&lt;lf&gt;FROM&lt;space&gt;metier_inao.t_aire&lt;space&gt;ta&lt;lf&gt;WHERE&lt;space&gt;lr.id_aire&lt;space&gt;=&lt;space&gt;ta.id_aire&lt;semicolon&gt;&lt;lf&gt;&lt;lf&gt;SELECT&lt;space&gt;insee&lt;comma&gt;&lt;space&gt;id_aire&lt;comma&gt;&lt;space&gt;lbl_aire&lt;comma&gt;&lt;space&gt;ST_ASTEXT&lt;openparen&gt;ST_MULTI&lt;openparen&gt;ST_COLLECTIONEXTRACT&lt;openparen&gt;ST_UNION&lt;openparen&gt;geom&lt;closeparen&gt;&lt;comma&gt;3&lt;closeparen&gt;&lt;closeparen&gt;&lt;closeparen&gt;&lt;space&gt;geometry&lt;lf&gt;FROM&lt;space&gt;work.live_result&lt;lf&gt;GROUP&lt;space&gt;BY&lt;space&gt;insee&lt;comma&gt;&lt;space&gt;id_aire&lt;comma&gt;&lt;space&gt;lbl_aire&lt;semicolon&gt;"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SQLCreator"/>
 #! </TRANSFORMER>
@@ -453,11 +465,11 @@
 #!   TYPE="SQLExecutor"
 #!   VERSION="8"
 #!   POSITION="1399.3200163163651 230.33349356325812"
-#!   BOUNDING_RECT="1399.3200163163651 230.33349356325812 -1 -1"
+#!   BOUNDING_RECT="1399.3200163163651 230.33349356325812 431 71"
 #!   ORDER="500000000000029"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="18312"
+#!   LAST_PARM_EDIT="19238"
 #! >
 #!     <OUTPUT_FEAT NAME="RESULT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -486,15 +498,16 @@
 #!     <XFORM_PARM PARM_NAME="COMBINE_ATTRS" PARM_VALUE="Result Attributes Only"/>
 #!     <XFORM_PARM PARM_NAME="COMBINE_GEOM" PARM_VALUE="Initiator Geometry Only"/>
 #!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="srv_sig_1"/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="srv_sig"/>
 #!     <XFORM_PARM PARM_NAME="DB_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="EXPOSED_ATTRIBUTE_LIST" PARM_VALUE="id_zone"/>
 #!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="POSTGRES"/>
-#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_READ_TIME_WITH_TIMEZONE,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Connection:,POSTGRES_SCHEMAS_FOR_TABLE_LISTING,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Schemas&lt;space&gt;for&lt;space&gt;Table&lt;space&gt;Listing:"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_READ_TIME_WITH_TIMEZONE,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_SCHEMAS_FOR_TABLE_LISTING,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Schemas&lt;space&gt;for&lt;space&gt;Table&lt;space&gt;Listing:,POSTGRES_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Connection:,POSTGRES_CREATE_FEATURE_TABLES_FROM_DATA,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;"/>
 #!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="POSTGRES_NAMED_CONNECTION" PARM_VALUE="srv_sig_1"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_CREATE_FEATURE_TABLES_FROM_DATA" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_NAMED_CONNECTION" PARM_VALUE="srv_sig"/>
 #!     <XFORM_PARM PARM_NAME="POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
 #!     <XFORM_PARM PARM_NAME="POSTGRES_READ_TIME_WITH_TIMEZONE" PARM_VALUE="Yes"/>
 #!     <XFORM_PARM PARM_NAME="POSTGRES_SCHEMAS_FOR_TABLE_LISTING" PARM_VALUE="edigeo ign_bd_cadastre ign_bd_carto ign_bd_topo mae metier_inao work cvi etalab"/>
@@ -507,7 +520,7 @@
 #!   TYPE="Inspector"
 #!   VERSION="5"
 #!   POSITION="2206.7947732861567 105.33224355075799"
-#!   BOUNDING_RECT="2206.7947732861567 105.33224355075799 -1 -1"
+#!   BOUNDING_RECT="2206.7947732861567 105.33224355075799 431 71"
 #!   ORDER="500000000000047"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -534,8 +547,8 @@
 #!   IDENTIFIER="29"
 #!   TYPE="Inspector"
 #!   VERSION="5"
-#!   POSITION="-313.7864556423342 -366.44388698832518"
-#!   BOUNDING_RECT="-313.7864556423342 -366.44388698832518 -1 -1"
+#!   POSITION="-226.98003202254245 -366.44388698832518"
+#!   BOUNDING_RECT="-226.98003202254245 -366.44388698832518 431 71"
 #!   ORDER="500000000000056"
 #!   PARMS_EDITED="false"
 #!   ENABLED="true"
@@ -562,8 +575,8 @@
 #!   IDENTIFIER="32"
 #!   TYPE="Inspector"
 #!   VERSION="5"
-#!   POSITION="-977.37088481995863 631.4483139275834"
-#!   BOUNDING_RECT="-977.37088481995863 631.4483139275834 -1 -1"
+#!   POSITION="-1005.148940378292 638.89407782966691"
+#!   BOUNDING_RECT="-1005.148940378292 638.89407782966691 431 71"
 #!   ORDER="500000000000057"
 #!   PARMS_EDITED="false"
 #!   ENABLED="true"
@@ -697,30 +710,28 @@
 #! <LOOKUP_TABLES>
 #! </LOOKUP_TABLES>
 #! </WORKSPACE>
-FME_PYTHON_VERSION 2or3
+
+FME_PYTHON_VERSION 37
 #! START_HEADER
 #! START_WB_HEADER
 READER_TYPE MULTI_READER
-
 WRITER_TYPE NULL
 WRITER_KEYWORD NULL_DEST
 NULL_DEST_DATASET null
 #! END_WB_HEADER
-
 #! START_WB_HEADER
 #! END_WB_HEADER
-
 #! END_HEADER
 
 LOG_FILENAME "$(FME_MF_DIR)2_aire_parcellaire_annule_et_remplace.log"
 LOG_APPEND NO
+LOG_FILTER_MASK -1
 LOG_MAX_FEATURES 200
 LOG_MAX_RECORDED_FEATURES 200
 FME_REPROJECTION_ENGINE FME
 FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
 FME_GEOMETRY_HANDLING Enhanced
 FME_STROKE_MAX_DEVIATION 0
-LOG_FILTER_MASK -1
 # -------------------------------------------------------------------------
 
 MULTI_READER_CONTINUE_ON_READER_FAILURE No
@@ -737,69 +748,54 @@ MACRO VISUALIZER_SCHEMA_FILE $(WORKSPACE_TEMP_DIR)/inspector.fsc
 MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
-MACRO SQLCreator_2_DIRECTIVES NAMED_CONNECTION srv_sig_1 QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS Yes SCHEMAS_FOR_TABLE_LISTING "edigeo ign_bd_cadastre ign_bd_carto ign_bd_topo mae metier_inao work cvi etalab" READ_TIME_WITH_TIMEZONE Yes
-
+MACRO SQLCreator_2_DIRECTIVES QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS Yes READ_TIME_WITH_TIMEZONE Yes SCHEMAS_FOR_TABLE_LISTING "edigeo ign_bd_cadastre ign_bd_carto ign_bd_topo mae metier_inao work cvi etalab" NAMED_CONNECTION srv_sig CREATE_FEATURE_TABLES_FROM_DATA Yes
 FACTORY_DEF * CreationFactory    FACTORY_NAME SQLCreator_2_Creator    OUTPUT FEATURE_TYPE _____CREATED______
-FACTORY_DEF * QueryFactory    FACTORY_NAME SQLCreator_2    INPUT FEATURE_TYPE _____CREATED______    QUERY_SQL            SELECT<space>id_aire<comma><space>lbl_aire<comma><space>id_zone<comma><space>insee<comma><space>nomcom<lf>FROM<space>metier_inao.t_aire<space><lf>INNER<space>JOIN<space>metier_inao.l_aire_zone<space>laz<space>USING<openparen>id_aire<closeparen><lf>INNER<space>JOIN<space>metier_inao.t_zone<space>tz<space>USING<openparen>id_zone<closeparen><lf>WHERE<space>type_zone<space>=<space>2    COMBINE_ATTRIBUTES   RESULT_ONLY    COMBINE_GEOMETRY     RESULT_ONLY    READER_TYPE          POSTGRES    READER_DATASET       "srv_sig_1"    READER_PARAMS        $(SQLCreator_2_DIRECTIVES)    QUERYFCT_PROPAGATE_IDS_ON_SQL_EXECUTE YES    CONTINUE_ON_READER_ERROR YES    OUTPUT RESULT FEATURE_TYPE SQLCreator_2_RESULT        @SupplyAttributes(fme_feature_type,SQLCreator_2)    OUTPUT READER_ERROR FEATURE_TYPE SQLCreator_2_<REJECTED>
-
+FACTORY_DEF * QueryFactory    FACTORY_NAME SQLCreator_2    INPUT FEATURE_TYPE _____CREATED______    QUERY_SQL            SELECT<space>id_aire<comma><space>lbl_aire<comma><space>id_zone<comma><space>insee<comma><space>nomcom<lf>FROM<space>metier_inao.t_aire<space><lf>INNER<space>JOIN<space>metier_inao.l_aire_zone<space>laz<space>USING<openparen>id_aire<closeparen><lf>INNER<space>JOIN<space>metier_inao.t_zone<space>tz<space>USING<openparen>id_zone<closeparen><lf>WHERE<space>type_zone<space>=<space>2    COMBINE_ATTRIBUTES   RESULT_ONLY    COMBINE_GEOMETRY     RESULT_ONLY    READER_TYPE          POSTGRES    READER_DATASET       "srv_sig"    READER_PARAMS        $(SQLCreator_2_DIRECTIVES)    QUERYFCT_PROPAGATE_IDS_ON_SQL_EXECUTE YES    CONTINUE_ON_READER_ERROR YES    OUTPUT RESULT FEATURE_TYPE SQLCreator_2_RESULT        @SupplyAttributes(fme_feature_type,SQLCreator_2)    OUTPUT READER_ERROR FEATURE_TYPE SQLCreator_2_<REJECTED>
 FACTORY_DEF * BranchingFactory   FACTORY_NAME "SQLCreator_2_RESULT Brancher -1 35"   INPUT FEATURE_TYPE SQLCreator_2_RESULT   TARGET_FACTORY "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   MAXIMUM_COUNT None   OUTPUT PASSED FEATURE_TYPE *
 DEFAULT_MACRO _WB_BYPASS_TERMINATION No
 FACTORY_DEF * TeeFactory FACTORY_NAME SQLCreator_2_<Rejected> INPUT FEATURE_TYPE SQLCreator_2_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, SQLCreator_2<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
 # -------------------------------------------------------------------------
-MACRO SQLCreator_DIRECTIVES NAMED_CONNECTION srv_sig_1 QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS Yes SCHEMAS_FOR_TABLE_LISTING "edigeo ign_bd_cadastre ign_bd_carto ign_bd_topo mae metier_inao work cvi etalab" READ_TIME_WITH_TIMEZONE Yes
-
+MACRO SQLCreator_DIRECTIVES QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS Yes READ_TIME_WITH_TIMEZONE Yes SCHEMAS_FOR_TABLE_LISTING "edigeo ign_bd_cadastre ign_bd_carto ign_bd_topo mae metier_inao work cvi etalab" NAMED_CONNECTION srv_sig CREATE_FEATURE_TABLES_FROM_DATA Yes
 FACTORY_DEF * CreationFactory    FACTORY_NAME SQLCreator_Creator    OUTPUT FEATURE_TYPE _____CREATED______
-FACTORY_DEF * QueryFactory    FACTORY_NAME SQLCreator    INPUT FEATURE_TYPE _____CREATED______    QUERY_SQL            UPDATE<space>work.live_result<space>lr<lf>SET<space>lbl_aire<space>=<space>ta.lbl_aire<lf>FROM<space>metier_inao.t_aire<space>ta<lf>WHERE<space>lr.id_aire<space>=<space>ta.id_aire<semicolon><lf><lf>SELECT<space>insee<comma><space>id_aire<comma><space>lbl_aire<comma><space>dataset<comma><space>st_astext<openparen>geom<closeparen><space>geometry<lf>FROM<space>work.live_result<semicolon>    COMBINE_ATTRIBUTES   RESULT_ONLY    COMBINE_GEOMETRY     RESULT_ONLY    READER_TYPE          POSTGRES    READER_DATASET       "srv_sig_1"    READER_PARAMS        $(SQLCreator_DIRECTIVES)    QUERYFCT_PROPAGATE_IDS_ON_SQL_EXECUTE YES    CONTINUE_ON_READER_ERROR YES    OUTPUT RESULT FEATURE_TYPE SQLCreator_RESULT        @SupplyAttributes(fme_feature_type,SQLCreator)    OUTPUT READER_ERROR FEATURE_TYPE SQLCreator_<REJECTED>
-
+FACTORY_DEF * QueryFactory    FACTORY_NAME SQLCreator    INPUT FEATURE_TYPE _____CREATED______    QUERY_SQL            UPDATE<space>work.live_result<space>lr<lf>SET<space>lbl_aire<space>=<space>ta.lbl_aire<lf>FROM<space>metier_inao.t_aire<space>ta<lf>WHERE<space>lr.id_aire<space>=<space>ta.id_aire<semicolon><lf><lf>SELECT<space>insee<comma><space>id_aire<comma><space>lbl_aire<comma><space>ST_ASTEXT<openparen>ST_MULTI<openparen>ST_COLLECTIONEXTRACT<openparen>ST_UNION<openparen>geom<closeparen><comma>3<closeparen><closeparen><closeparen><space>geometry<lf>FROM<space>work.live_result<lf>GROUP<space>BY<space>insee<comma><space>id_aire<comma><space>lbl_aire<semicolon>    COMBINE_ATTRIBUTES   RESULT_ONLY    COMBINE_GEOMETRY     RESULT_ONLY    READER_TYPE          POSTGRES    READER_DATASET       "srv_sig"    READER_PARAMS        $(SQLCreator_DIRECTIVES)    QUERYFCT_PROPAGATE_IDS_ON_SQL_EXECUTE YES    CONTINUE_ON_READER_ERROR YES    OUTPUT RESULT FEATURE_TYPE SQLCreator_RESULT        @SupplyAttributes(fme_feature_type,SQLCreator)    OUTPUT READER_ERROR FEATURE_TYPE SQLCreator_<REJECTED>
 FACTORY_DEF * BranchingFactory   FACTORY_NAME "SQLCreator_RESULT Brancher -1 23"   INPUT FEATURE_TYPE SQLCreator_RESULT   TARGET_FACTORY "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   MAXIMUM_COUNT None   OUTPUT PASSED FEATURE_TYPE *
 DEFAULT_MACRO _WB_BYPASS_TERMINATION No
 FACTORY_DEF * TeeFactory FACTORY_NAME SQLCreator_<Rejected> INPUT FEATURE_TYPE SQLCreator_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, SQLCreator<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
 # -------------------------------------------------------------------------
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   INPUT FEATURE_TYPE *  OUTPUT FEATURE_TYPE *
 # -------------------------------------------------------------------------
-
 INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {POLYGONS} == {POLYGONS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {POLYGONS} == {AGGREGATES}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {POLYGONS} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {POLYGONS} == {POLYGONS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {POLYGONS} == {AGGREGATES}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {POLYGONS} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
-
 FACTORY_DEF {*} ReferenceFactory    FACTORY_NAME FeatureMerger    INPUT REFERENCER FEATURE_TYPE SQLCreator_RESULT    INPUT REFERENCEE FEATURE_TYPE SQLCreator_2_RESULT    CONNECT_Z_MODE FIRST_WINS    REFERENCE_INFO $(FeatureMerger_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>insee<closeparen>,FeatureMerger) @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>insee<closeparen>,FeatureMerger) STRING @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>id_aire<closeparen>,FeatureMerger) @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>id_aire<closeparen>,FeatureMerger) NUM    ATTR_ACCUM_MODE "HANDLE_CONFLICT"    ATTR_CONFLICT_RES "REQUESTOR_IF_CONFLICT"    IGNORE_NULLS "No"    HANDLE_NULL_MISSING_KEYS_LIKE_FME2013 No    LIST_ATTRS_TO_INCLUDE { <Unused> }    LIST_ATTRS_TO_INCLUDE_MODE <Unused>    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES YES    REFERENCEES_FIRST No    REJECT_INVALID_GEOM YES    CLEANING_TOLERANCE NONE    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_MERGED    OUTPUT INCOMPLETE FEATURE_TYPE FeatureMerger_UNMERGED_REQUESTOR    OUTPUT REJECTED FEATURE_TYPE FeatureMerger_<REJECTED>
-
 FACTORY_DEF * TeeFactory   FACTORY_NAME "FeatureMerger MERGED Splitter"   INPUT FEATURE_TYPE FeatureMerger_MERGED   OUTPUT FEATURE_TYPE FeatureMerger_MERGED_0_tY5W/3lY1K0=   OUTPUT FEATURE_TYPE FeatureMerger_MERGED_1_Qz7KETrKJsY=
 FACTORY_DEF * TeeFactory   FACTORY_NAME "FeatureMerger UNMERGED_REQUESTOR Splitter"   INPUT FEATURE_TYPE FeatureMerger_UNMERGED_REQUESTOR   OUTPUT FEATURE_TYPE FeatureMerger_UNMERGED_REQUESTOR_0_tB4ni6hieW4=   OUTPUT FEATURE_TYPE FeatureMerger_UNMERGED_REQUESTOR_1_u3xmqzWQDV8=
 DEFAULT_MACRO _WB_BYPASS_TERMINATION No
 FACTORY_DEF * TeeFactory FACTORY_NAME FeatureMerger_<Rejected> INPUT FEATURE_TYPE FeatureMerger_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, FeatureMerger<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
 # -------------------------------------------------------------------------
-
 # Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
 DEFAULT_MACRO WORKSPACE_TEMP_DIR
 INCLUDE [    set safeName "[regsub -all {[^a-zA-Z0-9]} {FeatureMerger_UnmergedRequestor} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";    puts "MACRO SAFE_FFS_NAME $safeName"; ]
 FACTORY_DEF {*} InspectorFactory    FACTORY_NAME FeatureMerger_UnmergedRequestor_Prepper    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE FeatureMerger_UNMERGED_REQUESTOR_1_u3xmqzWQDV8=    GROUP_ATTRIBUTE __inspector_feature_type_attr__    GROUP_BY {  }    GROUP_ATTRIBUTE_PREFIX { FeatureMerger_UnmergedRequestor }    RASTER_REDUCTION NoReduction    POINT_CLOUD_REDUCTION NO_THINNING    OUTPUT RESULT FEATURE_TYPE __viewme__
 # Now route all the features into the recorder, changing their
 # feature type to the transformer name so that they view nicely
-
 DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
 DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
 # [PR#45549] The Data Inspector will limit the maximum number of features
 # it reads on WIN32, so we will correspondingly limit the number of
 # features we record here using the MAX_FEATURES_TO_RECORD directive.
-
 FACTORY_DEF * RecorderFactory    FACTORY_NAME FeatureMerger_UnmergedRequestor_Recorder    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    STORE_SCANNED_SCHEMA YES    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA aoc,varchar<openparen>255<closeparen>,id_aire,varchar<openparen>255<closeparen>,insee,varchar<openparen>255<closeparen>,lbl_aire,varchar<openparen>255<closeparen>,geometry,varchar<openparen>255<closeparen>    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
-
 # -------------------------------------------------------------------------
-
 # Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
 DEFAULT_MACRO WORKSPACE_TEMP_DIR
 INCLUDE [    set safeName "[regsub -all {[^a-zA-Z0-9]} {FeatureMerger_Merged} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";    puts "MACRO SAFE_FFS_NAME $safeName"; ]
 FACTORY_DEF {*} InspectorFactory    FACTORY_NAME FeatureMerger_Merged_Prepper    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE FeatureMerger_MERGED_1_Qz7KETrKJsY=    GROUP_ATTRIBUTE __inspector_feature_type_attr__    GROUP_BY {  }    GROUP_ATTRIBUTE_PREFIX { FeatureMerger_Merged }    RASTER_REDUCTION NoReduction    POINT_CLOUD_REDUCTION NO_THINNING    OUTPUT RESULT FEATURE_TYPE __viewme__
 # Now route all the features into the recorder, changing their
 # feature type to the transformer name so that they view nicely
-
 DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
 DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
 # [PR#45549] The Data Inspector will limit the maximum number of features
 # it reads on WIN32, so we will correspondingly limit the number of
 # features we record here using the MAX_FEATURES_TO_RECORD directive.
-
 FACTORY_DEF * RecorderFactory    FACTORY_NAME FeatureMerger_Merged_Recorder    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    STORE_SCANNED_SCHEMA YES    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA aoc,varchar<openparen>255<closeparen>,id_aire,varchar<openparen>255<closeparen>,insee,varchar<openparen>255<closeparen>,lbl_aire,varchar<openparen>255<closeparen>,geometry,varchar<openparen>255<closeparen>,nomcom,varchar<openparen>255<closeparen>,id_zone,varchar<openparen>255<closeparen>    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
-
 # -------------------------------------------------------------------------
 FACTORY_DEF * TeeFactory   FACTORY_NAME "SQLExecutor (Disabled) Nuker"   INPUT FEATURE_TYPE FeatureMerger_MERGED_0_tY5W/3lY1K0=
 DEFAULT_MACRO _WB_BYPASS_TERMINATION No
@@ -809,30 +805,24 @@ FACTORY_DEF * TeeFactory   FACTORY_NAME "SQLExecutor_2 (Disabled) Nuker"   INPUT
 DEFAULT_MACRO _WB_BYPASS_TERMINATION No
 FACTORY_DEF * TeeFactory FACTORY_NAME SQLExecutor_2_<Rejected> INPUT FEATURE_TYPE SQLExecutor_2_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, SQLExecutor_2<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
 # -------------------------------------------------------------------------
-MACRO SQLExecutor_3_DIRECTIVES QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS Yes READ_TIME_WITH_TIMEZONE Yes NAMED_CONNECTION srv_sig_1 SCHEMAS_FOR_TABLE_LISTING "edigeo ign_bd_cadastre ign_bd_carto ign_bd_topo mae metier_inao work cvi etalab"
-
-FACTORY_DEF * QueryFactory    FACTORY_NAME SQLExecutor_3    INPUT  FEATURE_TYPE SQLExecutor_2_RESULT    QUERY_SQL            "@EvaluateExpression(FDIV,STRING_ENCODED,INSERT<space>INTO<space>metier_inao.l_aire_zone<space><openparen>id_aire<comma><space>id_zone<closeparen><space>VALUES<space><openparen><apos><at>Value<openparen>id_aire<closeparen><apos><comma><apos><at>Value<openparen>id_zone<closeparen><apos><closeparen><space>RETURNING<space>id_zone<semicolon><lf><lf>UPDATE<space>metier_inao.t_zone<space>tz<lf>SET<space>nomcom<space>=<space>CASE<space>WHEN<space>nomcom<space>is<space>null<space>THEN<space>nom2012<space>ELSE<space>nomcom<space>END<space><lf>FROM<space>insee.historique<space>hist<lf>WHERE<space>tz.insee<space>=<space>hist.insee2012<semicolon>,SQLExecutor_3)"    READER_TYPE          POSTGRES    READER_DATASET       "srv_sig_1"    COMBINE_ATTRIBUTES   RESULT_ONLY    COMBINE_GEOMETRY     QUERY_ONLY    CONTINUE_ON_READER_ERROR YES    QUERYFCT_PROPAGATE_IDS_ON_SQL_EXECUTE YES    READER_PARAMS        $(SQLExecutor_3_DIRECTIVES)    OUTPUT RESULT FEATURE_TYPE SQLExecutor_3_RESULT        @SupplyAttributes(fme_feature_type,SQLExecutor_3)    OUTPUT QUERY FEATURE_TYPE SQLExecutor_3_INITIATOR    OUTPUT READER_ERROR FEATURE_TYPE SQLExecutor_3_<REJECTED>
-
+MACRO SQLExecutor_3_DIRECTIVES QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS Yes READ_TIME_WITH_TIMEZONE Yes SCHEMAS_FOR_TABLE_LISTING "edigeo ign_bd_cadastre ign_bd_carto ign_bd_topo mae metier_inao work cvi etalab" NAMED_CONNECTION srv_sig CREATE_FEATURE_TABLES_FROM_DATA Yes
+FACTORY_DEF * QueryFactory    FACTORY_NAME SQLExecutor_3    INPUT  FEATURE_TYPE SQLExecutor_2_RESULT    QUERY_SQL            "@EvaluateExpression(FDIV,STRING_ENCODED,INSERT<space>INTO<space>metier_inao.l_aire_zone<space><openparen>id_aire<comma><space>id_zone<closeparen><space>VALUES<space><openparen><apos><at>Value<openparen>id_aire<closeparen><apos><comma><apos><at>Value<openparen>id_zone<closeparen><apos><closeparen><space>RETURNING<space>id_zone<semicolon><lf><lf>UPDATE<space>metier_inao.t_zone<space>tz<lf>SET<space>nomcom<space>=<space>CASE<space>WHEN<space>nomcom<space>is<space>null<space>THEN<space>nom2012<space>ELSE<space>nomcom<space>END<space><lf>FROM<space>insee.historique<space>hist<lf>WHERE<space>tz.insee<space>=<space>hist.insee2012<semicolon>,SQLExecutor_3)"    READER_TYPE          POSTGRES    READER_DATASET       "srv_sig"    COMBINE_ATTRIBUTES   RESULT_ONLY    COMBINE_GEOMETRY     QUERY_ONLY    CONTINUE_ON_READER_ERROR YES    QUERYFCT_PROPAGATE_IDS_ON_SQL_EXECUTE YES    READER_PARAMS        $(SQLExecutor_3_DIRECTIVES)    OUTPUT RESULT FEATURE_TYPE SQLExecutor_3_RESULT        @SupplyAttributes(fme_feature_type,SQLExecutor_3)    OUTPUT QUERY FEATURE_TYPE SQLExecutor_3_INITIATOR    OUTPUT READER_ERROR FEATURE_TYPE SQLExecutor_3_<REJECTED>
 FACTORY_DEF * TeeFactory   FACTORY_NAME "SQLExecutor_3 INITIATOR Transformer Output Nuker"   INPUT FEATURE_TYPE SQLExecutor_3_INITIATOR
 DEFAULT_MACRO _WB_BYPASS_TERMINATION No
 FACTORY_DEF * TeeFactory FACTORY_NAME SQLExecutor_3_<Rejected> INPUT FEATURE_TYPE SQLExecutor_3_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, SQLExecutor_3<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
 # -------------------------------------------------------------------------
-
 # Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
 DEFAULT_MACRO WORKSPACE_TEMP_DIR
 INCLUDE [    set safeName "[regsub -all {[^a-zA-Z0-9]} {SQLExecutor_3_Result} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";    puts "MACRO SAFE_FFS_NAME $safeName"; ]
 FACTORY_DEF {*} InspectorFactory    FACTORY_NAME SQLExecutor_3_Result_Prepper    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE SQLExecutor_3_RESULT    GROUP_ATTRIBUTE __inspector_feature_type_attr__    GROUP_BY {  }    GROUP_ATTRIBUTE_PREFIX { SQLExecutor_3_Result }    RASTER_REDUCTION NoReduction    POINT_CLOUD_REDUCTION NO_THINNING    OUTPUT RESULT FEATURE_TYPE __viewme__
 # Now route all the features into the recorder, changing their
 # feature type to the transformer name so that they view nicely
-
 DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
 DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
 # [PR#45549] The Data Inspector will limit the maximum number of features
 # it reads on WIN32, so we will correspondingly limit the number of
 # features we record here using the MAX_FEATURES_TO_RECORD directive.
-
 FACTORY_DEF * RecorderFactory    FACTORY_NAME SQLExecutor_3_Result_Recorder    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    STORE_SCANNED_SCHEMA YES    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA id_zone,varchar<openparen>255<closeparen>    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
-
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
@@ -842,5 +832,6 @@ FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYP
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * CreationFactory   CREATE_AT_END   OUTPUT FEATURE_TYPE __NUKEME__   @TCL("if [file exists {$(WORKSPACE_TEMP_DIR)}] {set files [glob -nocomplain -directory  {$(WORKSPACE_TEMP_DIR)} -tails *.ffs];   if {[llength $files] == 1} {    set theFile {$(WORKSPACE_TEMP_DIR)/};   append theFile [lindex $files 0];   eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -f FFS \042$theFile\042 & \175;  } elseif { [llength $files] == 0 } {  catch { file delete -force {$(WORKSPACE_TEMP_DIR)} };  } else {  set filesNoExt {}; set lastfile {}; foreach {fileName} [lsort $files] { set fileNoExt [string trimright $fileName {.ffs}]; if [regexp {(.*)_[0-9]*$} $fileNoExt wholething fileNoExtBase] {  if { $fileNoExtBase == $lastfile } { continue } }; set lastfile $fileNoExt; lappend filesNoExt $fileNoExt };  eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -d {$(WORKSPACE_TEMP_DIR)} -a ffs -f FFS $filesNoExt & \175; }; }; ")
-FACTORY_DEF * TeeFactory   INPUT FEATURE_TYPE __NUKEME__
+DEFAULT_MACRO FME_LAUNCH_VIEWER_APP NO
+FACTORY_DEF * CreationFactory    FACTORY_NAME VisualizerProcessor   CREATE_AT_END   OUTPUT FEATURE_TYPE __NUKEME__   @TCL("if {{$(FME_LAUNCH_VIEWER_APP)} == {YES}} {  if [file exists {$(WORKSPACE_TEMP_DIR)}] {set files [glob -nocomplain -directory  {$(WORKSPACE_TEMP_DIR)} -tails *.ffs];   if {[llength $files] == 1} {    set theFile {$(WORKSPACE_TEMP_DIR)/};   append theFile [lindex $files 0];   eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -f FFS \042$theFile\042 & \175;  } elseif { [llength $files] == 0 } {  catch { file delete -force {$(WORKSPACE_TEMP_DIR)} };  } else {  set filesNoExt {}; set lastfile {}; foreach {fileName} [lsort $files] { set fileNoExt [string trimright $fileName {.ffs}]; if [regexp {(.*)_[0-9]*$} $fileNoExt wholething fileNoExtBase] {  if { $fileNoExtBase == $lastfile } { continue } }; set lastfile $fileNoExt; lappend filesNoExt $fileNoExt };  eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -d {$(WORKSPACE_TEMP_DIR)} -a ffs -f FFS $filesNoExt & \175; }; }; }; ")
+FACTORY_DEF * TeeFactory    FACTORY_NAME VisualizerCleaner   INPUT FEATURE_TYPE __NUKEME__

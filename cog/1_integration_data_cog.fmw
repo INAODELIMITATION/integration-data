@@ -1,11 +1,9 @@
 #! <?xml version="1.0" encoding="UTF-8" ?>
 #! <WORKSPACE
 #    Command-line to run this workspace:
-#        "C:\Program Files\FME\fme.exe" \\srv-34db\data2\BDDC\@_martin\1_integration-data\cog\1_integration_data_cog.fmw
-#              --SourceDataset_DBF_7 "C:\Users\baussier\Desktop\comsimp2012.dbf"
-#              --SourceDataset_CSV2 "C:\Users\baussier\Desktop\historiq2018.txt"
-#              --SourceDataset_DBF_6 "C:\Users\baussier\Desktop\comsimp2018.dbf"
-#              --DestDataset_POSTGRES "srv_sig_1"
+#        "C:\Program Files\FME\fme.exe" \\SRV-34DB\data2\BDDC\@_martin\1_integration-data\cog\1_integration_data_cog.fmw
+#              --SourceDataset_DBF "\\srv-34db\data2\BDDC\@_martin\1_integration-data\cog\data sources\mvtcommune-01042019.dbf"
+#              --DestDataset_POSTGRES "srv_sig"
 #    
 #!   ATTR_TYPE_ENCODING="SDF"
 #!   BEGIN_PYTHON=""
@@ -14,14 +12,14 @@
 #!   DESCRIPTION=""
 #!   DESTINATION="NONE"
 #!   DESTINATION_ROUTING_FILE=""
-#!   DOC_EXTENTS="5347.85 1169.76"
-#!   DOC_TOP_LEFT="-2087.03 -580.253"
+#!   DOC_EXTENTS="6899.13 435.631"
+#!   DOC_TOP_LEFT="-3207.31 249.561"
 #!   END_PYTHON=""
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
-#!   FME_BUILD_NUM="18312"
-#!   FME_DOCUMENT_GUID="664dac96-ef79-4c89-bd23-522b9b23eab2"
-#!   FME_DOCUMENT_PRIORGUID="83e9bc74-9b79-463d-a446-53aabce1279a,1f2c0310-f0ef-42b5-a3ef-57786ddbccd3,6ede8548-d764-4dbd-b116-8c5faa916d87,3b2b54e3-0816-421f-8f78-21d1c9cb248b,b7a916b2-aa77-483f-8cfa-6bce982e219f,c902342a-2a3b-4345-9a51-a319345567da,b70c305f-2386-4ed7-86ea-f1fd7aa4b17d,046f36da-afcd-4baf-9f86-7d16f754192b"
+#!   FME_BUILD_NUM="19238"
+#!   FME_DOCUMENT_GUID="91974023-21d1-44dd-b879-22bc0226fc0a"
+#!   FME_DOCUMENT_PRIORGUID="83e9bc74-9b79-463d-a446-53aabce1279a,1f2c0310-f0ef-42b5-a3ef-57786ddbccd3,6ede8548-d764-4dbd-b116-8c5faa916d87,3b2b54e3-0816-421f-8f78-21d1c9cb248b,b7a916b2-aa77-483f-8cfa-6bce982e219f,c902342a-2a3b-4345-9a51-a319345567da,b70c305f-2386-4ed7-86ea-f1fd7aa4b17d,046f36da-afcd-4baf-9f86-7d16f754192b,664dac96-ef79-4c89-bd23-522b9b23eab2,a60a825d-7dce-4a3f-8168-a52a035ca9eb,92f1604b-ae45-408c-850e-ad21f5fb359a,6d6f9460-8a07-46cb-957f-8f201e930141"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_REPROJECTION_ENGINE="FME"
@@ -29,8 +27,8 @@
 #!   FME_STROKE_MAX_DEVIATION="0"
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
-#!   LAST_SAVE_BUILD="FME(R) 2018.0.1.1 (20180615 - Build 18312 - WIN64)"
-#!   LAST_SAVE_DATE="2019-02-13T13:22:04"
+#!   LAST_SAVE_BUILD="FME(R) 2019.0.0.0 (20190328 - Build 19238 - WIN64)"
+#!   LAST_SAVE_DATE="2019-07-12T15:03:19"
 #!   LOG_FILE=""
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -38,8 +36,9 @@
 #!   MAX_LOG_FEATURES="200"
 #!   MULTI_WRITER_DATASET_ORDER="BY_ID"
 #!   PASSWORD=""
-#!   PYTHON_COMPATIBILITY="2or3"
+#!   PYTHON_COMPATIBILITY="37"
 #!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
 #!   SHOW_ANNOTATIONS="true"
 #!   SHOW_INFO_NODES="true"
 #!   SOURCE="NONE"
@@ -48,7 +47,7 @@
 #!   TITLE=""
 #!   USAGE=""
 #!   USE_MARKDOWN=""
-#!   VIEW_POSITION="-2456.81 648.155"
+#!   VIEW_POSITION="-3873.5 743.835"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
 #!   ZOOM_SCALE="81"
@@ -58,8 +57,8 @@
 #!   IS_SOURCE="true"
 #!   ROLE="READER"
 #!   FORMAT="DBF"
-#!   DATASET="$(SourceDataset_DBF_7)"
-#!   KEYWORD="DBF_3"
+#!   DATASET="$(SourceDataset_DBF)"
+#!   KEYWORD="DBF_1"
 #!   MULTI_GEOM_ALLOWED="false"
 #!   ATTR_MAX_LENGTH="0"
 #!   ATTR_CASE="ANY"
@@ -67,7 +66,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE=""
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_sweep_angle double fme_basename char(50) fme_rotation double fme_type char(50) fme_feature_type char(50) multi_reader_keyword char(50) multi_reader_id long fme_secondary_axis double fme_primary_axis double fme_start_angle double fme_text_string char(50) fme_text_size double multi_reader_full_id long fme_fill_color char(50) multi_reader_type char(50) fme_dataset char(50) fme_geometry char(50) fme_color char(50)"
+#!   EXPOSABLE_ATTRS="fme_secondary_axis double fme_color char(50) fme_feature_type char(50) multi_reader_id long fme_primary_axis double multi_reader_full_id long fme_geometry char(50) fme_dataset char(50) fme_rotation double multi_reader_keyword char(50) fme_type char(50) fme_fill_color char(50) fme_sweep_angle double fme_text_size double fme_basename char(50) fme_start_angle double multi_reader_type char(50) fme_text_string char(50)"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -75,119 +74,7 @@
 #!   ENABLED="true"
 #!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
 #!   DATASET_TYPE="FILEDIR"
-#!   GENERATE_FME_BUILD_NUM="18312"
-#!   COORDSYS=""
-#!   FEATURE_TYPES=""
-#!   MAX_FEATURES=""
-#!   MAX_FEATURES_PER_FEATURE_TYPE=""
-#!   MIN_FEATURES=""
-#!   START_FEATURE=""
-#! >
-#! <METAFILE_PARAMETER
-#!   NAME="ADVANCED_PARMS"
-#!   VALUE="DBF_IN_ENCODING DBF_OUT_ENCODING"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="DATASET_NAME"
-#!   VALUE="dbf file"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
-#!   VALUE="Table1"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="FEATURE_TYPE_NAME"
-#!   VALUE="Table"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="READER_DATASET_HINT"
-#!   VALUE="Select the DBF file(s)"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="WRITER_DATASET_HINT"
-#!   VALUE="Specify a folder for the DBF file"
-#! />
-#! </DATASET>
-#! <DATASET
-#!   IS_SOURCE="true"
-#!   ROLE="READER"
-#!   FORMAT="CSV2"
-#!   DATASET="$(SourceDataset_CSV2)"
-#!   KEYWORD="CSV2_1"
-#!   MULTI_GEOM_ALLOWED="false"
-#!   ATTR_MAX_LENGTH="0"
-#!   ATTR_CASE="ANY"
-#!   ALLOWED_FEAT_TYPES=""
-#!   WRITE_DEFS="true"
-#!   DEFLINE_TEMPLATE=""
-#!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_sweep_angle string fme_basename string fme_rotation string fme_feature_type string fme_type string multi_reader_id string multi_reader_keyword string fme_secondary_axis string csv_total_number_of_columns uint32 fme_primary_axis string fme_start_angle string csv_skipped_line string fme_text_string string csv_number_of_fields uint32 csv_type string fme_text_size string fme_fill_color string multi_reader_full_id string multi_reader_type string csv_line_number uint64 fme_dataset string fme_geometry string fme_color string"
-#!   DEFLINE_PARMS=""
-#!   ATTR_INDEX_TYPES=""
-#!   ATTR_NAME_INVALID_CHARS=""
-#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
-#!   ENABLED="true"
-#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
-#!   DATASET_TYPE="FILEDIR"
-#!   GENERATE_FME_BUILD_NUM="18312"
-#!   COORDSYS=""
-#!   FEATURE_TYPES=""
-#!   MAX_FEATURES=""
-#!   MAX_FEATURES_PER_FEATURE_TYPE=""
-#!   MIN_FEATURES=""
-#!   START_FEATURE=""
-#! >
-#! <METAFILE_PARAMETER
-#!   NAME="ATTRIBUTE_READING"
-#!   VALUE="DEFLINE"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="DATASET_NAME"
-#!   VALUE="csv file"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="DEFAULT_ATTR_TYPE"
-#!   VALUE="string"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
-#!   VALUE="File1"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="FEATURE_TYPE_NAME"
-#!   VALUE="CSV File"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="READER_DATASET_HINT"
-#!   VALUE="Select the CSV file(s)"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="WRITER_DATASET_HINT"
-#!   VALUE="Specify a folder for the CSV file"
-#! />
-#! </DATASET>
-#! <DATASET
-#!   IS_SOURCE="true"
-#!   ROLE="READER"
-#!   FORMAT="DBF"
-#!   DATASET="$(SourceDataset_DBF_6)"
-#!   KEYWORD="DBF_4"
-#!   MULTI_GEOM_ALLOWED="false"
-#!   ATTR_MAX_LENGTH="0"
-#!   ATTR_CASE="ANY"
-#!   ALLOWED_FEAT_TYPES=""
-#!   WRITE_DEFS="true"
-#!   DEFLINE_TEMPLATE=""
-#!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_sweep_angle double fme_basename char(50) fme_rotation double fme_type char(50) fme_feature_type char(50) multi_reader_keyword char(50) multi_reader_id long fme_secondary_axis double fme_primary_axis double fme_start_angle double fme_text_string char(50) fme_text_size double multi_reader_full_id long fme_fill_color char(50) multi_reader_type char(50) fme_dataset char(50) fme_geometry char(50) fme_color char(50)"
-#!   DEFLINE_PARMS=""
-#!   ATTR_INDEX_TYPES=""
-#!   ATTR_NAME_INVALID_CHARS=""
-#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
-#!   ENABLED="true"
-#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
-#!   DATASET_TYPE="FILEDIR"
-#!   GENERATE_FME_BUILD_NUM="18312"
+#!   GENERATE_FME_BUILD_NUM="19238"
 #!   COORDSYS=""
 #!   FEATURE_TYPES=""
 #!   MAX_FEATURES=""
@@ -233,15 +120,15 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="postgres_type {FME_GEN_GEOMETRY} postgres_sql_key_columns &quot;&quot; postgres_drop_table &quot;&quot; postgres_truncate_table &quot;&quot; postgres_mode &quot;&quot; fme_feature_operation INSERT fme_table_handling CREATE_IF_MISSING fme_selection_method MATCH_COLUMNS fme_match_columns &quot;&quot; fme_where_builder_clause &quot;&quot; postgres_create_with_oids NO postgres_vacuum_analyze NO postgres_allow_serial_writing NO"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_dataset char(50) fme_start_angle float8 fme_secondary_axis float8 fme_type char(50) fme_geometry char(50) fme_primary_axis float8 fme_feature_type char(50) postgres_type char(50) fme_basename char(50) fme_sweep_angle float8 fme_db_operation char(8) fme_color char(50) fme_fill_color char(50) fme_rotation float8 fme_text_size float8 fme_text_string char(50)"
-#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP fme_configuration_group fme_configuration_common_group%fme_spatial_group%fme_advanced_group%oracle_advanced_group Table&quot; &quot;&quot; &quot;GUI OPTIONAL NAMEDGROUP fme_configuration_common_group fme_feature_operation%fme_table_handling%oracle_model%fme_update_geometry%fme_selection_group%fme_table_creation_group General&quot; &quot;&quot; &quot;GUI ACTIVECHOICE_LOOKUP fme_feature_operation Insert,INSERT,fme_update_geometry,fme_selection_group%Update,UPDATE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN%Delete,DELETE,++fme_table_handling+USE_EXISTING,fme_update_geometry,++fme_selection_group+FME_DISCLOSURE_OPEN,fme_spatial_group,fme_advanced_group,oracle_sequenced_cols%&lt;at&gt;Value&lt;openparen&gt;fme_db_operation&lt;closeparen&gt;,MULTIPLE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN Feature Operation&quot; INSERT &quot;GUI ACTIVECHOICE_LOOKUP fme_table_handling Use&lt;space&gt;Existing,USE_EXISTING,fme_table_creation_group%Create&lt;space&gt;If&lt;space&gt;Needed,CREATE_IF_MISSING%Drop&lt;space&gt;and&lt;space&gt;Create,DROP_CREATE%Truncate&lt;space&gt;Existing,TRUNCATE_EXISTING,fme_table_creation_group Table Handling&quot; CREATE_IF_MISSING &quot;GUI OPTIONAL DISCLOSUREGROUP fme_selection_group fme_selection_method Row Selection&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE RADIOPARAMETERGROUP fme_selection_method fme_match_columns,MATCH_COLUMNS%fme_where_builder_clause,BUILDER Row Selection Method&quot; MATCH_COLUMNS &quot;GUI WHOLE_LINE ATTRLIST_COMMAS fme_match_columns \&quot; \&quot; Match Columns&quot; &quot;&quot; &quot;GUI WHOLE_LINE TEXT_EDIT_SQL_CFG_OR_ATTR fme_where_builder_clause MODE,WHERE WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP fme_table_creation_group postgres_create_with_oids Table Creation Parameters&quot; &quot;&quot; &quot;GUI CHOICE postgres_create_with_oids YES%NO Create With OIDs&quot; NO &quot;GUI OPTIONAL DISCLOSUREGROUP fme_advanced_group postgres_vacuum_analyze%postgres_allow_serial_writing Advanced&quot; &quot;&quot; &quot;GUI CHOICE postgres_vacuum_analyze YES%NO Vacuum Analyze Table&quot; NO &quot;GUI CHOICE postgres_allow_serial_writing YES%NO Allow Serial Column Writing&quot; NO "
+#!   EXPOSABLE_ATTRS="fme_rotation float8 fme_basename char(50) fme_color char(50) fme_fill_color char(50) postgres_type char(50) fme_db_operation char(8) fme_feature_type char(50) fme_type char(50) fme_geometry char(50) fme_secondary_axis float8 fme_dataset char(50) fme_start_angle float8 fme_sweep_angle float8 fme_primary_axis float8 fme_text_string char(50) fme_text_size float8"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP fme_configuration_group fme_configuration_common_group%fme_spatial_group%fme_advanced_group%oracle_advanced_group Table&quot; &quot;&quot; &quot;GUI OPTIONAL NAMEDGROUP fme_configuration_common_group fme_feature_operation%fme_table_handling%mie_pack%oracle_model%fme_update_geometry%fme_selection_group%fme_table_creation_group General&quot; &quot;&quot; &quot;GUI ACTIVECHOICE_LOOKUP fme_feature_operation Insert,INSERT,fme_update_geometry,fme_selection_group,mie_pack%Update,UPDATE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN%Delete,DELETE,++fme_table_handling+USE_EXISTING,fme_update_geometry,++fme_selection_group+FME_DISCLOSURE_OPEN,fme_spatial_group,fme_advanced_group,oracle_sequenced_cols%&lt;at&gt;Value&lt;openparen&gt;fme_db_operation&lt;closeparen&gt;,MULTIPLE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN Feature Operation&quot; INSERT &quot;GUI ACTIVECHOICE_LOOKUP fme_table_handling Use&lt;space&gt;Existing,USE_EXISTING,fme_table_creation_group%Create&lt;space&gt;If&lt;space&gt;Needed,CREATE_IF_MISSING%Drop&lt;space&gt;and&lt;space&gt;Create,DROP_CREATE%Truncate&lt;space&gt;Existing,TRUNCATE_EXISTING,fme_table_creation_group Table Handling&quot; CREATE_IF_MISSING &quot;GUI OPTIONAL DISCLOSUREGROUP fme_selection_group fme_selection_method Row Selection&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE RADIOPARAMETERGROUP fme_selection_method fme_match_columns,MATCH_COLUMNS%fme_where_builder_clause,BUILDER Row Selection Method&quot; MATCH_COLUMNS &quot;GUI WHOLE_LINE ATTRLIST_COMMAS fme_match_columns \&quot; \&quot; Match Columns&quot; &quot;&quot; &quot;GUI WHOLE_LINE TEXT_EDIT_SQL_CFG_OR_ATTR fme_where_builder_clause MODE,WHERE WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP fme_table_creation_group postgres_create_with_oids Table Creation Parameters&quot; &quot;&quot; &quot;GUI CHOICE postgres_create_with_oids YES%NO Create With OIDs&quot; NO &quot;GUI OPTIONAL DISCLOSUREGROUP fme_advanced_group postgres_vacuum_analyze%postgres_allow_serial_writing Advanced&quot; &quot;&quot; &quot;GUI CHOICE postgres_vacuum_analyze YES%NO Vacuum Analyze Table&quot; NO &quot;GUI CHOICE postgres_allow_serial_writing YES%NO Allow Serial Column Writing&quot; NO "
 #!   ATTR_INDEX_TYPES="BTree RTree Hash PrimaryKey"
 #!   ATTR_NAME_INVALID_CHARS=". %-#[]&quot;()!?*&apos;&amp;+\/"
 #!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
 #!   ENABLED="true"
 #!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
 #!   DATASET_TYPE="DATABASE"
-#!   GENERATE_FME_BUILD_NUM="18312"
+#!   GENERATE_FME_BUILD_NUM="19238"
 #!   COORDSYS=""
 #! >
 #! <METAFILE_PARAMETER
@@ -478,228 +365,6 @@
 #!   FORMAT_TYPE="number(width,decimal)"
 #!   FME_TYPE="fme_decimal(width,decimal)"
 #!   FORMAT="DBF"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
-#!   FME_TYPE="fme_buffer"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
-#!   FME_TYPE="fme_binarybuffer"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
-#!   FME_TYPE="fme_xml"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
-#!   FME_TYPE="fme_json"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
-#!   FME_TYPE="fme_varchar(width)"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
-#!   FME_TYPE="fme_varbinary(width)"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
-#!   FME_TYPE="fme_char(width)"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
-#!   FME_TYPE="fme_binary(width)"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
-#!   FME_TYPE="fme_datetime"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
-#!   FME_TYPE="fme_time"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
-#!   FME_TYPE="fme_date"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
-#!   FME_TYPE="fme_real64"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="real64"
-#!   FME_TYPE="fme_real64"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="x_coordinate"
-#!   FME_TYPE="fme_real64"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="y_coordinate"
-#!   FME_TYPE="fme_real64"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="z_coordinate"
-#!   FME_TYPE="fme_real64"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
-#!   FME_TYPE="fme_real32"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="real32"
-#!   FME_TYPE="fme_real32"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
-#!   FME_TYPE="fme_int64"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="int64"
-#!   FME_TYPE="fme_int64"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
-#!   FME_TYPE="fme_int32"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="int32"
-#!   FME_TYPE="fme_int32"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
-#!   FME_TYPE="fme_int16"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="int16"
-#!   FME_TYPE="fme_int16"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
-#!   FME_TYPE="fme_int8"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="int8"
-#!   FME_TYPE="fme_int8"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
-#!   FME_TYPE="fme_uint64"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="uint64"
-#!   FME_TYPE="fme_uint64"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
-#!   FME_TYPE="fme_uint32"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="uint32"
-#!   FME_TYPE="fme_uint32"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
-#!   FME_TYPE="fme_uint16"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="uint16"
-#!   FME_TYPE="fme_uint16"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
-#!   FME_TYPE="fme_uint8"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="uint8"
-#!   FME_TYPE="fme_uint8"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
-#!   FME_TYPE="fme_boolean"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="boolean"
-#!   FME_TYPE="fme_boolean"
-#!   FORMAT="CSV2"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
-#!   FME_TYPE="fme_decimal(width,decimal)"
-#!   FORMAT="CSV2"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
@@ -1004,108 +669,6 @@
 #!   FORMAT="DBF"
 #! />
 #! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="csv_feature_table"
-#!   FME_TYPE="fme_feature_table"
-#!   FORMAT="CSV2"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="csv_none"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="CSV2"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="csv_point"
-#!   FME_TYPE="fme_point"
-#!   FORMAT="CSV2"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="csv_none"
-#!   FME_TYPE="fme_line"
-#!   FORMAT="CSV2"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="csv_none"
-#!   FME_TYPE="fme_area"
-#!   FORMAT="CSV2"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="csv_none"
-#!   FME_TYPE="fme_text"
-#!   FORMAT="CSV2"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="csv_none"
-#!   FME_TYPE="fme_ellipse"
-#!   FORMAT="CSV2"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="csv_none"
-#!   FME_TYPE="fme_arc"
-#!   FORMAT="CSV2"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="csv_none"
-#!   FME_TYPE="fme_rectangle"
-#!   FORMAT="CSV2"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="csv_none"
-#!   FME_TYPE="fme_rounded_rectangle"
-#!   FORMAT="CSV2"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="fme_no_map"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="CSV2"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="fme_no_map"
-#!   FME_TYPE="fme_no_map"
-#!   FORMAT="CSV2"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="csv_none"
-#!   FME_TYPE="fme_collection"
-#!   FORMAT="CSV2"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="csv_none"
-#!   FME_TYPE="fme_raster"
-#!   FORMAT="CSV2"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="csv_none"
-#!   FME_TYPE="fme_surface"
-#!   FORMAT="CSV2"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="csv_none"
-#!   FME_TYPE="fme_solid"
-#!   FORMAT="CSV2"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="csv_none"
-#!   FME_TYPE="fme_point_cloud"
-#!   FORMAT="CSV2"
-#! />
-#! <GEOM_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="postgres_none"
 #!   FME_TYPE="fme_no_geom"
@@ -1199,17 +762,17 @@
 #! <FEATURE_TYPES>
 #! <FEATURE_TYPE
 #!   IS_SOURCE="true"
-#!   NODE_NAME="comsimp2012"
+#!   NODE_NAME="mvtcommune-01042019"
 #!   FEATURE_TYPE_NAME=""
 #!   FEATURE_TYPE_NAME_QUALIFIER=""
 #!   IS_EDITABLE="false"
-#!   IDENTIFIER="15"
+#!   IDENTIFIER="4"
 #!   FEAT_GEOMTYPE="dbf_none"
-#!   POSITION="-2041.9385921328351 184.1293402440196"
-#!   BOUNDING_RECT="-2041.9385921328351 184.1293402440196 -1 -1"
-#!   ORDER="500000000000087"
-#!   COLLAPSED="true"
-#!   KEYWORD="DBF_3"
+#!   POSITION="-3207.31119197625 434.78887350601894"
+#!   BOUNDING_RECT="-3207.31119197625 434.78887350601894 610.00106825772946 71"
+#!   ORDER="500000000000111"
+#!   COLLAPSED="false"
+#!   KEYWORD="DBF_1"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
 #!   HIDDEN_USER_ATTRS=""
@@ -1218,187 +781,52 @@
 #!   MERGE_FILTER_CASE_SENSITIVE="true"
 #!   DYNAMIC_SCHEMA="false"
 #! >
-#!     <FEAT_ATTRIBUTE ATTR_NAME="CDC" ATTR_TYPE="char(1)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="CHEFLIEU" ATTR_TYPE="char(1)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="REG" ATTR_TYPE="char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="DEP" ATTR_TYPE="char(3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="COM" ATTR_TYPE="char(3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="AR" ATTR_TYPE="char(1)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="CT" ATTR_TYPE="char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="TNCC" ATTR_TYPE="char(1)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="ARTMAJ" ATTR_TYPE="char(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="NCC" ATTR_TYPE="char(70)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="ARTMIN" ATTR_TYPE="char(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="NCCENR" ATTR_TYPE="char(70)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! </FEATURE_TYPE>
-#! <FEATURE_TYPE
-#!   IS_SOURCE="true"
-#!   NODE_NAME="CSV"
-#!   FEATURE_TYPE_NAME=""
-#!   FEATURE_TYPE_NAME_QUALIFIER=""
-#!   IS_EDITABLE="false"
-#!   IDENTIFIER="17"
-#!   FEAT_GEOMTYPE="csv_none csv_point"
-#!   POSITION="-2045.0286352863525 -496.36538118467598"
-#!   BOUNDING_RECT="-2045.0286352863525 -496.36538118467598 -1 -1"
-#!   ORDER="500000000000048"
-#!   COLLAPSED="true"
-#!   KEYWORD="CSV2_1"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   HIDDEN_USER_ATTRS=""
-#!   READ_SELECT_ATTRS="true"
-#!   MERGE_FILTER=""
-#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
-#!   MERGE_FILTER_CASE_SENSITIVE="true"
-#!   DYNAMIC_SCHEMA="false"
-#! >
-#!     <FEAT_ATTRIBUTE ATTR_NAME="DEP" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="AR" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="CT" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="COM" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="LEG" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="JO" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="EFF" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="DTR" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="MOD" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="C_LOFF" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="C_LANC" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="NBCOM" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="RANGCOM" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="COMECH" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="POPECH" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="SUECH" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="DEPANC" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="ARRANC" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="CTANC" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="TNCCOFF" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="NCCOFF" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="TNCCANC" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="NCCANC" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! </FEATURE_TYPE>
-#! <FEATURE_TYPE
-#!   IS_SOURCE="true"
-#!   NODE_NAME="comsimp2018"
-#!   FEATURE_TYPE_NAME=""
-#!   FEATURE_TYPE_NAME_QUALIFIER=""
-#!   IS_EDITABLE="false"
-#!   IDENTIFIER="16"
-#!   FEAT_GEOMTYPE="dbf_none"
-#!   POSITION="-2041.9385921328351 -143.27714122820254"
-#!   BOUNDING_RECT="-2041.9385921328351 -143.27714122820254 -1 -1"
-#!   ORDER="500000000000077"
-#!   COLLAPSED="true"
-#!   KEYWORD="DBF_4"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   HIDDEN_USER_ATTRS=""
-#!   MERGE_FILTER=""
-#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
-#!   MERGE_FILTER_CASE_SENSITIVE="true"
-#!   DYNAMIC_SCHEMA="false"
-#! >
-#!     <FEAT_ATTRIBUTE ATTR_NAME="CDC" ATTR_TYPE="char(1)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="CHEFLIEU" ATTR_TYPE="char(1)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="REG" ATTR_TYPE="char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="DEP" ATTR_TYPE="char(3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="COM" ATTR_TYPE="char(3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="AR" ATTR_TYPE="char(1)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="CT" ATTR_TYPE="char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="TNCC" ATTR_TYPE="char(1)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="ARTMAJ" ATTR_TYPE="char(7)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="NCC" ATTR_TYPE="char(70)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="ARTMIN" ATTR_TYPE="char(7)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="NCCENR" ATTR_TYPE="char(70)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="MOD" ATTR_TYPE="char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="DATE_EFF" ATTR_TYPE="char(10)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="TYPECOM_AV" ATTR_TYPE="char(4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="COM_AV" ATTR_TYPE="char(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="TNCC_AV" ATTR_TYPE="char(1)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NCC_AV" ATTR_TYPE="char(48)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NCCENR_AV" ATTR_TYPE="char(48)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="LIBELLE_AV" ATTR_TYPE="char(48)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="TYPECOM_AP" ATTR_TYPE="char(4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="COM_AP" ATTR_TYPE="char(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="TNCC_AP" ATTR_TYPE="char(1)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NCC_AP" ATTR_TYPE="char(46)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NCCENR_AP" ATTR_TYPE="char(46)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="LIBELLE_AP" ATTR_TYPE="char(46)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! </FEATURE_TYPE>
 #! <FEATURE_TYPE
 #!   IS_SOURCE="false"
-#!   NODE_NAME="cog_2012"
+#!   NODE_NAME="mvtcommune"
 #!   FEATURE_TYPE_NAME=""
 #!   FEATURE_TYPE_NAME_QUALIFIER="insee"
 #!   IS_EDITABLE="true"
-#!   IDENTIFIER="12"
+#!   IDENTIFIER="6"
 #!   FEAT_GEOMTYPE="All"
-#!   POSITION="-110.55147471227775 266.10606865327895"
-#!   BOUNDING_RECT="-110.55147471227775 266.10606865327895 -1 -1"
-#!   ORDER="500000000000098"
+#!   POSITION="-440.15885837870633 320.5611111666671"
+#!   BOUNDING_RECT="-440.15885837870633 320.5611111666671 610.00106825772946 71"
+#!   ORDER="500000000000112"
 #!   COLLAPSED="false"
 #!   KEYWORD="POSTGRES_1"
 #!   PARMS_EDITED="false"
 #!   ENABLED="true"
 #!   SCHEMA_ATTRIBUTE_SOURCE="1"
 #! >
-#!     <FEAT_ATTRIBUTE ATTR_NAME="nom" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="insee" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="fme_advanced_group" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="fme_configuration_common_group" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="fme_configuration_group" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="fme_feature_operation" PARM_VALUE="INSERT"/>
-#!     <DEFLINE_PARM PARM_NAME="fme_match_columns" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <DEFLINE_PARM PARM_NAME="fme_selection_group" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="fme_selection_method" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <DEFLINE_PARM PARM_NAME="fme_table_creation_group" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="fme_table_handling" PARM_VALUE="DROP_CREATE"/>
-#!     <DEFLINE_PARM PARM_NAME="fme_where_builder_clause" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <DEFLINE_PARM PARM_NAME="postgres_allow_serial_writing" PARM_VALUE="NO"/>
-#!     <DEFLINE_PARM PARM_NAME="postgres_create_with_oids" PARM_VALUE="NO"/>
-#!     <DEFLINE_PARM PARM_NAME="postgres_vacuum_analyze" PARM_VALUE="NO"/>
-#! </FEATURE_TYPE>
-#! <FEATURE_TYPE
-#!   IS_SOURCE="false"
-#!   NODE_NAME="cog_2018"
-#!   FEATURE_TYPE_NAME=""
-#!   FEATURE_TYPE_NAME_QUALIFIER="insee"
-#!   IS_EDITABLE="true"
-#!   IDENTIFIER="13"
-#!   FEAT_GEOMTYPE="All"
-#!   POSITION="-110.55147471227775 -143.27714122820254"
-#!   BOUNDING_RECT="-110.55147471227775 -143.27714122820254 -1 -1"
-#!   ORDER="500000000000097"
-#!   COLLAPSED="false"
-#!   KEYWORD="POSTGRES_1"
-#!   PARMS_EDITED="false"
-#!   ENABLED="true"
-#!   SCHEMA_ATTRIBUTE_SOURCE="1"
-#! >
-#!     <FEAT_ATTRIBUTE ATTR_NAME="nom" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="insee" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="fme_advanced_group" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="fme_configuration_common_group" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="fme_configuration_group" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="fme_feature_operation" PARM_VALUE="INSERT"/>
-#!     <DEFLINE_PARM PARM_NAME="fme_match_columns" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <DEFLINE_PARM PARM_NAME="fme_selection_group" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="fme_selection_method" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <DEFLINE_PARM PARM_NAME="fme_table_creation_group" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="fme_table_handling" PARM_VALUE="DROP_CREATE"/>
-#!     <DEFLINE_PARM PARM_NAME="fme_where_builder_clause" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <DEFLINE_PARM PARM_NAME="postgres_allow_serial_writing" PARM_VALUE="NO"/>
-#!     <DEFLINE_PARM PARM_NAME="postgres_create_with_oids" PARM_VALUE="NO"/>
-#!     <DEFLINE_PARM PARM_NAME="postgres_vacuum_analyze" PARM_VALUE="NO"/>
-#! </FEATURE_TYPE>
-#! <FEATURE_TYPE
-#!   IS_SOURCE="false"
-#!   NODE_NAME="cog_histo_2018"
-#!   FEATURE_TYPE_NAME=""
-#!   FEATURE_TYPE_NAME_QUALIFIER="insee"
-#!   IS_EDITABLE="true"
-#!   IDENTIFIER="26"
-#!   FEAT_GEOMTYPE="All"
-#!   POSITION="-110.55147471227775 -580.2528695377589"
-#!   BOUNDING_RECT="-110.55147471227775 -580.2528695377589 -1 -1"
-#!   ORDER="500000000000097"
-#!   COLLAPSED="false"
-#!   KEYWORD="POSTGRES_1"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   SCHEMA_ATTRIBUTE_SOURCE="1"
-#! >
-#!     <FEAT_ATTRIBUTE ATTR_NAME="eff" ATTR_TYPE="float4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="old_insee" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="new_insee" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="new_name" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="mod" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="mod" ATTR_TYPE="varchar(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="date_eff" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="typecom_av" ATTR_TYPE="varchar(4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="com_av" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="tncc_av" ATTR_TYPE="varchar(1)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ncc_av" ATTR_TYPE="varchar(48)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="nccenr_av" ATTR_TYPE="varchar(48)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="libelle_av" ATTR_TYPE="varchar(48)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="typecom_ap" ATTR_TYPE="varchar(4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="com_ap" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="tncc_ap" ATTR_TYPE="varchar(1)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ncc_ap" ATTR_TYPE="varchar(46)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="nccenr_ap" ATTR_TYPE="varchar(46)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="libelle_ap" ATTR_TYPE="varchar(46)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <DEFLINE_PARM PARM_NAME="fme_advanced_group" PARM_VALUE=""/>
 #!     <DEFLINE_PARM PARM_NAME="fme_configuration_common_group" PARM_VALUE=""/>
 #!     <DEFLINE_PARM PARM_NAME="fme_configuration_group" PARM_VALUE=""/>
@@ -1415,83 +843,39 @@
 #! </FEATURE_TYPE>
 #! </FEATURE_TYPES>
 #! <FMESERVER>
+#! <READER_DATASETS>
+#! <DATASET 
+#!   NAME="DBF_1"
+#!   OVERRIDE="-DBF_1_DATASET"
+#!   DATASET="DBF_1/mvtcommune-01042019.dbf"
+#! />
+#! </READER_DATASETS>
 #! </FMESERVER>
 #! <GLOBAL_PARAMETERS>
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI MULTIFILE SourceDataset_DBF_7 DBF_Files(*.dbf)|*.dbf|All_Files(*)|* Source dBASE (DBF) File(s):"
-#!   DEFAULT_VALUE="C:\Users\baussier\Desktop\comsimp2012.dbf"
-#!   IS_STAND_ALONE="false"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI MULTIFILE SourceDataset_CSV2 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|* Source CSV (Comma Separated Value) File(s):"
-#!   DEFAULT_VALUE="C:\Users\baussier\Desktop\historiq2018.txt"
-#!   IS_STAND_ALONE="false"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI MULTIFILE SourceDataset_DBF_6 DBF_Files(*.dbf)|*.dbf|All_Files(*)|* Source dBASE (DBF) File(s):"
-#!   DEFAULT_VALUE="C:\Users\baussier\Desktop\comsimp2018.dbf"
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_DBF DBF_Files(*.dbf)|*.dbf|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files(*)|* Source dBASE (DBF) File(s):"
+#!   DEFAULT_VALUE="\\srv-34db\data2\BDDC\@_martin\1_integration-data\cog\data sources\mvtcommune-01042019.dbf"
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI NAMED_DB_CONNECTION_ENCODED DestDataset_POSTGRES FMT:POSTGRES%FAMILY:PostgreSQL Connection:"
-#!   DEFAULT_VALUE="srv_sig_1"
+#!   DEFAULT_VALUE="srv_sig"
 #!   IS_STAND_ALONE="false"
 #! />
 #! </GLOBAL_PARAMETERS>
 #! <COMMENTS>
 #! <COMMENT
-#!   IDENTIFIER="9"
-#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;HISTORIQUE COG 2018&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="-2087.0286352863523 -302.86428117367592"
-#!   TOP_LEFT="-2087.0286352863523 -302.86428117367592"
-#!   BOTTOM_RIGHT="-1615.0286352863523 -301.86428117367592"
-#!   BOUNDING_RECT="-2087.0286352863523 -302.86428117367592 472 -1"
-#!   ORDER="500000000000083"
-#!   FOLLOW_ANCHOR="true"
-#!   INFO_NODE="false"
-#!   COLOUR="1,1,0.78431372549019607,0.19607843137254902"
-#!   SIZE_POLICY="10"
-#!   ANCHORED_NODE="17"
-#! />
-#! <COMMENT
-#!   IDENTIFIER="10"
-#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;COMMUNE ETAT 2018&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="-2083.9385921328349 5.2235087782975143"
-#!   TOP_LEFT="-2083.9385921328349 5.2235087782975143"
-#!   BOTTOM_RIGHT="-1611.9385921328349 6.2235087782975143"
-#!   BOUNDING_RECT="-2083.9385921328349 5.2235087782975143 472 -1"
-#!   ORDER="500000000000084"
-#!   FOLLOW_ANCHOR="true"
-#!   INFO_NODE="false"
-#!   COLOUR="1,1,0.78431372549019607,0.19607843137254902"
-#!   SIZE_POLICY="10"
-#!   ANCHORED_NODE="16"
-#! />
-#! <COMMENT
-#!   IDENTIFIER="11"
-#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;COMMUNE ETAT 2012&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="-2045.0250427504272 335.4737248607052"
-#!   TOP_LEFT="-2045.0250427504272 335.4737248607052"
-#!   BOTTOM_RIGHT="-1573.0250427504272 336.4737248607052"
-#!   BOUNDING_RECT="-2045.0250427504272 335.4737248607052 472 -1"
-#!   ORDER="500000000000085"
-#!   FOLLOW_ANCHOR="true"
-#!   INFO_NODE="false"
-#!   COLOUR="1,1,0.78431372549019607,0.19607843137254902"
-#!   SIZE_POLICY="10"
-#!   ANCHORED_NODE="15"
-#! />
-#! <COMMENT
 #!   IDENTIFIER="22"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;INTEGRATION DES DONNEES DU COG DE L&apos;INSEE DANS POSTGRES&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="-1308.6550618592603 589.51206796018573"
-#!   TOP_LEFT="-1308.6550618592603 589.51206796018573"
-#!   BOTTOM_RIGHT="-558.65506185926029 539.51206796018573"
-#!   BOUNDING_RECT="-1308.6550618592603 589.51206796018573 750 50"
+#!   POSITION="-1783.9684569685196 685.19203710555632"
+#!   TOP_LEFT="-1783.9684569685196 685.19203710555632"
+#!   BOTTOM_RIGHT="-1033.9684569685196 635.19203710555632"
+#!   BOUNDING_RECT="-1783.9684569685196 685.19203710555632 750 50"
 #!   ORDER="500000000000099"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
-#!   COLOUR="1,1,0.78431372549019607,0.19607843137254902"
+#!   CUSTOM_USER_COLOR="false"
+#!   COLOUR="0.28627450980392155,0.29803921568627451,0.0078431372549019607,0.78431372549019607"
 #!   SIZE_POLICY="10"
 #!   ANCHORED_NODE="0"
 #! />
@@ -1506,7 +890,7 @@
 #!   TYPE="Inspector"
 #!   VERSION="5"
 #!   POSITION="3260.817191628706 480.12885807870418"
-#!   BOUNDING_RECT="3260.817191628706 480.12885807870418 -1 -1"
+#!   BOUNDING_RECT="3260.817191628706 480.12885807870418 431 71"
 #!   ORDER="500000000000053"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1530,101 +914,107 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ok"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="24"
-#!   TYPE="AttributeManager"
+#!   IDENTIFIER="8"
+#!   TYPE="DateTimeConverter"
 #!   VERSION="1"
-#!   POSITION="-1246.9254455361217 184.1293402440196"
-#!   BOUNDING_RECT="-1246.9254455361217 184.1293402440196 -1 -1"
-#!   ORDER="500000000000090"
+#!   POSITION="-2129.650926138891 434.78887350601894"
+#!   BOUNDING_RECT="-2129.650926138891 434.78887350601894 431 71"
+#!   ORDER="500000000000103"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="18312"
+#!   LAST_PARM_EDIT="19238"
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="DEP" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="COM" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="MOD" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="DATE_EFF" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="TYPECOM_AV" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="COM_AV" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="TNCC_AV" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NCC_AV" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NCCENR_AV" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="LIBELLE_AV" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="TYPECOM_AP" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="COM_AP" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="TNCC_AP" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NCC_AP" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NCCENR_AP" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="LIBELLE_AP" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="MOD" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="DATE_EFF" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="TYPECOM_AV" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="COM_AV" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="TNCC_AV" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="NCC_AV" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="NCCENR_AV" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="LIBELLE_AV" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="TYPECOM_AP" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="COM_AP" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="TNCC_AP" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="NCC_AP" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="NCCENR_AP" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="LIBELLE_AP" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="DATETIME_ATTR" PARM_VALUE="DATE_EFF"/>
+#!     <XFORM_PARM PARM_NAME="IN_FORMAT" PARM_VALUE="%Y-%m-%d"/>
+#!     <XFORM_PARM PARM_NAME="OUT_FORMAT" PARM_VALUE="FME"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="REFERENCE" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="REFERENCE_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="REPAIR_INPUT" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="TEST_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_INPUT" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_INPUT_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <XFORM_PARM PARM_NAME="TEST_RESULT" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="DateTimeConverter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="7"
+#!   TYPE="AttributeManager"
+#!   VERSION="2"
+#!   POSITION="-1420.7087194328726 374.78887350601894"
+#!   BOUNDING_RECT="-1420.7087194328726 374.78887350601894 454 71"
+#!   ORDER="500000000000113"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19238"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="mod" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="libelle_av" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="libelle_ap" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="com_av" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="typecom_ap" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="nccenr_av" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="typecom_av" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="tncc_ap" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ncc_ap" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="tncc_av" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="date_eff" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="com_ap" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="nccenr_ap" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ncc_av" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="CDC CDC  REMOVE CHEFLIEU CHEFLIEU  REMOVE REG REG  REMOVE DEP DEP  NO_OP COM COM  NO_OP AR AR  REMOVE CT CT  REMOVE TNCC TNCC  REMOVE ARTMAJ ARTMAJ  REMOVE NCC nom  RENAME_SET_VALUE ARTMIN ARTMIN  REMOVE NCCENR NCCENR  REMOVE  insee &lt;at&gt;Value&lt;openparen&gt;DEP&lt;closeparen&gt;&lt;at&gt;Value&lt;openparen&gt;COM&lt;closeparen&gt; SET_TO"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="MOD mod  RENAME_SET_VALUE LIBELLE_AV libelle_av  RENAME_SET_VALUE LIBELLE_AP libelle_ap  RENAME_SET_VALUE COM_AV com_av  RENAME_SET_VALUE TYPECOM_AP typecom_ap  RENAME_SET_VALUE NCCENR_AV nccenr_av  RENAME_SET_VALUE TYPECOM_AV typecom_av  RENAME_SET_VALUE TNCC_AP tncc_ap  RENAME_SET_VALUE NCC_AP ncc_ap  RENAME_SET_VALUE TNCC_AV tncc_av  RENAME_SET_VALUE DATE_EFF date_eff  RENAME_SET_VALUE COM_AP com_ap  RENAME_SET_VALUE NCCENR_AP nccenr_ap  RENAME_SET_VALUE NCC_AV ncc_av  RENAME_SET_VALUE"/>
 #!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
-#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="0"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="0"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="0"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#!   IDENTIFIER="21"
-#!   TYPE="AttributeManager"
-#!   VERSION="1"
-#!   POSITION="-1274.7035010944551 -143.27714122820254"
-#!   BOUNDING_RECT="-1274.7035010944551 -143.27714122820254 -1 -1"
-#!   ORDER="500000000000090"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="18312"
-#! >
-#!     <OUTPUT_FEAT NAME="OUTPUT"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="DEP" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="COM" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="CDC CDC  REMOVE CHEFLIEU CHEFLIEU  REMOVE REG REG  REMOVE DEP DEP  NO_OP COM COM  NO_OP AR AR  REMOVE CT CT  REMOVE TNCC TNCC  REMOVE ARTMAJ ARTMAJ  REMOVE NCC nom  RENAME_SET_VALUE ARTMIN ARTMIN  REMOVE NCCENR NCCENR  REMOVE  insee &lt;at&gt;Value&lt;openparen&gt;DEP&lt;closeparen&gt;&lt;at&gt;Value&lt;openparen&gt;COM&lt;closeparen&gt; SET_TO"/>
-#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
-#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
-#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager_2"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#!   IDENTIFIER="18"
-#!   TYPE="AttributeManager"
-#!   VERSION="1"
-#!   POSITION="-1155.2971229095003 -496.36538118467598"
-#!   BOUNDING_RECT="-1155.2971229095003 -496.36538118467598 -1 -1"
-#!   ORDER="500000000000091"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="18312"
-#! >
-#!     <OUTPUT_FEAT NAME="OUTPUT"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="DEP" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="COM" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="eff" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="mod" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="old_insee" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="new_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="TNCCANC" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="NCCANC" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="new_insee" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="EFF" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="DEP DEP  NO_OP AR AR  REMOVE CT CT  REMOVE COM COM  NO_OP LEG LEG  REMOVE JO JO  REMOVE EFF eff &lt;at&gt;DateTimeFormat&lt;openparen&gt;&lt;at&gt;DateTimeParse&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;EFF&lt;closeparen&gt;&lt;comma&gt;%d-%m-%Y&lt;closeparen&gt;&lt;comma&gt;%Y&lt;closeparen&gt; SET_TO DTR DTR  REMOVE MOD mod  RENAME_SET_VALUE C_LOFF C_LOFF  REMOVE C_LANC C_LANC  REMOVE NBCOM NBCOM  REMOVE RANGCOM RANGCOM  REMOVE COMECH old_insee  RENAME_SET_VALUE POPECH POPECH  REMOVE SUECH SUECH  REMOVE DEPANC DEPANC  REMOVE ARRANC ARRANC  REMOVE CTANC CTANC  REMOVE TNCCOFF TNCCOFF  REMOVE NCCOFF new_name  RENAME_SET_VALUE TNCCANC TNCCANC  NO_OP NCCANC NCCANC  NO_OP  new_insee &lt;at&gt;Value&lt;openparen&gt;DEP&lt;closeparen&gt;&lt;at&gt;Value&lt;openparen&gt;COM&lt;closeparen&gt; SET_TO"/>
-#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
-#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
-#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager_3"/>
 #! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
 #! <FEAT_LINK
-#!   IDENTIFIER="20"
-#!   SOURCE_NODE="15"
-#!   TARGET_NODE="24"
+#!   IDENTIFIER="5"
+#!   SOURCE_NODE="4"
+#!   TARGET_NODE="8"
 #!   SOURCE_PORT_DESC="-1"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -1633,55 +1023,22 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="27"
-#!   SOURCE_NODE="16"
-#!   TARGET_NODE="21"
-#!   SOURCE_PORT_DESC="-1"
+#!   IDENTIFIER="10"
+#!   SOURCE_NODE="7"
+#!   TARGET_NODE="6"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="9"
+#!   SOURCE_NODE="8"
+#!   TARGET_NODE="7"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="19"
-#!   SOURCE_NODE="17"
-#!   TARGET_NODE="18"
-#!   SOURCE_PORT_DESC="-1"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="29"
-#!   SOURCE_NODE="18"
-#!   TARGET_NODE="26"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="-1"
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="28"
-#!   SOURCE_NODE="21"
-#!   TARGET_NODE="13"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="-1"
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="25"
-#!   SOURCE_NODE="24"
-#!   TARGET_NODE="12"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="-1"
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
@@ -1697,44 +1054,31 @@
 #! <LOOKUP_TABLES>
 #! </LOOKUP_TABLES>
 #! </WORKSPACE>
-FME_PYTHON_VERSION 2or3
-GUI IGNORE SourceDataset_DBF_3,DBF_IN_FME_GROUP_NAMED1_DBF_3,DBF_IN_ENCODING_DBF_3,DBF_IN_TRIM_PRECEDING_SPACES_DBF_3,DBF_IN_NETWORK_AUTHENTICATION_DBF_3,SourceDataset_CSV2_1,CSV2_IN_FIELDS_GROUP_CSV2_1,CSV2_IN_DELIMITER_CSV2_1,CSV2_IN_FIELD_NAMES_LINE_CSV2_1,CSV2_IN_DATA_START_LINE_CSV2_1,CSV2_IN_ADVANCED_GROUP_CSV2_1,CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_1,CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_1,CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_1,CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_1,CSV2_IN_FIELD_NAMES_GROUP_CSV2_1,CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_1,CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_1,CSV2_IN_FIELD_VALUES_GROUP_CSV2_1,CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_1,CSV2_IN_ENCODING_GROUP_CSV2_1,CSV2_IN_ENCODING_CSV2_1,CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_1,CSV2_IN_SKIPPED_LINES_GROUP_CSV2_1,CSV2_IN_READ_SKIPPED_LINES_CSV2_1,CSV2_IN_NETWORK_AUTHENTICATION_CSV2_1,SourceDataset_DBF_4,DBF_IN_FME_GROUP_NAMED1_DBF_4,DBF_IN_ENCODING_DBF_4,DBF_IN_TRIM_PRECEDING_SPACES_DBF_4,DBF_IN_NETWORK_AUTHENTICATION_DBF_4,DestDataset_POSTGRES_1,POSTGRES_OUT_FME_CONNECTION_GROUP_POSTGRES_1,POSTGRES_OUT_ADVANCED_POSTGRES_1,POSTGRES_OUT_BULK_COPY_POSTGRES_1,POSTGRES_OUT_START_TRANSACTION_POSTGRES_1,POSTGRES_OUT_TRANSACTION_INTERVAL_POSTGRES_1,POSTGRES_OUT_BEGIN_SQL_POSTGRES_1,POSTGRES_OUT_END_SQL_POSTGRES_1
-DEFAULT_MACRO SourceDataset_DBF_7 C:\Users\baussier\Desktop\comsimp2012.dbf
-GUI MULTIFILE SourceDataset_DBF_7 DBF_Files(*.dbf)|*.dbf|All_Files(*)|* Source dBASE (DBF) File(s):
-DEFAULT_MACRO SourceDataset_CSV2 C:\Users\baussier\Desktop\historiq2018.txt
-GUI MULTIFILE SourceDataset_CSV2 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|* Source CSV (Comma Separated Value) File(s):
-DEFAULT_MACRO SourceDataset_DBF_6 C:\Users\baussier\Desktop\comsimp2018.dbf
-GUI MULTIFILE SourceDataset_DBF_6 DBF_Files(*.dbf)|*.dbf|All_Files(*)|* Source dBASE (DBF) File(s):
-DEFAULT_MACRO DestDataset_POSTGRES srv_sig_1
+
+FME_PYTHON_VERSION 37
+GUI IGNORE SourceDataset_DBF_1,DBF_IN_FME_GROUP_NAMED1_DBF_1,DBF_IN_ENCODING_DBF_1,DBF_IN_TRIM_PRECEDING_SPACES_DBF_1,DBF_IN_NETWORK_AUTHENTICATION_DBF_1,DestDataset_POSTGRES_1,POSTGRES_OUT_FME_CONNECTION_GROUP_POSTGRES_1,POSTGRES_OUT_ADVANCED_POSTGRES_1,POSTGRES_OUT_BULK_COPY_POSTGRES_1,POSTGRES_OUT_START_TRANSACTION_POSTGRES_1,POSTGRES_OUT_TRANSACTION_INTERVAL_POSTGRES_1,POSTGRES_OUT_BEGIN_SQL_POSTGRES_1,POSTGRES_OUT_END_SQL_POSTGRES_1
+DEFAULT_MACRO SourceDataset_DBF \\srv-34db\data2\BDDC\@_martin\1_integration-data\cog\data sources\mvtcommune-01042019.dbf
+GUI MULTIFILE SourceDataset_DBF DBF_Files(*.dbf)|*.dbf|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files(*)|* Source dBASE (DBF) File(s):
+DEFAULT_MACRO DestDataset_POSTGRES srv_sig
 GUI NAMED_DB_CONNECTION_ENCODED DestDataset_POSTGRES FMT:POSTGRES%FAMILY:PostgreSQL Connection:
-INCLUDE [ if {{$(SourceDataset_DBF_7)} == {}} { puts_real {Parameter 'SourceDataset_DBF_7' must be given a value.}; exit 1; }; ]
-INCLUDE [ if {{$(SourceDataset_CSV2)} == {}} { puts_real {Parameter 'SourceDataset_CSV2' must be given a value.}; exit 1; }; ]
-INCLUDE [ if {{$(SourceDataset_DBF_6)} == {}} { puts_real {Parameter 'SourceDataset_DBF_6' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(SourceDataset_DBF)} == {}} { puts_real {Parameter 'SourceDataset_DBF' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(DestDataset_POSTGRES)} == {}} { puts_real {Parameter 'DestDataset_POSTGRES' must be given a value.}; exit 1; }; ]
 #! START_HEADER
 #! START_WB_HEADER
 READER_TYPE MULTI_READER
 MULTI_READER_TYPE{0} DBF
-MULTI_READER_KEYWORD{0} DBF_3
-MULTI_READER_GEN_DIRECTIVES{0} _MERGE_SCHEMAS,YES,ENCODING,,TRIM_PRECEDING_SPACES,yes,CHECK_NUMERIC_FIELDS,yes,DBF_EXPOSE_FORMAT_ATTRS,,NUMERIC_TYPE_ATTRIBUTE_HANDLING,STANDARD_TYPES,EXPOSE_ATTRS_GROUP,
-MULTI_READER_TYPE{1} CSV2
-MULTI_READER_KEYWORD{1} CSV2_1
-MULTI_READER_GEN_DIRECTIVES{1} FEATURE_TYPE_NAME,FORMAT_NAME,CASE_SENSITIVE_FIELD_NAMES,Yes,SKIPPED_LINES_GROUP,,ADVANCED_GROUP,,SCHEMA,,SCAN_MAX_ROWS,1000,ENCODING,,CSV2_EXPOSE_FORMAT_ATTRS,,_MERGE_SCHEMAS,YES,TRIM_FIELD_NAME_QUALIFIERS,Yes,DATA_START_LINE,2,TRIM_FIELD_VALUE_QUALIFIERS,Yes,SKIP_DUPLICATE_DELIMITERS,No,SCAN_ADDITIONAL_FIELDS,No,FIELD_NAMES_LINE,1,FIELD_QUALIFIER_CHARACTER,<lt>quote<gt>,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,FIELD_QUALIFIER_ESCAPE_CHARACTER,<lt>quote<gt>,ENFORCE_STRICT_SCHEMA,No,DATASET_GROUP,,FIELD_VALUES_GROUP,,FIELDS_GROUP,,ENCODING_GROUP,,SCHEMA_GENERATION_GROUP,,PREVIEW_PLACEHOLDER,,EXPOSE_ATTRS_GROUP,,USE_CUSTOM_SCHEMA,NO,FIELD_NAMES_GROUP,,DELIMITER,tab,PRESERVE_SOURCE_ENCODING,No,FIELD_SEPARATION_GROUP,,READ_SKIPPED_LINES,No,SCAN_TYPES,No
-MULTI_READER_TYPE{2} DBF
-MULTI_READER_KEYWORD{2} DBF_4
-MULTI_READER_GEN_DIRECTIVES{2} _MERGE_SCHEMAS,YES,ENCODING,,TRIM_PRECEDING_SPACES,yes,CHECK_NUMERIC_FIELDS,yes,DBF_EXPOSE_FORMAT_ATTRS,,NUMERIC_TYPE_ATTRIBUTE_HANDLING,STANDARD_TYPES,EXPOSE_ATTRS_GROUP,
-
+MULTI_READER_KEYWORD{0} DBF_1
+MULTI_READER_GEN_DIRECTIVES{0} TRIM_PRECEDING_SPACES,yes,CHECK_NUMERIC_FIELDS,yes,ENCODING,fme-source-encoding,EXPOSE_ATTRS_GROUP,,NUMERIC_TYPE_ATTRIBUTE_HANDLING,STANDARD_TYPES,DBF_EXPOSE_FORMAT_ATTRS,,_MERGE_SCHEMAS,YES
 WRITER_TYPE MULTI_WRITER
 MULTI_WRITER_DATASET_ORDER BY_ID
 MULTI_WRITER_FIRST_WRITER_ID 0
 MULTI_WRITER_TYPE{0} POSTGRES
 MULTI_WRITER_KEYWORD{0} POSTGRES_1
 #! END_WB_HEADER
-
 #! START_WB_HEADER
-MACRO WB_KEYWORD "DBF_3"
+MACRO WB_KEYWORD "DBF_1"
 #! END_WB_HEADER
-#! START_SOURCE_HEADER DBF DBF_3
+#! START_SOURCE_HEADER DBF DBF_1
 # ============================================================================
 # The following GUI line prompts for a folder to be used as the
 # source of the DBF files.
@@ -1745,190 +1089,43 @@ MACRO WB_KEYWORD "DBF_3"
 #! START_WB_HEADER
 DEFAULT_MACRO SourceDataset
 INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
- puts {DEFAULT_MACRO SourceDataset_DBF_3 $(SourceDataset)}     \
+ puts {DEFAULT_MACRO SourceDataset_DBF_1 $(SourceDataset)}     \
  } ]
 #! END_WB_HEADER
-#! START_SOURCE_HEADER DBF DBF_3
-DEFAULT_MACRO SourceDataset_DBF_3 $(SourceDataset_DBF_7)
-GUI MULTIFILE SourceDataset_DBF_3 DBF_Files(*.dbf)|*.dbf|All_Files(*)|* Source dBASE (DBF) File(s):
-DEFAULT_MACRO DBF_IN_FME_GROUP_NAMED1_DBF_3 
-GUI OPTIONAL DISCLOSUREGROUP DBF_IN_FME_GROUP_NAMED1_DBF_3 DBF_IN_ENCODING_DBF_3%DBF_IN_TRIM_PRECEDING_SPACES_DBF_3%DBF_IN_NUMERIC_TYPE_ATTRIBUTE_HANDLING File Contents
+#! START_SOURCE_HEADER DBF DBF_1
+DEFAULT_MACRO SourceDataset_DBF_1 $(SourceDataset_DBF)
+GUI MULTIFILE SourceDataset_DBF_1 DBF_Files(*.dbf)|*.dbf|All_Files(*)|* Source dBASE (DBF) File(s):
+DEFAULT_MACRO DBF_IN_FME_GROUP_NAMED1_DBF_1 
+GUI OPTIONAL DISCLOSUREGROUP DBF_IN_FME_GROUP_NAMED1_DBF_1 DBF_IN_ENCODING_DBF_1%DBF_IN_TRIM_PRECEDING_SPACES_DBF_1%DBF_IN_NUMERIC_TYPE_ATTRIBUTE_HANDLING File Contents
 # ============================================================================
 # The following keyword allows the user to choose what encoding to
 # use for reading the DBF file, overrides dbf file LDID or .cpg
 # file if present.
-DEFAULT_MACRO DBF_IN_ENCODING_DBF_3 
-DBF_3_ENCODING "$(DBF_IN_ENCODING_DBF_3)"
-GUI OPTIONAL ENCODING DBF_IN_ENCODING_DBF_3 SYSTEM%ANSI%BIG5%EUC%ISO%OEM%SJIS%UTF-8%CP437%CP708%CP720%CP737%CP775%CP850%CP852%CP855%CP857%CP860%CP861%CP862%CP863%CP864%CP865%CP866%CP869%CP932%CP936%CP950%CP1250%CP1251%CP1252%CP1253%CP1254%CP1255%CP1256%CP1257%CP1258%ISO8859-1%ISO8859-2%ISO8859-3%ISO8859-4%ISO8859-5%ISO8859-6%ISO8859-7%ISO8859-8%ISO8859-9%ISO8859-13%ISO8859-15 Character Encoding:
-DEFAULT_MACRO DBF_IN_TRIM_PRECEDING_SPACES_DBF_3 yes
-DBF_3_TRIM_PRECEDING_SPACES "$(DBF_IN_TRIM_PRECEDING_SPACES_DBF_3)"
-GUI CHOICE DBF_IN_TRIM_PRECEDING_SPACES_DBF_3 yes%no Trim Preceding Spaces
-DEFAULT_MACRO DBF_IN_EXPOSE_ATTRS_GROUP_DBF_3 
-DBF_3_EXPOSE_ATTRS_GROUP "$(DBF_IN_EXPOSE_ATTRS_GROUP_DBF_3)"
-DEFAULT_MACRO DBF_IN_CHECK_NUMERIC_FIELDS_DBF_3 yes
-DBF_3_CHECK_NUMERIC_FIELDS "$(DBF_IN_CHECK_NUMERIC_FIELDS_DBF_3)"
+DEFAULT_MACRO DBF_IN_ENCODING_DBF_1 fme-source-encoding
+DBF_1_ENCODING "$(DBF_IN_ENCODING_DBF_1)"
+GUI STRING_OR_ENCODING DBF_IN_ENCODING_DBF_1 fme-source-encoding%* Character Encoding:
+DEFAULT_MACRO DBF_IN_TRIM_PRECEDING_SPACES_DBF_1 yes
+DBF_1_TRIM_PRECEDING_SPACES "$(DBF_IN_TRIM_PRECEDING_SPACES_DBF_1)"
+GUI CHOICE DBF_IN_TRIM_PRECEDING_SPACES_DBF_1 yes%no Trim Preceding Spaces
+DEFAULT_MACRO DBF_IN_EXPOSE_ATTRS_GROUP_DBF_1 
+DBF_1_EXPOSE_ATTRS_GROUP "$(DBF_IN_EXPOSE_ATTRS_GROUP_DBF_1)"
+DEFAULT_MACRO DBF_IN_CHECK_NUMERIC_FIELDS_DBF_1 yes
+DBF_1_CHECK_NUMERIC_FIELDS "$(DBF_IN_CHECK_NUMERIC_FIELDS_DBF_1)"
 # ============================================================================
 # Determines whether numeric attributes should be interpreted as binary or as
 # bound number fields (ActualDBFrepresentation)
-DEFAULT_MACRO DBF_IN_NUMERIC_TYPE_ATTRIBUTE_HANDLING_DBF_3 STANDARD_TYPES
-DBF_3_NUMERIC_TYPE_ATTRIBUTE_HANDLING "$(DBF_IN_NUMERIC_TYPE_ATTRIBUTE_HANDLING_DBF_3)"
+DEFAULT_MACRO DBF_IN_NUMERIC_TYPE_ATTRIBUTE_HANDLING_DBF_1 STANDARD_TYPES
+DBF_1_NUMERIC_TYPE_ATTRIBUTE_HANDLING "$(DBF_IN_NUMERIC_TYPE_ATTRIBUTE_HANDLING_DBF_1)"
 # ===========================================================================
-DEFAULT_MACRO DBF_IN_NETWORK_AUTHENTICATION_DBF_3 
-DBF_3_NETWORK_AUTHENTICATION "$(DBF_IN_NETWORK_AUTHENTICATION_DBF_3)"
-GUI OPTIONAL AUTHENTICATOR DBF_IN_NETWORK_AUTHENTICATION_DBF_3 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+DEFAULT_MACRO DBF_IN_NETWORK_AUTHENTICATION_DBF_1 
+DBF_1_NETWORK_AUTHENTICATION "$(DBF_IN_NETWORK_AUTHENTICATION_DBF_1)"
+GUI OPTIONAL AUTHENTICATOR DBF_IN_NETWORK_AUTHENTICATION_DBF_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
 # ============================================================================ 
-DEFAULT_MACRO DBF_IN_ATTRIBUTE_READING_DBF_3 ALL
-DBF_3_ATTRIBUTE_READING "$(DBF_IN_ATTRIBUTE_READING_DBF_3)"
+DEFAULT_MACRO DBF_IN_ATTRIBUTE_READING_DBF_1 ALL
+DBF_1_ATTRIBUTE_READING "$(DBF_IN_ATTRIBUTE_READING_DBF_1)"
 # ============================================================================ 
-DBF_3_GENERATE_FME_BUILD_NUM 18312
-DBF_3_DATASET "$(SourceDataset_DBF_3)"
-#! END_SOURCE_HEADER
-#! START_WB_HEADER
-MACRO WB_KEYWORD "CSV2_1"
-#! END_WB_HEADER
-#! START_SOURCE_HEADER CSV2 CSV2_1
-# =====================================================================
-# The following GUI line prompts for a file to be used as the source CSV file.
-# The user input is stored in a macro, which is then used to define
-# the dataset to be read.
-# The dataset this mapping file was generated from was:
-#! END_SOURCE_HEADER
-#! START_WB_HEADER
-DEFAULT_MACRO SourceDataset
-INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
- puts {DEFAULT_MACRO SourceDataset_CSV2_1 $(SourceDataset)}     \
- } ]
-#! END_WB_HEADER
-#! START_SOURCE_HEADER CSV2 CSV2_1
-DEFAULT_MACRO SourceDataset_CSV2_1 $(SourceDataset_CSV2)
-GUI MULTIFILE SourceDataset_CSV2_1 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|* Source CSV (Comma Separated Value) File(s):
-DEFAULT_MACRO CSV2_IN_FEATURE_TYPE_NAME_CSV2_1 FORMAT_NAME
-CSV2_1_FEATURE_TYPE_NAME "$(CSV2_IN_FEATURE_TYPE_NAME_CSV2_1)"
-DEFAULT_MACRO CSV2_IN_FIELDS_GROUP_CSV2_1 
-GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_FIELDS_GROUP_CSV2_1 CSV2_IN_DELIMITER_CSV2_1%CSV2_IN_FIELD_NAMES_LINE_CSV2_1%CSV2_IN_DATA_START_LINE_CSV2_1 Fields
-DEFAULT_MACRO CSV2_IN_DELIMITER_CSV2_1 tab
-CSV2_1_DELIMITER "$(CSV2_IN_DELIMITER_CSV2_1)"
-GUI STRING_OR_CHOICE_ENCODED CSV2_IN_DELIMITER_CSV2_1 ,%;%|%space%tab Delimiter Character:
-DEFAULT_MACRO CSV2_IN_FIELD_NAMES_LINE_CSV2_1 1
-CSV2_1_FIELD_NAMES_LINE "$(CSV2_IN_FIELD_NAMES_LINE_CSV2_1)"
-GUI OPTIONAL INT_OR_CHOICE CSV2_IN_FIELD_NAMES_LINE_CSV2_1 None%1%2%3%4%5 Field Names Line:
-GUI LOOKUP CSV2_IN_FIELD_NAMES_LINE_CSV2_1 None, 
-DEFAULT_MACRO CSV2_IN_DATA_START_LINE_CSV2_1 2
-CSV2_1_DATA_START_LINE "$(CSV2_IN_DATA_START_LINE_CSV2_1)"
-GUI RANGE_SLIDER CSV2_IN_DATA_START_LINE_CSV2_1 1%MAX%0 Data Start Line:
-DEFAULT_MACRO CSV2_IN_ADVANCED_GROUP_CSV2_1 
-GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_ADVANCED_GROUP_CSV2_1 FME_DISCLOSURE_CLOSED%CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_1%CSV2_IN_FIELD_NAMES_GROUP_CSV2_1%CSV2_IN_FIELD_VALUES_GROUP_CSV2_1%CSV2_IN_ENCODING_GROUP_CSV2_1%CSV2_IN_SKIPPED_LINES_GROUP_CSV2_1%CSV2_IN_SCHEMA_GENERATION_GROUP Advanced
-DEFAULT_MACRO CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_1 
-GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_1 FME_DISCLOSURE_CLOSED%CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_1%CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_1%CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_1 Field Separation
-DEFAULT_MACRO CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_1 No
-CSV2_1_SKIP_DUPLICATE_DELIMITERS "$(CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_1)"
-GUI CHOICE CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_1 Yes%No Skip Duplicate Delimiters:
-DEFAULT_MACRO CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_1 <quote>
-CSV2_1_FIELD_QUALIFIER_CHARACTER "$(CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_1)"
-GUI OPTIONAL STRING_ENCODED CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_1 Field Qualifier Character:
-DEFAULT_MACRO CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_1 <quote>
-CSV2_1_FIELD_QUALIFIER_ESCAPE_CHARACTER "$(CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_1)"
-GUI OPTIONAL STRING_ENCODED CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_1 Field Qualifier Escape Character:
-DEFAULT_MACRO CSV2_IN_FIELD_NAMES_GROUP_CSV2_1 
-GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_FIELD_NAMES_GROUP_CSV2_1 FME_DISCLOSURE_CLOSED%CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_1%CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_1 Field Names
-DEFAULT_MACRO CSV2_IN_TRIM_FIELD_NAME_QUALIFIERS_CSV2_1 Yes
-CSV2_1_TRIM_FIELD_NAME_QUALIFIERS "$(CSV2_IN_TRIM_FIELD_NAME_QUALIFIERS_CSV2_1)"
-DEFAULT_MACRO CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_1 Yes
-CSV2_1_CASE_SENSITIVE_FIELD_NAMES "$(CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_1)"
-GUI CHOICE CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_1 Yes%No Case Sensitive Field Names:
-DEFAULT_MACRO CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_1 No
-CSV2_1_ENFORCE_STRICT_SCHEMA "$(CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_1)"
-GUI CHOICE CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_1 Yes%No Enforce Strict Schema:
-DEFAULT_MACRO CSV2_IN_FIELD_VALUES_GROUP_CSV2_1 
-GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_FIELD_VALUES_GROUP_CSV2_1 FME_DISCLOSURE_CLOSED%CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_1 Field Values
-DEFAULT_MACRO CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_1 Yes
-CSV2_1_TRIM_FIELD_VALUE_QUALIFIERS "$(CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_1)"
-GUI CHOICE CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_1 Yes%No Trim Field Qualifier Characters:
-DEFAULT_MACRO CSV2_IN_ENCODING_GROUP_CSV2_1 
-GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_ENCODING_GROUP_CSV2_1 FME_DISCLOSURE_CLOSED%CSV2_IN_ENCODING_CSV2_1%CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_1 Encoding
-DEFAULT_MACRO CSV2_IN_ENCODING_CSV2_1 
-CSV2_1_ENCODING "$(CSV2_IN_ENCODING_CSV2_1)"
-GUI OPTIONAL STRING_OR_ENCODING CSV2_IN_ENCODING_CSV2_1 SYSTEM%* Character Encoding:
-DEFAULT_MACRO CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_1 No
-CSV2_1_PRESERVE_SOURCE_ENCODING "$(CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_1)"
-GUI CHOICE CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_1 Yes%No Preserve Source Encoding:
-DEFAULT_MACRO CSV2_IN_SKIPPED_LINES_GROUP_CSV2_1 
-GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_SKIPPED_LINES_GROUP_CSV2_1 FME_DISCLOSURE_CLOSED%CSV2_IN_READ_SKIPPED_LINES_CSV2_1 Skipped Lines
-DEFAULT_MACRO CSV2_IN_READ_SKIPPED_LINES_CSV2_1 No
-CSV2_1_READ_SKIPPED_LINES "$(CSV2_IN_READ_SKIPPED_LINES_CSV2_1)"
-GUI CHOICE CSV2_IN_READ_SKIPPED_LINES_CSV2_1 Yes%No Read Skipped Lines:
-DEFAULT_MACRO CSV2_IN_SCAN_MAX_ROWS_CSV2_1 1000
-CSV2_1_SCAN_MAX_ROWS "$(CSV2_IN_SCAN_MAX_ROWS_CSV2_1)"
-DEFAULT_MACRO CSV2_IN_SCAN_TYPES_CSV2_1 No
-CSV2_1_SCAN_TYPES "$(CSV2_IN_SCAN_TYPES_CSV2_1)"
-DEFAULT_MACRO CSV2_IN_SCAN_ADDITIONAL_FIELDS_CSV2_1 No
-CSV2_1_SCAN_ADDITIONAL_FIELDS "$(CSV2_IN_SCAN_ADDITIONAL_FIELDS_CSV2_1)"
-DEFAULT_MACRO CSV2_IN_EXPOSE_ATTRS_GROUP_CSV2_1 
-CSV2_1_EXPOSE_ATTRS_GROUP "$(CSV2_IN_EXPOSE_ATTRS_GROUP_CSV2_1)"
-DEFAULT_MACRO CSV2_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_CSV2_1 Yes
-CSV2_1_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(CSV2_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_CSV2_1)"
-# ===========================================================================
-DEFAULT_MACRO CSV2_IN_NETWORK_AUTHENTICATION_CSV2_1 
-CSV2_1_NETWORK_AUTHENTICATION "$(CSV2_IN_NETWORK_AUTHENTICATION_CSV2_1)"
-GUI OPTIONAL AUTHENTICATOR CSV2_IN_NETWORK_AUTHENTICATION_CSV2_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
-# ============================================================================ 
-DEFAULT_MACRO CSV2_IN_ATTRIBUTE_READING_CSV2_1 DEFLINE
-CSV2_1_ATTRIBUTE_READING "$(CSV2_IN_ATTRIBUTE_READING_CSV2_1)"
-# ============================================================================ 
-CSV2_1_GENERATE_FME_BUILD_NUM 18312
-CSV2_1_DATASET "$(SourceDataset_CSV2_1)"
-#! END_SOURCE_HEADER
-#! START_WB_HEADER
-MACRO WB_KEYWORD "DBF_4"
-#! END_WB_HEADER
-#! START_SOURCE_HEADER DBF DBF_4
-# ============================================================================
-# The following GUI line prompts for a folder to be used as the
-# source of the DBF files.
-# The user input is stored in a macro, which is then used to define
-# the dataset to be read.
-# The dataset this mapping file was generated from was:
-#! END_SOURCE_HEADER
-#! START_WB_HEADER
-DEFAULT_MACRO SourceDataset
-INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
- puts {DEFAULT_MACRO SourceDataset_DBF_4 $(SourceDataset)}     \
- } ]
-#! END_WB_HEADER
-#! START_SOURCE_HEADER DBF DBF_4
-DEFAULT_MACRO SourceDataset_DBF_4 $(SourceDataset_DBF_6)
-GUI MULTIFILE SourceDataset_DBF_4 DBF_Files(*.dbf)|*.dbf|All_Files(*)|* Source dBASE (DBF) File(s):
-DEFAULT_MACRO DBF_IN_FME_GROUP_NAMED1_DBF_4 
-GUI OPTIONAL DISCLOSUREGROUP DBF_IN_FME_GROUP_NAMED1_DBF_4 DBF_IN_ENCODING_DBF_4%DBF_IN_TRIM_PRECEDING_SPACES_DBF_4%DBF_IN_NUMERIC_TYPE_ATTRIBUTE_HANDLING File Contents
-# ============================================================================
-# The following keyword allows the user to choose what encoding to
-# use for reading the DBF file, overrides dbf file LDID or .cpg
-# file if present.
-DEFAULT_MACRO DBF_IN_ENCODING_DBF_4 
-DBF_4_ENCODING "$(DBF_IN_ENCODING_DBF_4)"
-GUI OPTIONAL ENCODING DBF_IN_ENCODING_DBF_4 SYSTEM%ANSI%BIG5%EUC%ISO%OEM%SJIS%UTF-8%CP437%CP708%CP720%CP737%CP775%CP850%CP852%CP855%CP857%CP860%CP861%CP862%CP863%CP864%CP865%CP866%CP869%CP932%CP936%CP950%CP1250%CP1251%CP1252%CP1253%CP1254%CP1255%CP1256%CP1257%CP1258%ISO8859-1%ISO8859-2%ISO8859-3%ISO8859-4%ISO8859-5%ISO8859-6%ISO8859-7%ISO8859-8%ISO8859-9%ISO8859-13%ISO8859-15 Character Encoding:
-DEFAULT_MACRO DBF_IN_TRIM_PRECEDING_SPACES_DBF_4 yes
-DBF_4_TRIM_PRECEDING_SPACES "$(DBF_IN_TRIM_PRECEDING_SPACES_DBF_4)"
-GUI CHOICE DBF_IN_TRIM_PRECEDING_SPACES_DBF_4 yes%no Trim Preceding Spaces
-DEFAULT_MACRO DBF_IN_EXPOSE_ATTRS_GROUP_DBF_4 
-DBF_4_EXPOSE_ATTRS_GROUP "$(DBF_IN_EXPOSE_ATTRS_GROUP_DBF_4)"
-DEFAULT_MACRO DBF_IN_CHECK_NUMERIC_FIELDS_DBF_4 yes
-DBF_4_CHECK_NUMERIC_FIELDS "$(DBF_IN_CHECK_NUMERIC_FIELDS_DBF_4)"
-# ============================================================================
-# Determines whether numeric attributes should be interpreted as binary or as
-# bound number fields (ActualDBFrepresentation)
-DEFAULT_MACRO DBF_IN_NUMERIC_TYPE_ATTRIBUTE_HANDLING_DBF_4 STANDARD_TYPES
-DBF_4_NUMERIC_TYPE_ATTRIBUTE_HANDLING "$(DBF_IN_NUMERIC_TYPE_ATTRIBUTE_HANDLING_DBF_4)"
-# ===========================================================================
-DEFAULT_MACRO DBF_IN_NETWORK_AUTHENTICATION_DBF_4 
-DBF_4_NETWORK_AUTHENTICATION "$(DBF_IN_NETWORK_AUTHENTICATION_DBF_4)"
-GUI OPTIONAL AUTHENTICATOR DBF_IN_NETWORK_AUTHENTICATION_DBF_4 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
-# ============================================================================ 
-DEFAULT_MACRO DBF_IN_ATTRIBUTE_READING_DBF_4 ALL
-DBF_4_ATTRIBUTE_READING "$(DBF_IN_ATTRIBUTE_READING_DBF_4)"
-# ============================================================================ 
-DBF_4_GENERATE_FME_BUILD_NUM 18312
-DBF_4_DATASET "$(SourceDataset_DBF_4)"
+DBF_1_GENERATE_FME_BUILD_NUM 19238
+DBF_1_DATASET "$(SourceDataset_DBF_1)"
 #! END_SOURCE_HEADER
 #! START_WB_HEADER
 MACRO WB_KEYWORD "POSTGRES_1"
@@ -1968,38 +1165,27 @@ GUI OPTIONAL TEXT_EDIT_SQL_CFG POSTGRES_OUT_END_SQL_POSTGRES_1 MODE,SQL;FORMAT,P
 DEFAULT_MACRO POSTGRES_OUT_COORDINATE_SYSTEM_GRANULARITY_POSTGRES_1 FEATURE
 POSTGRES_1_COORDINATE_SYSTEM_GRANULARITY "$(POSTGRES_OUT_COORDINATE_SYSTEM_GRANULARITY_POSTGRES_1)"
 # ============================================================================ 
-POSTGRES_1_GENERATE_FME_BUILD_NUM 18312
+POSTGRES_1_GENERATE_FME_BUILD_NUM 19238
 POSTGRES_1_DATASET "$(DestDataset_POSTGRES_1)"
 #! END_DEST_HEADER
 #! START_WB_HEADER
 #! END_WB_HEADER
-
 #! END_HEADER
 
 LOG_FILENAME "$(FME_MF_DIR)1_integration_data_cog.log"
 LOG_APPEND NO
+LOG_FILTER_MASK -1
 LOG_MAX_FEATURES 200
 LOG_MAX_RECORDED_FEATURES 200
 FME_REPROJECTION_ENGINE FME
 FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
 FME_GEOMETRY_HANDLING Enhanced
 FME_STROKE_MAX_DEVIATION 0
-LOG_FILTER_MASK -1
-DEFAULT_MACRO DATASET_KEYWORD_DBF_3 DBF_3
-DEFAULT_MACRO DATASET_KEYWORD_CSV2_1 CSV2_1
-DEFAULT_MACRO DATASET_KEYWORD_DBF_4 DBF_4
+DEFAULT_MACRO DATASET_KEYWORD_DBF_1 DBF_1
 DEFAULT_MACRO DATASET_KEYWORD_POSTGRES_1 POSTGRES_1
 # -------------------------------------------------------------------------
 
-DBF_3_READER_META_ATTRIBUTES fme_feature_type
-
-# -------------------------------------------------------------------------
-
-CSV2_1_READER_META_ATTRIBUTES fme_feature_type
-
-# -------------------------------------------------------------------------
-
-DBF_4_READER_META_ATTRIBUTES fme_feature_type
+DBF_1_READER_META_ATTRIBUTES fme_feature_type
 
 # -------------------------------------------------------------------------
 
@@ -2016,54 +1202,36 @@ MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
 MACRO VISUALIZER_SCHEMA_FILE $(WORKSPACE_TEMP_DIR)/inspector.fsc
 MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
 # -------------------------------------------------------------------------
-DBF_3_DEF comsimp2012   CDC                          char(1)   CHEFLIEU                     char(1)   REG                          char(2)   DEP                          char(3)   COM                          char(3)   AR                           char(1)   CT                           char(2)   TNCC                         char(1)   ARTMAJ                       char(5)   NCC                          char(70)   ARTMIN                       char(5)   NCCENR                       char(70)
-# -------------------------------------------------------------------------
-DBF_4_DEF comsimp2018   CDC                          char(1)   CHEFLIEU                     char(1)   REG                          char(2)   DEP                          char(3)   COM                          char(3)   AR                           char(1)   CT                           char(2)   TNCC                         char(1)   ARTMAJ                       char(7)   NCC                          char(70)   ARTMIN                       char(7)   NCCENR                       char(70)
+DBF_1_DEF mvtcommune-01042019   MOD                          char(2)   DATE_EFF                     char(10)   TYPECOM_AV                   char(4)   COM_AV                       char(5)   TNCC_AV                      char(1)   NCC_AV                       char(48)   NCCENR_AV                    char(48)   LIBELLE_AV                   char(48)   TYPECOM_AP                   char(4)   COM_AP                       char(5)   TNCC_AP                      char(1)   NCC_AP                       char(46)   NCCENR_AP                    char(46)   LIBELLE_AP                   char(46)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE DBF DBF_3::comsimp2012 multi_reader_keyword,$(DATASET_KEYWORD_DBF_3) TO FME_GENERIC ::comsimp2012 ALIAS_GEOMETRY    ROUTE CSV2 CSV2_1::CSV multi_reader_keyword,$(DATASET_KEYWORD_CSV2_1) TO FME_GENERIC ::CSV ALIAS_GEOMETRY    ROUTE DBF DBF_4::comsimp2018 multi_reader_keyword,$(DATASET_KEYWORD_DBF_4) TO FME_GENERIC ::comsimp2018 ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
-DBF_3_MERGE_DEF DBF_3::comsimp2012 EXACT comsimp2012
-CSV2_1_MERGE_DEF CSV2_1::CSV EXACT CSV DEFLINE fme_attribute_reading,defined,DEP,string,AR,string,CT,string,COM,string,LEG,string,JO,string,EFF,string,DTR,string,MOD,string,C_LOFF,string,C_LANC,string,NBCOM,string,RANGCOM,string,COMECH,string,POPECH,string,SUECH,string,DEPANC,string,ARRANC,string,CTANC,string,TNCCOFF,string,NCCOFF,string,TNCCANC,string,NCCANC,string
-DBF_4_MERGE_DEF DBF_4::comsimp2018 EXACT comsimp2018
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_DBF_1)   INPUT FEATURE_TYPE *    ROUTE DBF DBF_1::mvtcommune-01042019 multi_reader_keyword,$(DATASET_KEYWORD_DBF_1) TO FME_GENERIC ::mvtcommune-01042019 ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+DBF_1_MERGE_DEF DBF_1::mvtcommune-01042019 EXACT mvtcommune-01042019
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "comsimp2018 (DBF_4) Splitter"    INPUT FEATURE_TYPE comsimp2018    OUTPUT FEATURE_TYPE comsimp2018_DBF_4
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME "CSV (CSV2_1) Splitter"    INPUT FEATURE_TYPE CSV    OUTPUT FEATURE_TYPE CSV_CSV2_1
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME "comsimp2012 (DBF_3) Splitter"    INPUT FEATURE_TYPE comsimp2012    OUTPUT FEATURE_TYPE comsimp2012_DBF_3
+FACTORY_DEF * TeeFactory    FACTORY_NAME "mvtcommune-01042019 (DBF_1) Splitter"    INPUT FEATURE_TYPE mvtcommune-01042019    OUTPUT FEATURE_TYPE mvtcommune-01042019_DBF_1
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
-
-
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeManager_2    INPUT  FEATURE_TYPE comsimp2018_DBF_4    MULTI_FEATURE_MODE NO     NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "CDC" "CDC" "" "REMOVE" }      ATTR_ACTION { "CHEFLIEU" "CHEFLIEU" "" "REMOVE" }      ATTR_ACTION { "REG" "REG" "" "REMOVE" }      ATTR_ACTION { "AR" "AR" "" "REMOVE" }      ATTR_ACTION { "CT" "CT" "" "REMOVE" }      ATTR_ACTION { "TNCC" "TNCC" "" "REMOVE" }      ATTR_ACTION { "ARTMAJ" "ARTMAJ" "" "REMOVE" }      ATTR_ACTION { "NCC" "nom" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "ARTMIN" "ARTMIN" "" "REMOVE" }      ATTR_ACTION { "NCCENR" "NCCENR" "" "REMOVE" }      ATTR_ACTION { "" "insee" "<at>Value<openparen>DEP<closeparen><at>Value<openparen>COM<closeparen>" "SET_TO" }    OUTPUT OUTPUT FEATURE_TYPE AttributeManager_2_OUTPUT
-
+DEFAULT_MACRO DateTimeConverter_EXPRESSION_LIST
+DEFAULT_MACRO DateTimeConverter_TEST_CLAUSE_LIST
+INCLUDE [    set repairInput {};    if {{NO} eq {YES}} {       set repairInput "<comma>repair";    };    set inFormat {FME|ISO};    if { {%Y-%m-%d} ne {} } {       set inFormat {%Y-%m-%d};       if { [string first "<quote>" $inFormat] != -1 } {          set inFormat [string map {"<quote>" "<backslash><quote>"} $inFormat];       };    };    set outFormat {FME};    if { [string first "<quote>" $outFormat] != -1 } {       set outFormat [string map {"<quote>" "<backslash><quote>"} $outFormat];    };    set parmList {};    set testList {};    set attrs [split {DATE_EFF} { }];    foreach attr $attrs {       lappend parmList $attr;       set funcAttr $attr;       if { [string first "<quote>" $attr] != -1 }       {          set funcAttr [string map {"<quote>" "<backslash><quote>"} $attr];          append funcAttr "<quote>";          set funcAttr "<quote>$funcAttr";       };       lappend parmList <at>DateTimeFormat<openparen><at>DateTimeParse<openparen><at>Value<openparen>$funcAttr<closeparen><comma><quote>$inFormat<quote>$repairInput<closeparen><comma><quote>$outFormat<quote><closeparen>;       lappend testList "TEST $attr ATTRIBUTE_VALUE_NULL \"\" ENCODED"    };    puts "MACRO DateTimeConverter_EXPRESSION_LIST [join $parmList {,}]";    puts "MACRO DateTimeConverter_TEST_CLAUSE_LIST [join $testList { }]"; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME DateTimeConverter_1    INPUT  FEATURE_TYPE mvtcommune-01042019_DBF_1    OUTPUT FEATURE_TYPE DateTimeConverter__TEST_NULL__         @EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV, $(DateTimeConverter_EXPRESSION_LIST), DateTimeConverter)
+FACTORY_DEF * TestFactory    FACTORY_NAME DateTimeConverter_2    INPUT FEATURE_TYPE DateTimeConverter__TEST_NULL__    $(DateTimeConverter_TEST_CLAUSE_LIST)    BOOLEAN_OPERATOR OR    OUTPUT PASSED FEATURE_TYPE DateTimeConverter_<REJECTED>       fme_rejection_code "INVALID_INPUT"    OUTPUT FAILED FEATURE_TYPE DateTimeConverter_OUTPUT
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME DateTimeConverter_<Rejected> INPUT FEATURE_TYPE DateTimeConverter_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, DateTimeConverter<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME AttributeManager    INPUT  FEATURE_TYPE DateTimeConverter_OUTPUT    MULTI_FEATURE_MODE NO    NUM_PRIOR_FEATURES 0    NUM_SUBSEQUENT_FEATURES 0     NULL_ATTR_MODE NO_OP     NULL_ATTR_VALUE 0     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "MOD" "mod" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "LIBELLE_AV" "libelle_av" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "LIBELLE_AP" "libelle_ap" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "COM_AV" "com_av" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "TYPECOM_AP" "typecom_ap" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "NCCENR_AV" "nccenr_av" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "TYPECOM_AV" "typecom_av" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "TNCC_AP" "tncc_ap" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "NCC_AP" "ncc_ap" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "TNCC_AV" "tncc_av" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "DATE_EFF" "date_eff" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "COM_AP" "com_ap" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "NCCENR_AP" "nccenr_ap" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "NCC_AV" "ncc_av" "" "RENAME_SET_VALUE" }    OUTPUT OUTPUT FEATURE_TYPE AttributeManager_OUTPUT
 # -------------------------------------------------------------------------
 
-
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeManager_3    INPUT  FEATURE_TYPE CSV_CSV2_1    MULTI_FEATURE_MODE NO     NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "AR" "AR" "" "REMOVE" }      ATTR_ACTION { "CT" "CT" "" "REMOVE" }      ATTR_ACTION { "LEG" "LEG" "" "REMOVE" }      ATTR_ACTION { "JO" "JO" "" "REMOVE" }      ATTR_ACTION { "EFF" "eff" "<at>DateTimeFormat<openparen><at>DateTimeParse<openparen><at>Value<openparen>EFF<closeparen><comma>%d-%m-%Y<closeparen><comma>%Y<closeparen>" "SET_TO" }      ATTR_ACTION { "DTR" "DTR" "" "REMOVE" }      ATTR_ACTION { "MOD" "mod" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "C_LOFF" "C_LOFF" "" "REMOVE" }      ATTR_ACTION { "C_LANC" "C_LANC" "" "REMOVE" }      ATTR_ACTION { "NBCOM" "NBCOM" "" "REMOVE" }      ATTR_ACTION { "RANGCOM" "RANGCOM" "" "REMOVE" }      ATTR_ACTION { "COMECH" "old_insee" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "POPECH" "POPECH" "" "REMOVE" }      ATTR_ACTION { "SUECH" "SUECH" "" "REMOVE" }      ATTR_ACTION { "DEPANC" "DEPANC" "" "REMOVE" }      ATTR_ACTION { "ARRANC" "ARRANC" "" "REMOVE" }      ATTR_ACTION { "CTANC" "CTANC" "" "REMOVE" }      ATTR_ACTION { "TNCCOFF" "TNCCOFF" "" "REMOVE" }      ATTR_ACTION { "NCCOFF" "new_name" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "" "new_insee" "<at>Value<openparen>DEP<closeparen><at>Value<openparen>COM<closeparen>" "SET_TO" }    OUTPUT OUTPUT FEATURE_TYPE AttributeManager_3_OUTPUT
-
-# -------------------------------------------------------------------------
-
-
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeManager    INPUT  FEATURE_TYPE comsimp2012_DBF_3    MULTI_FEATURE_MODE NO     NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "CDC" "CDC" "" "REMOVE" }      ATTR_ACTION { "CHEFLIEU" "CHEFLIEU" "" "REMOVE" }      ATTR_ACTION { "REG" "REG" "" "REMOVE" }      ATTR_ACTION { "AR" "AR" "" "REMOVE" }      ATTR_ACTION { "CT" "CT" "" "REMOVE" }      ATTR_ACTION { "TNCC" "TNCC" "" "REMOVE" }      ATTR_ACTION { "ARTMAJ" "ARTMAJ" "" "REMOVE" }      ATTR_ACTION { "NCC" "nom" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "ARTMIN" "ARTMIN" "" "REMOVE" }      ATTR_ACTION { "NCCENR" "NCCENR" "" "REMOVE" }      ATTR_ACTION { "" "insee" "<at>Value<openparen>DEP<closeparen><at>Value<openparen>COM<closeparen>" "SET_TO" }    OUTPUT OUTPUT FEATURE_TYPE AttributeManager_OUTPUT
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeManager_OUTPUT TO POSTGRES __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>insee.cog_2012<closeparen> GEOMETRY    ROUTE FME_GENERIC AttributeManager_2_OUTPUT TO POSTGRES __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>insee.cog_2018<closeparen> GEOMETRY    ROUTE FME_GENERIC AttributeManager_3_OUTPUT TO POSTGRES __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>insee.cog_histo_2018<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeManager_OUTPUT TO POSTGRES __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>insee.mvtcommune<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * CreationFactory   CREATE_AT_END   OUTPUT FEATURE_TYPE __NUKEME__   @TCL("if [file exists {$(WORKSPACE_TEMP_DIR)}] {set files [glob -nocomplain -directory  {$(WORKSPACE_TEMP_DIR)} -tails *.ffs];   if {[llength $files] == 1} {    set theFile {$(WORKSPACE_TEMP_DIR)/};   append theFile [lindex $files 0];   eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -f FFS \042$theFile\042 & \175;  } elseif { [llength $files] == 0 } {  catch { file delete -force {$(WORKSPACE_TEMP_DIR)} };  } else {  set filesNoExt {}; set lastfile {}; foreach {fileName} [lsort $files] { set fileNoExt [string trimright $fileName {.ffs}]; if [regexp {(.*)_[0-9]*$} $fileNoExt wholething fileNoExtBase] {  if { $fileNoExtBase == $lastfile } { continue } }; set lastfile $fileNoExt; lappend filesNoExt $fileNoExt };  eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -d {$(WORKSPACE_TEMP_DIR)} -a ffs -f FFS $filesNoExt & \175; }; }; ")
-FACTORY_DEF * TeeFactory   INPUT FEATURE_TYPE __NUKEME__
+DEFAULT_MACRO FME_LAUNCH_VIEWER_APP NO
+FACTORY_DEF * CreationFactory    FACTORY_NAME VisualizerProcessor   CREATE_AT_END   OUTPUT FEATURE_TYPE __NUKEME__   @TCL("if {{$(FME_LAUNCH_VIEWER_APP)} == {YES}} {  if [file exists {$(WORKSPACE_TEMP_DIR)}] {set files [glob -nocomplain -directory  {$(WORKSPACE_TEMP_DIR)} -tails *.ffs];   if {[llength $files] == 1} {    set theFile {$(WORKSPACE_TEMP_DIR)/};   append theFile [lindex $files 0];   eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -f FFS \042$theFile\042 & \175;  } elseif { [llength $files] == 0 } {  catch { file delete -force {$(WORKSPACE_TEMP_DIR)} };  } else {  set filesNoExt {}; set lastfile {}; foreach {fileName} [lsort $files] { set fileNoExt [string trimright $fileName {.ffs}]; if [regexp {(.*)_[0-9]*$} $fileNoExt wholething fileNoExtBase] {  if { $fileNoExtBase == $lastfile } { continue } }; set lastfile $fileNoExt; lappend filesNoExt $fileNoExt };  eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -d {$(WORKSPACE_TEMP_DIR)} -a ffs -f FFS $filesNoExt & \175; }; }; }; ")
+FACTORY_DEF * TeeFactory    FACTORY_NAME VisualizerCleaner   INPUT FEATURE_TYPE __NUKEME__
 # -------------------------------------------------------------------------
-POSTGRES_1_DEF insee.cog_2012   postgres_type                All   postgres_sql_key_columns     ""   postgres_drop_table          ""   postgres_truncate_table      ""   postgres_mode                ""   fme_feature_operation        INSERT   fme_table_handling           DROP_CREATE   postgres_create_with_oids    NO   postgres_vacuum_analyze      NO   postgres_allow_serial_writing NO   nom                          text   insee                        varchar(5)
-# -------------------------------------------------------------------------
-POSTGRES_1_DEF insee.cog_histo_2018   postgres_type                All   postgres_sql_key_columns     ""   postgres_drop_table          ""   postgres_truncate_table      ""   postgres_mode                ""   fme_feature_operation        INSERT   fme_table_handling           DROP_CREATE   postgres_create_with_oids    NO   postgres_vacuum_analyze      NO   postgres_allow_serial_writing NO   eff                          float4   old_insee                    varchar(5)   new_insee                    varchar(5)   new_name                     text   mod                          text
-# -------------------------------------------------------------------------
-POSTGRES_1_DEF insee.cog_2018   postgres_type                All   postgres_sql_key_columns     ""   postgres_drop_table          ""   postgres_truncate_table      ""   postgres_mode                ""   fme_feature_operation        INSERT   fme_table_handling           DROP_CREATE   postgres_create_with_oids    NO   postgres_vacuum_analyze      NO   postgres_allow_serial_writing NO   nom                          text   insee                        varchar(5)
+POSTGRES_1_DEF insee.mvtcommune   postgres_type                All   postgres_sql_key_columns     ""   postgres_drop_table          ""   postgres_truncate_table      ""   postgres_mode                ""   fme_feature_operation        INSERT   fme_table_handling           DROP_CREATE   postgres_create_with_oids    NO   postgres_vacuum_analyze      NO   postgres_allow_serial_writing NO   mod                          varchar(2)   date_eff                     date   typecom_av                   varchar(4)   com_av                       varchar(5)   tncc_av                      varchar(1)   ncc_av                       varchar(48)   nccenr_av                    varchar(48)   libelle_av                   varchar(48)   typecom_ap                   varchar(4)   com_ap                       varchar(5)   tncc_ap                      varchar(1)   ncc_ap                       varchar(46)   nccenr_ap                    varchar(46)   libelle_ap                   varchar(46)

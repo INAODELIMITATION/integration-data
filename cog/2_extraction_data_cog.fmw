@@ -2,8 +2,6 @@
 #! <WORKSPACE
 #    Command-line to run this workspace:
 #        "C:\Program Files\FME\fme.exe" \\SRV-34DB\data2\BDDC\@_martin\1_integration-data\cog\2_extraction_data_cog.fmw
-#              --SourceDataset_XLSXR "\\srv-34db\data2\BDDC\0_organisation\bilan_db.xlsx"
-#              --DestDataset_XLSXW "\\srv-34db\data2\BDDC\0_organisation\bilan_cog_insee.xlsx"
 #    
 #!   ATTR_TYPE_ENCODING="SDF"
 #!   BEGIN_PYTHON=""
@@ -12,14 +10,14 @@
 #!   DESCRIPTION=""
 #!   DESTINATION="NONE"
 #!   DESTINATION_ROUTING_FILE=""
-#!   DOC_EXTENTS="4487.4 2078.88"
-#!   DOC_TOP_LEFT="-674.76 -1427.84"
+#!   DOC_EXTENTS="2395.02 880.961"
+#!   DOC_TOP_LEFT="-2118.17 -937.271"
 #!   END_PYTHON=""
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
 #!   FME_BUILD_NUM="18312"
-#!   FME_DOCUMENT_GUID="414986d1-5519-4890-bb1a-f2edb9cd8606"
-#!   FME_DOCUMENT_PRIORGUID="66452cb5-6d32-4b64-83a0-474ee1b9d9ac,d2baf8a1-f3d3-4cf6-8a48-039779e681f9,2ce291f0-62f8-44b8-9c75-a5b9f12f3f52"
+#!   FME_DOCUMENT_GUID="f47d3940-6b6a-43b1-b49b-c79a0634aad3"
+#!   FME_DOCUMENT_PRIORGUID="66452cb5-6d32-4b64-83a0-474ee1b9d9ac,d2baf8a1-f3d3-4cf6-8a48-039779e681f9,2ce291f0-62f8-44b8-9c75-a5b9f12f3f52,414986d1-5519-4890-bb1a-f2edb9cd8606,72f9b477-d28e-48eb-b967-444aa360e37a,8c26a54c-208b-4bc0-a2dd-a28cca72f3f3"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_REPROJECTION_ENGINE="FME"
@@ -28,7 +26,7 @@
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
 #!   LAST_SAVE_BUILD="FME(R) 2018.0.1.1 (20180615 - Build 18312 - WIN64)"
-#!   LAST_SAVE_DATE="2019-02-27T17:41:35"
+#!   LAST_SAVE_DATE="2019-03-21T17:57:17"
 #!   LOG_FILE=""
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -46,755 +44,31 @@
 #!   TITLE=""
 #!   USAGE=""
 #!   USE_MARKDOWN=""
-#!   VIEW_POSITION="-1948.13 938.689"
+#!   VIEW_POSITION="-2976.44 1056.61"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
 #!   ZOOM_SCALE="53"
 #! >
 #! <DATASETS>
-#! <DATASET
-#!   IS_SOURCE="true"
-#!   ROLE="READER"
-#!   FORMAT="XLSXR"
-#!   DATASET="$(SourceDataset_XLSXR)"
-#!   KEYWORD="XLSXR_1"
-#!   MULTI_GEOM_ALLOWED="false"
-#!   ATTR_MAX_LENGTH="0"
-#!   ATTR_CASE="ANY"
-#!   ALLOWED_FEAT_TYPES=""
-#!   WRITE_DEFS="true"
-#!   DEFLINE_TEMPLATE="xlsx_start_row &quot;&quot; xlsx_end_row &quot;&quot;"
-#!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="multi_reader_keyword char(50) fme_type char(50) fme_basename char(50) xlsx_row_id number(11,0) fme_text_size number(31,15) fme_primary_axis number(31,15) multi_reader_type char(50) fme_rotation number(31,15) fme_secondary_axis number(31,15) fme_dataset char(50) fme_fill_color char(50) fme_geometry char(50) fme_sweep_angle number(31,15) fme_color char(50) multi_reader_id number(11,0) fme_text_string char(50) fme_feature_type char(50) fme_start_angle number(31,15) multi_reader_full_id number(11,0)"
-#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP xlsx_table_settings_group xlsx_start_row%xlsx_end_row Table&quot; &quot;&quot; &quot;GUI FORCE_DEFS OPTIONAL INTEGER xlsx_start_row Start Row:&quot; &quot;&quot; &quot;GUI FORCE_DEFS OPTIONAL INTEGER xlsx_end_row End Row:&quot; &quot;&quot; "
-#!   ATTR_INDEX_TYPES=""
-#!   ATTR_NAME_INVALID_CHARS=""
-#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
-#!   ENABLED="true"
-#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
-#!   DATASET_TYPE="FILE"
-#!   GENERATE_FME_BUILD_NUM="18312"
-#!   COORDSYS=""
-#!   FEATURE_TYPES=""
-#!   MAX_FEATURES=""
-#!   MAX_FEATURES_PER_FEATURE_TYPE=""
-#!   MIN_FEATURES=""
-#!   START_FEATURE=""
-#! >
-#! <METAFILE_PARAMETER
-#!   NAME="ADVANCED_PARMS"
-#!   VALUE="XLSXR_IN_READ_BLANK_AS XLSXR_IN_EXPAND_MERGED_CELLS XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="ALLOW_DATASET_CONFLICT"
-#!   VALUE="YES"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="ATTRIBUTE_READING"
-#!   VALUE="DEFLINE"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="DATASET_NAME"
-#!   VALUE="xlsx file"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="FEATURE_TYPE_NAME"
-#!   VALUE="Sheet"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="MIME_TYPE"
-#!   VALUE="application/vnd.ms-excel ADD_DISPOSITION"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="READER_DATASET_HINT"
-#!   VALUE="Select the Excel file(s)"
-#! />
-#! </DATASET>
-#! <DATASET
-#!   IS_SOURCE="false"
-#!   ROLE="WRITER"
-#!   FORMAT="XLSXW"
-#!   DATASET="$(DestDataset_XLSXW)"
-#!   KEYWORD="XLSXW_1"
-#!   MULTI_GEOM_ALLOWED="true"
-#!   ATTR_MAX_LENGTH="255"
-#!   ATTR_CASE="ANY"
-#!   ALLOWED_FEAT_TYPES=""
-#!   WRITE_DEFS="true"
-#!   DEFLINE_TEMPLATE="xlsx_drop_sheet No xlsx_trunc_sheet No xlsx_sheet_order &quot;&quot; xlsx_freeze_end_row &quot;&quot; xlsx_names_are_positions No xlsx_field_names_out Yes xlsx_start_col &quot;&quot; xlsx_start_row &quot;&quot; xlsx_offset_col &quot;&quot; xlsx_offset_row &quot;&quot; xlsx_raster_type PNG xlsx_table_writer_mode Insert xlsx_row_id_column &quot;&quot; xlsx_protect_sheet &quot;NO&quot; xlsx_protect_sheet_level &quot;&lt;Unused&gt;&quot; xlsx_protect_sheet_password &quot;&lt;Unused&gt;&quot; xlsx_protect_sheet_permissions &quot;&lt;Unused&gt;&quot;"
-#!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_type string(50) xlsx_col_id number(width,xlsx_col_props) fme_db_operation string(width,xlsx_col_props) xlsx_row_formatting string(width,xlsx_col_props) fme_basename string(50) xlsx_row_id number(width,xlsx_col_props) fme_text_size number(width,xlsx_col_props) fme_primary_axis number(width,xlsx_col_props) fme_rotation number(width,xlsx_col_props) fme_secondary_axis number(width,xlsx_col_props) fme_dataset string(50) fme_fill_color string(50) xlsx_raster_height number(width,xlsx_col_props) fme_geometry string(50) fme_sweep_angle number(width,xlsx_col_props) fme_color string(50) xlsx_raster_scale_factor number(width,xlsx_col_props) fme_text_string string(50) fme_feature_type string(50) fme_start_angle number(width,xlsx_col_props) xlsx_raster_width number(width,xlsx_col_props)"
-#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP xlsx_layer_group xlsx_table_writer_mode%xlsx_field_names_out%xlsx_names_are_positions%xlsx_row_id_column%xlsx_truncate_group%xlsx_table_group%xlsx_rowcolumn_group%xlsx_protect_sheet%xlsx_advanced_group Sheet Settings&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP xlsx_truncate_group xlsx_row_id%xlsx_drop_sheet%xlsx_trunc_sheet Drop/Truncate&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP xlsx_rowcolumn_group xlsx_start_col%xlsx_start_row%xlsx_offset_col%xlsx_offset_row Start Position&quot; &quot;&quot; &quot;GUI ACTIVEDISCLOSUREGROUP xlsx_protect_sheet xlsx_protect_sheet_password%xlsx_protect_sheet_level%xlsx_protect_sheet_permissions Protect Sheet&quot; NO &quot;GUI OPTIONAL DISCLOSUREGROUP xlsx_advanced_group xlsx_sheet_order%xlsx_freeze_end_row%xlsx_raster_type Advanced&quot; &quot;&quot; &quot;GUI CHOICE xlsx_drop_sheet Yes%No Drop Existing Sheet/Named Range:&quot; No &quot;GUI CHOICE xlsx_trunc_sheet Yes%No Truncate Existing Sheet/Named Range:&quot; No &quot;GUI OPTIONAL RANGE_SLIDER xlsx_sheet_order 1%MAX Sheet Order (1 - n):&quot; &quot;&quot; &quot;GUI OPTIONAL RANGE_SLIDER xlsx_freeze_end_row 1%MAX Freeze First Row(s) (1 - n):&quot; &quot;&quot; &quot;GUI CHOICE xlsx_field_names_out Yes%No Output Field Names:&quot; Yes &quot;GUI CHOICE xlsx_names_are_positions Yes%No Use Attribute Names As Column Positions:&quot; No &quot;GUI OPTIONAL TEXT xlsx_start_col Named Range Start Column:&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER xlsx_start_row Named Range Start Row:&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT xlsx_offset_col Start Column:&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER xlsx_offset_row Start Row:&quot; &quot;&quot; &quot;GUI CHOICE xlsx_raster_type BMP%JPEG%PNG Raster Format:&quot; PNG &quot;GUI OPTIONAL PASSWORD_ENCODED xlsx_protect_sheet_password Password:&quot; &lt;Unused&gt; &quot;GUI ACTIVECHOICE_LOOKUP xlsx_protect_sheet_level Select&lt;space&gt;Only&lt;space&gt;Permissions,PROT_DEFAULT,xlsx_protect_sheet_permissions%View&lt;space&gt;Only&lt;space&gt;Permissions,PROT_ALL,xlsx_protect_sheet_permissions%Specific&lt;space&gt;Permissions Protection Level:&quot; &lt;Unused&gt; &quot;GUI OPTIONAL LOOKUP_LISTBOX xlsx_protect_sheet_permissions Select&lt;space&gt;locked&lt;space&gt;cells,PROT_SEL_LOCKED_CELLS%Select&lt;space&gt;unlocked&lt;space&gt;cells,PROT_SEL_UNLOCKED_CELLS%Format&lt;space&gt;cells,PROT_FORMAT_CELLS%Format&lt;space&gt;columns,PROT_FORMAT_COLUMNS%Format&lt;space&gt;rows,PROT_FORMAT_ROWS%Insert&lt;space&gt;columns,PROT_INSERT_COLUMNS%Insert&lt;space&gt;rows,PROT_INSERT_ROWS%Add&lt;space&gt;hyperlinks&lt;space&gt;to&lt;space&gt;unlocked&lt;space&gt;cells,PROT_INSERT_HYPERLINKS%Delete&lt;space&gt;unlocked&lt;space&gt;columns,PROT_DELETE_COLUMNS%Delete&lt;space&gt;unlocked&lt;space&gt;rows,PROT_DELETE_ROWS%Sort&lt;space&gt;unlocked&lt;space&gt;cells/rows/columns\,PROT_SORT%Use&lt;space&gt;Autofilter&lt;space&gt;on&lt;space&gt;unlocked&lt;space&gt;cells,PROT_AUTOFILTER%Use&lt;space&gt;PivotTable&lt;space&gt;&amp;&lt;space&gt;PivotChart&lt;space&gt;on&lt;space&gt;unlocked&lt;space&gt;cells,PROT_PIVOTTABLES%Edit&lt;space&gt;unlocked&lt;space&gt;objects,PROT_OBJECTS%Edit&lt;space&gt;unprotected&lt;space&gt;scenarios,PROT_SCENARIOS Specific Permissions:&quot; &lt;Unused&gt; &quot;GUI ACTIVECHOICE xlsx_table_writer_mode Insert,+xlsx_row_id_column+%Update,+xlsx_row_id_column+xlsx_row_id%Delete,+xlsx_row_id_column+xlsx_row_id Writer Mode:&quot; Insert &quot;GUI OPTIONAL ATTR xlsx_row_id_column ALLOW_NEW Row Number Attribute:&quot; &quot;&quot; "
-#!   ATTR_INDEX_TYPES=""
-#!   ATTR_NAME_INVALID_CHARS="\\&quot;*{}$"
-#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
-#!   ENABLED="true"
-#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
-#!   DATASET_TYPE="FILE"
-#!   GENERATE_FME_BUILD_NUM="18312"
-#!   COORDSYS=""
-#!   FANOUT_EXPRESSION="&lt;Unused&gt;"
-#!   FANOUT_GROUP="NO"
-#! >
-#! <METAFILE_PARAMETER
-#!   NAME="ALLOW_DATASET_CONFLICT"
-#!   VALUE="YES"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="ATTRIBUTE_READING"
-#!   VALUE="DEFLINE"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="DATASET_NAME"
-#!   VALUE="xlsx file"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="DEFAULT_ATTR_TYPE"
-#!   VALUE="auto"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="DEFAULT_READER"
-#!   VALUE="XLSXR"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
-#!   VALUE="Sheet1"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="FEATURE_TYPE_NAME"
-#!   VALUE="Sheet"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="MIME_TYPE"
-#!   VALUE="application/vnd.ms-excel ADD_DISPOSITION"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="USER_ATTRIBUTES_COLUMNS"
-#!   VALUE="Width,Cell Width%Precision,Formatting"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="WRITER_DATASET_HINT"
-#!   VALUE="Specify a name for the Microsoft Excel file"
-#! />
-#! </DATASET>
 #! </DATASETS>
 #! <DATA_TYPES>
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="char(width)"
-#!   FME_TYPE="fme_varchar(width)"
-#!   FORMAT="XLSXR"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="char(width)"
-#!   FME_TYPE="fme_varbinary(width)"
-#!   FORMAT="XLSXR"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="char(width)"
-#!   FME_TYPE="fme_char(width)"
-#!   FORMAT="XLSXR"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="char(width)"
-#!   FME_TYPE="fme_binary(width)"
-#!   FORMAT="XLSXR"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
-#!   FME_TYPE="fme_buffer"
-#!   FORMAT="XLSXR"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
-#!   FME_TYPE="fme_binarybuffer"
-#!   FORMAT="XLSXR"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
-#!   FME_TYPE="fme_xml"
-#!   FORMAT="XLSXR"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
-#!   FME_TYPE="fme_json"
-#!   FORMAT="XLSXR"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="datetime"
-#!   FME_TYPE="fme_datetime"
-#!   FORMAT="XLSXR"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="time"
-#!   FME_TYPE="fme_time"
-#!   FORMAT="XLSXR"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="date"
-#!   FME_TYPE="fme_date"
-#!   FORMAT="XLSXR"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="number(31,15)"
-#!   FME_TYPE="fme_real64"
-#!   FORMAT="XLSXR"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="x_coordinate"
-#!   FME_TYPE="fme_real64"
-#!   FORMAT="XLSXR"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="y_coordinate"
-#!   FME_TYPE="fme_real64"
-#!   FORMAT="XLSXR"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="z_coordinate"
-#!   FME_TYPE="fme_real64"
-#!   FORMAT="XLSXR"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="number(15,7)"
-#!   FME_TYPE="fme_real32"
-#!   FORMAT="XLSXR"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="number(11,0)"
-#!   FME_TYPE="fme_int32"
-#!   FORMAT="XLSXR"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="number(11,0)"
-#!   FME_TYPE="fme_uint32"
-#!   FORMAT="XLSXR"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="number(20,0)"
-#!   FME_TYPE="fme_int64"
-#!   FORMAT="XLSXR"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="number(20,0)"
-#!   FME_TYPE="fme_uint64"
-#!   FORMAT="XLSXR"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="number(6,0)"
-#!   FME_TYPE="fme_int16"
-#!   FORMAT="XLSXR"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="number(6,0)"
-#!   FME_TYPE="fme_uint16"
-#!   FORMAT="XLSXR"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="number(4,0)"
-#!   FME_TYPE="fme_int8"
-#!   FORMAT="XLSXR"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="number(4,0)"
-#!   FME_TYPE="fme_uint8"
-#!   FORMAT="XLSXR"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="number(width,decimal)"
-#!   FME_TYPE="fme_decimal(width,decimal)"
-#!   FORMAT="XLSXR"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="boolean"
-#!   FME_TYPE="fme_boolean"
-#!   FORMAT="XLSXR"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="string(width,xlsx_col_props)"
-#!   FME_TYPE="fme_varchar(width)"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="string(width,xlsx_col_props)"
-#!   FME_TYPE="fme_varbinary(width)"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="string(width,xlsx_col_props)"
-#!   FME_TYPE="fme_char(width)"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="string(width,xlsx_col_props)"
-#!   FME_TYPE="fme_binary(width)"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="string(width,xlsx_col_props)"
-#!   FME_TYPE="fme_buffer"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="string(width,xlsx_col_props)"
-#!   FME_TYPE="fme_binarybuffer"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="string(width,xlsx_col_props)"
-#!   FME_TYPE="fme_xml"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="string(width,xlsx_col_props)"
-#!   FME_TYPE="fme_json"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="auto(width,xlsx_col_props)"
-#!   FME_TYPE="fme_buffer"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="datetime(width,xlsx_col_props)"
-#!   FME_TYPE="fme_datetime"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="time(width,xlsx_col_props)"
-#!   FME_TYPE="fme_time"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="date(width,xlsx_col_props)"
-#!   FME_TYPE="fme_date"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="number(width,xlsx_col_props)"
-#!   FME_TYPE="fme_decimal(width,decimal)"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="number(width,xlsx_col_props)"
-#!   FME_TYPE="fme_real64"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="number(width,xlsx_col_props)"
-#!   FME_TYPE="fme_real32"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="number(width,xlsx_col_props)"
-#!   FME_TYPE="fme_int32"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="number(width,xlsx_col_props)"
-#!   FME_TYPE="fme_uint32"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="number(width,xlsx_col_props)"
-#!   FME_TYPE="fme_int64"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="number(width,xlsx_col_props)"
-#!   FME_TYPE="fme_uint64"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="number(width,xlsx_col_props)"
-#!   FME_TYPE="fme_int16"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="number(width,xlsx_col_props)"
-#!   FME_TYPE="fme_uint16"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="number(width,xlsx_col_props)"
-#!   FME_TYPE="fme_int8"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="number(width,xlsx_col_props)"
-#!   FME_TYPE="fme_uint8"
-#!   FORMAT="XLSXW"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="boolean(width,xlsx_col_props)"
-#!   FME_TYPE="fme_boolean"
-#!   FORMAT="XLSXW"
-#! />
 #! </DATA_TYPES>
 #! <GEOM_TYPES>
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="XLSXR"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_point"
-#!   FORMAT="XLSXR"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xlsx_point"
-#!   FME_TYPE="fme_point"
-#!   FORMAT="XLSXR"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_line"
-#!   FORMAT="XLSXR"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_area"
-#!   FORMAT="XLSXR"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_text"
-#!   FORMAT="XLSXR"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_ellipse"
-#!   FORMAT="XLSXR"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_arc"
-#!   FORMAT="XLSXR"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_rectangle"
-#!   FORMAT="XLSXR"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_rounded_rectangle"
-#!   FORMAT="XLSXR"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_collection"
-#!   FORMAT="XLSXR"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_surface"
-#!   FORMAT="XLSXR"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_solid"
-#!   FORMAT="XLSXR"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_raster"
-#!   FORMAT="XLSXR"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_point_cloud"
-#!   FORMAT="XLSXR"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_feature_table"
-#!   FORMAT="XLSXR"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_point"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_point"
-#!   FME_TYPE="fme_point"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_line"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_area"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_text"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_ellipse"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_arc"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_rectangle"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_rounded_rectangle"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_collection"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_surface"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_solid"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_raster"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_point_cloud"
-#!   FORMAT="XLSXW"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xlsx_none"
-#!   FME_TYPE="fme_feature_table"
-#!   FORMAT="XLSXW"
-#! />
 #! </GEOM_TYPES>
 #! <FEATURE_TYPES>
-#! <FEATURE_TYPE
-#!   IS_SOURCE="true"
-#!   NODE_NAME="inventaire"
-#!   FEATURE_TYPE_NAME=""
-#!   FEATURE_TYPE_NAME_QUALIFIER=""
-#!   IS_EDITABLE="false"
-#!   IDENTIFIER="12"
-#!   FEAT_GEOMTYPE="xlsx_none xlsx_point"
-#!   POSITION="6.4265334011365667 226.88406347026427"
-#!   BOUNDING_RECT="6.4265334011365667 226.88406347026427 -1 -1"
-#!   ORDER="500000000000029"
-#!   COLLAPSED="true"
-#!   KEYWORD="XLSXR_1"
-#!   PARMS_EDITED="false"
-#!   ENABLED="true"
-#!   HIDDEN_USER_ATTRS=""
-#!   READ_SELECT_ATTRS="true"
-#!   MERGE_FILTER=""
-#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
-#!   MERGE_FILTER_CASE_SENSITIVE="false"
-#!   DYNAMIC_SCHEMA="false"
-#! >
-#!     <FEAT_ATTRIBUTE ATTR_NAME="UID" ATTR_TYPE="number(6,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="siqo_site" ATTR_TYPE="char(12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="siqo_code_insee" ATTR_TYPE="number(6,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="siqo_nom_com" ATTR_TYPE="char(28)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="siqo_id_app" ATTR_TYPE="number(5,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="siqo_appellation" ATTR_TYPE="char(28)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="siqo_id_denom" ATTR_TYPE="number(5,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="siqo_denomination" ATTR_TYPE="char(35)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="etat_general" ATTR_TYPE="char(26)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="etat_db" ATTR_TYPE="char(11)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="inv_cp" ATTR_TYPE="number(9,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="inv_np" ATTR_TYPE="char(11)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="inv_agent" ATTR_TYPE="char(11)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="commentaire" ATTR_TYPE="char(55)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="file_name" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_end_row" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_start_row" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_table_settings_group" PARM_VALUE=""/>
-#! </FEATURE_TYPE>
-#! <FEATURE_TYPE
-#!   IS_SOURCE="false"
-#!   NODE_NAME="historique2"
-#!   FEATURE_TYPE_NAME=""
-#!   FEATURE_TYPE_NAME_QUALIFIER=""
-#!   IS_EDITABLE="false"
-#!   IDENTIFIER="26"
-#!   FEAT_GEOMTYPE="All"
-#!   POSITION="3812.6441619133166 -91.845538920099258"
-#!   BOUNDING_RECT="3812.6441619133166 -91.845538920099258 -1 -1"
-#!   ORDER="500000000000022"
-#!   COLLAPSED="false"
-#!   KEYWORD="XLSXW_1"
-#!   PARMS_EDITED="false"
-#!   ENABLED="true"
-#!   SCHEMA_ATTRIBUTE_SOURCE="0"
-#! >
-#!     <FEAT_ATTRIBUTE ATTR_NAME="changement observé" ATTR_TYPE="auto(20,version;1;number_format_string;;font;;font_color;;background_color;;pattern_color;;pattern_style;;CELL_BORDER_FORMATTING;NO;CELL_BORDER_COLOR;;CELL_BORDER_STYLE;;text_alignment;NO;horizontal_alignment;;vertical_alignment;;indent;;text_orientation;;text_control;;cell_protection;NO;hide_cells;;lock_cells;)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="commune viticole" ATTR_TYPE="auto(20,version;1;number_format_string;;font;;font_color;;background_color;;pattern_color;;pattern_style;;CELL_BORDER_FORMATTING;NO;CELL_BORDER_COLOR;;CELL_BORDER_STYLE;;text_alignment;NO;horizontal_alignment;;vertical_alignment;;indent;;text_orientation;;text_control;;cell_protection;NO;hide_cells;;lock_cells;)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="site inao" ATTR_TYPE="auto(20,version;1;number_format_string;;font;;font_color;;background_color;;pattern_color;;pattern_style;;CELL_BORDER_FORMATTING;NO;CELL_BORDER_COLOR;;CELL_BORDER_STYLE;;text_alignment;NO;horizontal_alignment;;vertical_alignment;;indent;;text_orientation;;text_control;;cell_protection;NO;hide_cells;;lock_cells;)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="insee2012" ATTR_TYPE="auto(20,version;1;number_format_string;;font;;font_color;;background_color;;pattern_color;;pattern_style;;CELL_BORDER_FORMATTING;NO;CELL_BORDER_COLOR;;CELL_BORDER_STYLE;;text_alignment;NO;horizontal_alignment;;vertical_alignment;;indent;;text_orientation;;text_control;;cell_protection;NO;hide_cells;;lock_cells;)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="nom2012" ATTR_TYPE="auto(20,version;1;number_format_string;;font;;font_color;;background_color;;pattern_color;;pattern_style;;CELL_BORDER_FORMATTING;NO;CELL_BORDER_COLOR;;CELL_BORDER_STYLE;;text_alignment;NO;horizontal_alignment;;vertical_alignment;;indent;;text_orientation;;text_control;;cell_protection;NO;hide_cells;;lock_cells;)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="nom2013" ATTR_TYPE="auto(20,version;1;number_format_string;;font;;font_color;;background_color;;pattern_color;;pattern_style;;CELL_BORDER_FORMATTING;NO;CELL_BORDER_COLOR;;CELL_BORDER_STYLE;;text_alignment;NO;horizontal_alignment;;vertical_alignment;;indent;;text_orientation;;text_control;;cell_protection;NO;hide_cells;;lock_cells;)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="insee2013" ATTR_TYPE="auto(20,version;1;number_format_string;;font;;font_color;;background_color;;pattern_color;;pattern_style;;CELL_BORDER_FORMATTING;NO;CELL_BORDER_COLOR;;CELL_BORDER_STYLE;;text_alignment;NO;horizontal_alignment;;vertical_alignment;;indent;;text_orientation;;text_control;;cell_protection;NO;hide_cells;;lock_cells;)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="nom2014" ATTR_TYPE="auto(20,version;1;number_format_string;;font;;font_color;;background_color;;pattern_color;;pattern_style;;CELL_BORDER_FORMATTING;NO;CELL_BORDER_COLOR;;CELL_BORDER_STYLE;;text_alignment;NO;horizontal_alignment;;vertical_alignment;;indent;;text_orientation;;text_control;;cell_protection;NO;hide_cells;;lock_cells;)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="insee2014" ATTR_TYPE="auto(20,version;1;number_format_string;;font;;font_color;;background_color;;pattern_color;;pattern_style;;CELL_BORDER_FORMATTING;NO;CELL_BORDER_COLOR;;CELL_BORDER_STYLE;;text_alignment;NO;horizontal_alignment;;vertical_alignment;;indent;;text_orientation;;text_control;;cell_protection;NO;hide_cells;;lock_cells;)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="nom2015" ATTR_TYPE="auto(20,version;1;number_format_string;;font;;font_color;;background_color;;pattern_color;;pattern_style;;CELL_BORDER_FORMATTING;NO;CELL_BORDER_COLOR;;CELL_BORDER_STYLE;;text_alignment;NO;horizontal_alignment;;vertical_alignment;;indent;;text_orientation;;text_control;;cell_protection;NO;hide_cells;;lock_cells;)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="insee2015" ATTR_TYPE="auto(20,version;1;number_format_string;;font;;font_color;;background_color;;pattern_color;;pattern_style;;CELL_BORDER_FORMATTING;NO;CELL_BORDER_COLOR;;CELL_BORDER_STYLE;;text_alignment;NO;horizontal_alignment;;vertical_alignment;;indent;;text_orientation;;text_control;;cell_protection;NO;hide_cells;;lock_cells;)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="nom2016" ATTR_TYPE="auto(20,version;1;number_format_string;;font;;font_color;;background_color;;pattern_color;;pattern_style;;CELL_BORDER_FORMATTING;NO;CELL_BORDER_COLOR;;CELL_BORDER_STYLE;;text_alignment;NO;horizontal_alignment;;vertical_alignment;;indent;;text_orientation;;text_control;;cell_protection;NO;hide_cells;;lock_cells;)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="insee2016" ATTR_TYPE="auto(20,version;1;number_format_string;;font;;font_color;;background_color;;pattern_color;;pattern_style;;CELL_BORDER_FORMATTING;NO;CELL_BORDER_COLOR;;CELL_BORDER_STYLE;;text_alignment;NO;horizontal_alignment;;vertical_alignment;;indent;;text_orientation;;text_control;;cell_protection;NO;hide_cells;;lock_cells;)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="nom2017" ATTR_TYPE="auto(20,version;1;number_format_string;;font;;font_color;;background_color;;pattern_color;;pattern_style;;CELL_BORDER_FORMATTING;NO;CELL_BORDER_COLOR;;CELL_BORDER_STYLE;;text_alignment;NO;horizontal_alignment;;vertical_alignment;;indent;;text_orientation;;text_control;;cell_protection;NO;hide_cells;;lock_cells;)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="insee2017" ATTR_TYPE="auto(20,version;1;number_format_string;;font;;font_color;;background_color;;pattern_color;;pattern_style;;CELL_BORDER_FORMATTING;NO;CELL_BORDER_COLOR;;CELL_BORDER_STYLE;;text_alignment;NO;horizontal_alignment;;vertical_alignment;;indent;;text_orientation;;text_control;;cell_protection;NO;hide_cells;;lock_cells;)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="nom2018" ATTR_TYPE="auto(20,version;1;number_format_string;;font;;font_color;;background_color;;pattern_color;;pattern_style;;CELL_BORDER_FORMATTING;NO;CELL_BORDER_COLOR;;CELL_BORDER_STYLE;;text_alignment;NO;horizontal_alignment;;vertical_alignment;;indent;;text_orientation;;text_control;;cell_protection;NO;hide_cells;;lock_cells;)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="insee2018" ATTR_TYPE="auto(20,version;1;number_format_string;;font;;font_color;;background_color;;pattern_color;;pattern_style;;CELL_BORDER_FORMATTING;NO;CELL_BORDER_COLOR;;CELL_BORDER_STYLE;;text_alignment;NO;horizontal_alignment;;vertical_alignment;;indent;;text_orientation;;text_control;;cell_protection;NO;hide_cells;;lock_cells;)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_advanced_group" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_drop_sheet" PARM_VALUE="Yes"/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_out" PARM_VALUE="Yes"/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_freeze_end_row" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_layer_group" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_names_are_positions" PARM_VALUE="No"/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_offset_col" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_offset_row" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_protect_sheet" PARM_VALUE="NO"/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_protect_sheet_level" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_protect_sheet_password" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_protect_sheet_permissions" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_raster_type" PARM_VALUE="PNG"/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_row_id_column" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_rowcolumn_group" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_sheet_order" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_start_col" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_start_row" PARM_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_table_writer_mode" PARM_VALUE="Insert"/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_trunc_sheet" PARM_VALUE="Yes"/>
-#!     <DEFLINE_PARM PARM_NAME="xlsx_truncate_group" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
-#! </FEATURE_TYPE>
 #! </FEATURE_TYPES>
 #! <FMESERVER>
 #! </FMESERVER>
 #! <GLOBAL_PARAMETERS>
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI MULTIFILE SourceDataset_XLSXR Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File(s):"
-#!   DEFAULT_VALUE="\\srv-34db\data2\BDDC\0_organisation\bilan_db.xlsx"
-#!   IS_STAND_ALONE="false"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI FILENAME DestDataset_XLSXW Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|All_files(*)|* Destination Microsoft Excel File:"
-#!   DEFAULT_VALUE="\\srv-34db\data2\BDDC\0_organisation\bilan_cog_insee.xlsx"
-#!   IS_STAND_ALONE="false"
-#! />
 #! </GLOBAL_PARAMETERS>
 #! <COMMENTS>
 #! <COMMENT
 #!   IDENTIFIER="30"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;EXECUTION DE LA VUE HISTORIQUE COG&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="175.83850290002033 -686.47793787461706"
-#!   TOP_LEFT="175.83850290002033 -686.47793787461706"
-#!   BOTTOM_RIGHT="647.83850290002033 -685.47793787461706"
-#!   BOUNDING_RECT="175.83850290002033 -686.47793787461706 472 -1"
+#!   POSITION="-1267.5721576216795 -195.90699442933351"
+#!   TOP_LEFT="-1267.5721576216795 -195.90699442933351"
+#!   BOTTOM_RIGHT="-795.57215762167948 -194.90699442933351"
+#!   BOUNDING_RECT="-1267.5721576216795 -195.90699442933351 472 -1"
 #!   ORDER="500000000000017"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
@@ -802,156 +76,31 @@
 #!   SIZE_POLICY="10"
 #!   ANCHORED_NODE="8"
 #! />
-#! <COMMENT
-#!   IDENTIFIER="31"
-#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;EXTRACTION DE LA VUE HISTORIQUE COG&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="975.04269113237854 -741.24039026104583"
-#!   TOP_LEFT="975.04269113237854 -741.24039026104583"
-#!   BOTTOM_RIGHT="1447.0426911323784 -740.24039026104583"
-#!   BOUNDING_RECT="975.04269113237854 -741.24039026104583 472 -1"
-#!   ORDER="500000000000018"
-#!   FOLLOW_ANCHOR="true"
-#!   INFO_NODE="false"
-#!   COLOUR="1,1,0.78431372549019607,0.19607843137254902"
-#!   SIZE_POLICY="10"
-#!   ANCHORED_NODE="5"
-#! />
-#! <COMMENT
-#!   IDENTIFIER="32"
-#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;CROISEMENT AVEC LE FICHIER BILAN DB POUR OBTENIR LES COMMUNES VITICOLES ET LE SITE DE REFERENCE&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="1639.2525036361474 651.04216103889439"
-#!   TOP_LEFT="1639.2525036361474 651.04216103889439"
-#!   BOTTOM_RIGHT="2069.2525036361476 652.04216103889439"
-#!   BOUNDING_RECT="1639.2525036361474 651.04216103889439 430 -1"
-#!   ORDER="500000000000019"
-#!   FOLLOW_ANCHOR="true"
-#!   INFO_NODE="false"
-#!   COLOUR="1,1,0.78431372549019607,0.19607843137254902"
-#!   SIZE_POLICY="10"
-#!   ANCHORED_NODE="17"
-#! />
 #! </COMMENTS>
 #! <CONSTANTS>
 #! </CONSTANTS>
 #! <BOOKMARKS>
 #! <BOOKMARK
-#!   IDENTIFIER="27"
-#!   NAME="CROISEMENT AVEC INVENTAIRE"
-#!   DESCRIPTION="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   TOP_LEFT="-85.573466598863433 441.1917585225234"
-#!   ORDER="500000000000015"
-#!   BOTTOM_RIGHT="2959.1069720221017 -212.46073899010594"
-#!   BOUNDING_RECT="-85.573466598863433 441.1917585225234 3044.6804386209651 653.65249751262934"
-#!   STICKY="true"
-#!   COLOUR="0.79607843137254897,0.61960784313725492,0.55686274509803924"
-#!   CONTENTS="20 17 41 18 36 35 24 12 25 "
-#! >
-#! </BOOKMARK>
-#! <BOOKMARK
 #!   IDENTIFIER="29"
 #!   NAME="CREATION DE LA VUE ET EXTRACTION DES DONNEES HISTORIQUES INSEE COG"
 #!   DESCRIPTION="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   TOP_LEFT="-674.75994117965865 -546.88046880468801"
+#!   TOP_LEFT="-2118.1706017013585 -56.309525359404461"
 #!   ORDER="500000000000016"
-#!   BOTTOM_RIGHT="1720.2592090118433 -1427.8416593689763"
-#!   BOUNDING_RECT="-674.75994117965865 -546.88046880468801 2395.0191501915019 880.96119056428813"
+#!   BOTTOM_RIGHT="276.84854849014346 -937.27071592369259"
+#!   BOUNDING_RECT="-2118.1706017013585 -56.309525359404461 2395.0191501915019 880.96119056428813"
 #!   STICKY="true"
 #!   COLOUR="0.43529411764705883,0.44705882352941179,0.80784313725490198"
-#!   CONTENTS="6 8 30 9 5 10 31 "
-#! >
-#! </BOOKMARK>
-#! <BOOKMARK
-#!   IDENTIFIER="23"
-#!   NAME="ORGANISATION DES ATRIBUTS"
-#!   DESCRIPTION="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   TOP_LEFT="2298.5096864625425 -806.24149027204589"
-#!   ORDER="500000000000020"
-#!   BOTTOM_RIGHT="3422.515386519543 -1109.7421152782961"
-#!   BOUNDING_RECT="2298.5096864625425 -806.24149027204589 1124.0057000570005 303.50062500625017"
-#!   STICKY="true"
-#!   COLOUR="0,0.72156862745098038,0.8666666666666667"
-#!   CONTENTS="14 28 11 "
+#!   CONTENTS="8 30 10 9 "
 #! >
 #! </BOOKMARK>
 #! </BOOKMARKS>
 #! <TRANSFORMERS>
 #! <TRANSFORMER
-#!   IDENTIFIER="5"
-#!   TYPE="SQLExecutor"
-#!   VERSION="8"
-#!   POSITION="1017.042691132379 -934.74149027204578"
-#!   BOUNDING_RECT="1017.042691132379 -934.74149027204578 -1 -1"
-#!   ORDER="500000000000003"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="18312"
-#! >
-#!     <OUTPUT_FEAT NAME="RESULT"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="changement" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2012" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2013" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2014" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2015" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2016" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2017" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2018" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2012" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2013" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2014" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2015" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2016" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2017" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2018" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <OUTPUT_FEAT NAME="INITIATOR"/>
-#!     <FEAT_COLLAPSED COLLAPSED="1"/>
-#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
-#!     <FEAT_COLLAPSED COLLAPSED="2"/>
-#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="_reader_error" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="changement" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="insee2012" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="insee2013" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="insee2014" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="insee2015" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="insee2016" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="insee2017" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="insee2018" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="nom2012" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="nom2013" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="nom2014" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="nom2015" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="nom2016" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="nom2017" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="nom2018" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_PARM PARM_NAME="COMBINE_ATTRS" PARM_VALUE="Result Attributes Only"/>
-#!     <XFORM_PARM PARM_NAME="COMBINE_GEOM" PARM_VALUE="Initiator Geometry Only"/>
-#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="srv_sig_1"/>
-#!     <XFORM_PARM PARM_NAME="DB_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="EXPOSED_ATTRIBUTE_LIST" PARM_VALUE="changement,insee2012,insee2013,insee2014,insee2015,insee2016,insee2017,insee2018,nom2012,nom2013,nom2014,nom2015,nom2016,nom2017,nom2018"/>
-#!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="POSTGRES"/>
-#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="POSTGRES_READ_TIME_WITH_TIMEZONE,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_SCHEMAS_FOR_TABLE_LISTING,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Schemas&lt;space&gt;for&lt;space&gt;Table&lt;space&gt;Listing:,POSTGRES_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Connection:"/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="POSTGRES_NAMED_CONNECTION" PARM_VALUE="srv_sig_1"/>
-#!     <XFORM_PARM PARM_NAME="POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
-#!     <XFORM_PARM PARM_NAME="POSTGRES_READ_TIME_WITH_TIMEZONE" PARM_VALUE="Yes"/>
-#!     <XFORM_PARM PARM_NAME="POSTGRES_SCHEMAS_FOR_TABLE_LISTING" PARM_VALUE="edigeo ign_bd_cadastre ign_bd_carto ign_bd_topo mae metier_inao work cvi etalab"/>
-#!     <XFORM_PARM PARM_NAME="SQL_STATEMENT" PARM_VALUE="SELECT&lt;space&gt;*&lt;space&gt;FROM&lt;space&gt;insee.historique"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SQLExecutor"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
 #!   IDENTIFIER="8"
 #!   TYPE="SQLExecutor"
 #!   VERSION="8"
-#!   POSITION="217.83850290002033 -879.979037885617"
-#!   BOUNDING_RECT="217.83850290002033 -879.979037885617 -1 -1"
+#!   POSITION="-1225.5721576216795 -389.40809444033346"
+#!   BOUNDING_RECT="-1225.5721576216795 -389.40809444033346 -1 -1"
 #!   ORDER="500000000000004"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -976,13 +125,13 @@
 #!     <XFORM_PARM PARM_NAME="EXPOSED_ATTRIBUTE_LIST" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="POSTGRES"/>
-#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="POSTGRES_READ_TIME_WITH_TIMEZONE,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Connection:,POSTGRES_SCHEMAS_FOR_TABLE_LISTING,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Schemas&lt;space&gt;for&lt;space&gt;Table&lt;space&gt;Listing:"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="POSTGRES_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Connection:,POSTGRES_SCHEMAS_FOR_TABLE_LISTING,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Schemas&lt;space&gt;for&lt;space&gt;Table&lt;space&gt;Listing:,POSTGRES_READ_TIME_WITH_TIMEZONE,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;"/>
 #!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="POSTGRES_NAMED_CONNECTION" PARM_VALUE="srv_sig_1"/>
 #!     <XFORM_PARM PARM_NAME="POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
 #!     <XFORM_PARM PARM_NAME="POSTGRES_READ_TIME_WITH_TIMEZONE" PARM_VALUE="Yes"/>
 #!     <XFORM_PARM PARM_NAME="POSTGRES_SCHEMAS_FOR_TABLE_LISTING" PARM_VALUE="edigeo ign_bd_cadastre ign_bd_carto ign_bd_topo mae metier_inao work cvi etalab"/>
-#!     <XFORM_PARM PARM_NAME="SQL_STATEMENT" PARM_VALUE="SET&lt;space&gt;search_path&lt;space&gt;=&lt;space&gt;insee&lt;semicolon&gt;&lt;lf&gt;&lt;lf&gt;DROP&lt;space&gt;MATERIALIZED&lt;space&gt;VIEW&lt;space&gt;IF&lt;space&gt;EXISTS&lt;space&gt;insee.historique&lt;semicolon&gt;&lt;lf&gt;CREATE&lt;space&gt;MATERIALIZED&lt;space&gt;VIEW&lt;space&gt;insee.historique&lt;space&gt;AS&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;----------------------------------------------------------------------&lt;lf&gt;--&lt;space&gt;Creation&lt;space&gt;des&lt;space&gt;tables&lt;space&gt;d&lt;apos&gt;historiques&lt;space&gt;des&lt;space&gt;changements&lt;space&gt;par&lt;space&gt;ann&lt;u00e9&gt;e&lt;space&gt;-------&lt;lf&gt;----------------------------------------------------------------------&lt;lf&gt;&lt;lf&gt;WITH&lt;space&gt;histo2013&lt;space&gt;AS&lt;space&gt;&lt;openparen&gt;&lt;lf&gt;SELECT&lt;space&gt;DISTINCT&lt;space&gt;old_insee&lt;comma&gt;&lt;space&gt;new_insee&lt;comma&gt;&lt;space&gt;new_name&lt;comma&gt;&lt;space&gt;mod&lt;comma&gt;&lt;space&gt;eff&lt;lf&gt;FROM&lt;space&gt;&lt;quote&gt;cog_histo_2018&lt;quote&gt;&lt;space&gt;hist&lt;space&gt;&lt;lf&gt;WHERE&lt;space&gt;eff&lt;space&gt;=&lt;space&gt;2013&lt;space&gt;AND&lt;space&gt;mod::integer&lt;space&gt;IN&lt;openparen&gt;341&lt;comma&gt;100&lt;comma&gt;321&lt;closeparen&gt;&lt;lf&gt;ORDER&lt;space&gt;BY&lt;space&gt;old_insee&lt;comma&gt;&lt;space&gt;eff&lt;lf&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;lf&gt;histo2014&lt;space&gt;AS&lt;space&gt;&lt;openparen&gt;&lt;lf&gt;SELECT&lt;space&gt;DISTINCT&lt;space&gt;old_insee&lt;comma&gt;&lt;space&gt;new_insee&lt;comma&gt;&lt;space&gt;new_name&lt;comma&gt;&lt;space&gt;mod&lt;comma&gt;&lt;space&gt;eff&lt;lf&gt;FROM&lt;space&gt;&lt;quote&gt;cog_histo_2018&lt;quote&gt;&lt;space&gt;hist&lt;space&gt;&lt;lf&gt;WHERE&lt;space&gt;eff&lt;space&gt;=&lt;space&gt;2014&lt;space&gt;AND&lt;space&gt;mod::integer&lt;space&gt;IN&lt;openparen&gt;341&lt;comma&gt;100&lt;comma&gt;321&lt;closeparen&gt;&lt;lf&gt;ORDER&lt;space&gt;BY&lt;space&gt;old_insee&lt;comma&gt;&lt;space&gt;eff&lt;lf&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;lf&gt;histo2015&lt;space&gt;AS&lt;space&gt;&lt;openparen&gt;&lt;lf&gt;SELECT&lt;space&gt;DISTINCT&lt;space&gt;old_insee&lt;comma&gt;&lt;space&gt;new_insee&lt;comma&gt;&lt;space&gt;new_name&lt;comma&gt;&lt;space&gt;mod&lt;comma&gt;&lt;space&gt;eff&lt;lf&gt;FROM&lt;space&gt;&lt;quote&gt;cog_histo_2018&lt;quote&gt;&lt;space&gt;hist&lt;space&gt;&lt;lf&gt;WHERE&lt;space&gt;eff&lt;space&gt;=&lt;space&gt;2015&lt;space&gt;AND&lt;space&gt;mod::integer&lt;space&gt;IN&lt;openparen&gt;341&lt;comma&gt;100&lt;comma&gt;321&lt;closeparen&gt;&lt;lf&gt;ORDER&lt;space&gt;BY&lt;space&gt;old_insee&lt;comma&gt;&lt;space&gt;eff&lt;lf&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;lf&gt;histo2016&lt;space&gt;AS&lt;space&gt;&lt;openparen&gt;&lt;lf&gt;SELECT&lt;space&gt;DISTINCT&lt;space&gt;old_insee&lt;comma&gt;&lt;space&gt;new_insee&lt;comma&gt;&lt;space&gt;new_name&lt;comma&gt;&lt;space&gt;mod&lt;comma&gt;&lt;space&gt;eff&lt;lf&gt;FROM&lt;space&gt;&lt;quote&gt;cog_histo_2018&lt;quote&gt;&lt;space&gt;hist&lt;space&gt;&lt;lf&gt;WHERE&lt;space&gt;eff&lt;space&gt;=&lt;space&gt;2016&lt;space&gt;AND&lt;space&gt;mod::integer&lt;space&gt;IN&lt;openparen&gt;341&lt;comma&gt;100&lt;comma&gt;321&lt;closeparen&gt;&lt;lf&gt;ORDER&lt;space&gt;BY&lt;space&gt;old_insee&lt;comma&gt;&lt;space&gt;eff&lt;lf&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;lf&gt;histo2017&lt;space&gt;AS&lt;space&gt;&lt;openparen&gt;&lt;lf&gt;SELECT&lt;space&gt;DISTINCT&lt;space&gt;old_insee&lt;comma&gt;&lt;space&gt;new_insee&lt;comma&gt;&lt;space&gt;new_name&lt;comma&gt;&lt;space&gt;mod&lt;comma&gt;&lt;space&gt;eff&lt;lf&gt;FROM&lt;space&gt;&lt;quote&gt;cog_histo_2018&lt;quote&gt;&lt;space&gt;hist&lt;space&gt;&lt;lf&gt;WHERE&lt;space&gt;eff&lt;space&gt;=&lt;space&gt;2017&lt;space&gt;AND&lt;space&gt;mod::integer&lt;space&gt;IN&lt;openparen&gt;341&lt;comma&gt;100&lt;comma&gt;321&lt;closeparen&gt;&lt;lf&gt;ORDER&lt;space&gt;BY&lt;space&gt;old_insee&lt;comma&gt;&lt;space&gt;eff&lt;lf&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;lf&gt;histo2018&lt;space&gt;AS&lt;space&gt;&lt;openparen&gt;&lt;lf&gt;SELECT&lt;space&gt;DISTINCT&lt;space&gt;old_insee&lt;comma&gt;&lt;space&gt;new_insee&lt;comma&gt;&lt;space&gt;new_name&lt;comma&gt;&lt;space&gt;mod&lt;comma&gt;&lt;space&gt;eff&lt;lf&gt;FROM&lt;space&gt;&lt;quote&gt;cog_histo_2018&lt;quote&gt;&lt;space&gt;hist&lt;space&gt;&lt;lf&gt;WHERE&lt;space&gt;eff&lt;space&gt;=&lt;space&gt;2018&lt;space&gt;AND&lt;space&gt;mod::integer&lt;space&gt;IN&lt;openparen&gt;341&lt;comma&gt;100&lt;comma&gt;321&lt;closeparen&gt;&lt;lf&gt;ORDER&lt;space&gt;BY&lt;space&gt;old_insee&lt;comma&gt;&lt;space&gt;eff&lt;lf&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;lf&gt;----------------------------------------------------------------------&lt;lf&gt;--creation&lt;space&gt;de&lt;space&gt;la&lt;space&gt;compilation&lt;space&gt;des&lt;space&gt;changement&lt;space&gt;de&lt;space&gt;code&lt;space&gt;insee&lt;space&gt;par&lt;space&gt;ann&lt;u00e9&gt;e---&lt;lf&gt;----------------------------------------------------------------------&lt;lf&gt;tab2013&lt;space&gt;AS&lt;lf&gt;&lt;openparen&gt;SELECT&lt;space&gt;nom&lt;space&gt;nom2012&lt;comma&gt;&lt;space&gt;insee&lt;space&gt;insee2012&lt;comma&gt;&lt;space&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_insee&lt;space&gt;is&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;insee&lt;space&gt;ELSE&lt;space&gt;new_insee&lt;space&gt;END&lt;space&gt;insee2013&lt;comma&gt;&lt;space&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_name&lt;space&gt;is&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;nom&lt;space&gt;ELSE&lt;space&gt;new_name&lt;space&gt;END&lt;space&gt;nom2013&lt;comma&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_insee&lt;space&gt;is&lt;space&gt;not&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;true&lt;space&gt;ELSE&lt;space&gt;false&lt;space&gt;END&lt;space&gt;changement&lt;lf&gt;FROM&lt;space&gt;&lt;quote&gt;cog_2012&lt;quote&gt;&lt;space&gt;cog2012&lt;lf&gt;FULL&lt;space&gt;JOIN&lt;space&gt;histo2013&lt;space&gt;ON&lt;space&gt;cog2012.insee&lt;space&gt;=&lt;space&gt;histo2013.old_insee&lt;closeparen&gt;&lt;comma&gt;&lt;lf&gt;&lt;lf&gt;tab2014&lt;space&gt;AS&lt;lf&gt;&lt;openparen&gt;SELECT&lt;space&gt;insee2012&lt;comma&gt;&lt;space&gt;nom2012&lt;comma&gt;&lt;space&gt;insee2013&lt;comma&gt;&lt;space&gt;nom2013&lt;comma&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_insee&lt;space&gt;is&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;insee2013&lt;space&gt;ELSE&lt;space&gt;new_insee&lt;space&gt;END&lt;space&gt;insee2014&lt;comma&gt;&lt;space&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_name&lt;space&gt;is&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;nom2013&lt;space&gt;ELSE&lt;space&gt;new_name&lt;space&gt;END&lt;space&gt;nom2014&lt;comma&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_insee&lt;space&gt;is&lt;space&gt;not&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;true&lt;space&gt;ELSE&lt;space&gt;changement&lt;space&gt;END&lt;space&gt;changement&lt;tab&gt;&lt;lf&gt;FROM&lt;space&gt;tab2013&lt;lf&gt;FULL&lt;space&gt;JOIN&lt;space&gt;histo2014&lt;space&gt;ON&lt;space&gt;insee2013&lt;space&gt;=&lt;space&gt;old_insee&lt;closeparen&gt;&lt;comma&gt;&lt;lf&gt;&lt;lf&gt;tab2015&lt;space&gt;AS&lt;lf&gt;&lt;openparen&gt;SELECT&lt;space&gt;insee2012&lt;comma&gt;&lt;space&gt;nom2012&lt;comma&gt;&lt;space&gt;insee2013&lt;comma&gt;&lt;space&gt;nom2013&lt;comma&gt;&lt;space&gt;insee2014&lt;comma&gt;&lt;space&gt;nom2014&lt;comma&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_insee&lt;space&gt;is&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;insee2014&lt;space&gt;ELSE&lt;space&gt;new_insee&lt;space&gt;END&lt;space&gt;insee2015&lt;comma&gt;&lt;space&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_name&lt;space&gt;is&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;nom2014&lt;space&gt;ELSE&lt;space&gt;new_name&lt;space&gt;END&lt;space&gt;nom2015&lt;comma&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_insee&lt;space&gt;is&lt;space&gt;not&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;true&lt;space&gt;ELSE&lt;space&gt;changement&lt;space&gt;END&lt;space&gt;changement&lt;tab&gt;&lt;lf&gt;FROM&lt;space&gt;tab2014&lt;lf&gt;FULL&lt;space&gt;JOIN&lt;space&gt;histo2015&lt;space&gt;ON&lt;space&gt;insee2014&lt;space&gt;=&lt;space&gt;old_insee&lt;closeparen&gt;&lt;comma&gt;&lt;lf&gt;&lt;lf&gt;tab2016&lt;space&gt;AS&lt;lf&gt;&lt;openparen&gt;SELECT&lt;space&gt;insee2012&lt;comma&gt;&lt;space&gt;nom2012&lt;comma&gt;&lt;space&gt;insee2013&lt;comma&gt;&lt;space&gt;nom2013&lt;comma&gt;&lt;space&gt;insee2014&lt;comma&gt;&lt;space&gt;nom2014&lt;comma&gt;&lt;space&gt;insee2015&lt;comma&gt;&lt;space&gt;nom2015&lt;comma&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_insee&lt;space&gt;is&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;insee2015&lt;space&gt;ELSE&lt;space&gt;new_insee&lt;space&gt;END&lt;space&gt;insee2016&lt;comma&gt;&lt;space&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_name&lt;space&gt;is&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;nom2015&lt;space&gt;ELSE&lt;space&gt;new_name&lt;space&gt;END&lt;space&gt;nom2016&lt;comma&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_insee&lt;space&gt;is&lt;space&gt;not&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;true&lt;space&gt;ELSE&lt;space&gt;changement&lt;space&gt;END&lt;space&gt;changement&lt;tab&gt;&lt;lf&gt;FROM&lt;space&gt;tab2015&lt;lf&gt;FULL&lt;space&gt;JOIN&lt;space&gt;histo2016&lt;space&gt;ON&lt;space&gt;insee2015&lt;space&gt;=&lt;space&gt;old_insee&lt;closeparen&gt;&lt;comma&gt;&lt;lf&gt;&lt;lf&gt;tab2017&lt;space&gt;AS&lt;lf&gt;&lt;openparen&gt;SELECT&lt;space&gt;insee2012&lt;comma&gt;&lt;space&gt;nom2012&lt;comma&gt;&lt;space&gt;insee2013&lt;comma&gt;&lt;space&gt;nom2013&lt;comma&gt;&lt;space&gt;insee2014&lt;comma&gt;&lt;space&gt;nom2014&lt;comma&gt;&lt;space&gt;insee2015&lt;comma&gt;&lt;space&gt;nom2015&lt;comma&gt;&lt;space&gt;insee2016&lt;comma&gt;&lt;space&gt;nom2016&lt;comma&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_insee&lt;space&gt;is&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;insee2016&lt;space&gt;ELSE&lt;space&gt;new_insee&lt;space&gt;END&lt;space&gt;insee2017&lt;comma&gt;&lt;space&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_name&lt;space&gt;is&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;nom2016&lt;space&gt;ELSE&lt;space&gt;new_name&lt;space&gt;END&lt;space&gt;nom2017&lt;comma&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_insee&lt;space&gt;is&lt;space&gt;not&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;true&lt;space&gt;ELSE&lt;space&gt;changement&lt;space&gt;END&lt;space&gt;changement&lt;tab&gt;&lt;lf&gt;FROM&lt;space&gt;tab2016&lt;lf&gt;FULL&lt;space&gt;JOIN&lt;space&gt;histo2017&lt;space&gt;ON&lt;space&gt;insee2016&lt;space&gt;=&lt;space&gt;old_insee&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;SELECT&lt;space&gt;insee2012&lt;comma&gt;&lt;space&gt;nom2012&lt;comma&gt;&lt;space&gt;insee2013&lt;comma&gt;&lt;space&gt;nom2013&lt;comma&gt;&lt;space&gt;insee2014&lt;comma&gt;&lt;space&gt;nom2014&lt;comma&gt;&lt;space&gt;insee2015&lt;comma&gt;&lt;space&gt;nom2015&lt;comma&gt;&lt;space&gt;insee2016&lt;comma&gt;&lt;space&gt;nom2016&lt;comma&gt;&lt;space&gt;insee2017&lt;comma&gt;&lt;space&gt;nom2017&lt;comma&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_insee&lt;space&gt;is&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;insee2017&lt;space&gt;ELSE&lt;space&gt;new_insee&lt;space&gt;END&lt;space&gt;insee2018&lt;comma&gt;&lt;space&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_name&lt;space&gt;is&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;nom2017&lt;space&gt;ELSE&lt;space&gt;new_name&lt;space&gt;END&lt;space&gt;nom2018&lt;comma&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_insee&lt;space&gt;is&lt;space&gt;not&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;true&lt;space&gt;ELSE&lt;space&gt;changement&lt;space&gt;END&lt;space&gt;changement&lt;tab&gt;&lt;lf&gt;FROM&lt;space&gt;tab2017&lt;lf&gt;FULL&lt;space&gt;JOIN&lt;space&gt;histo2018&lt;space&gt;ON&lt;space&gt;insee2017&lt;space&gt;=&lt;space&gt;old_insee&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;"/>
+#!     <XFORM_PARM PARM_NAME="SQL_STATEMENT" PARM_VALUE="SET&lt;space&gt;search_path&lt;space&gt;=&lt;space&gt;insee&lt;semicolon&gt;&lt;lf&gt;&lt;lf&gt;DROP&lt;space&gt;MATERIALIZED&lt;space&gt;VIEW&lt;space&gt;IF&lt;space&gt;EXISTS&lt;space&gt;insee.historique&lt;semicolon&gt;&lt;lf&gt;CREATE&lt;space&gt;MATERIALIZED&lt;space&gt;VIEW&lt;space&gt;insee.historique&lt;space&gt;AS&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;---------------------------------------------&lt;lf&gt;--&lt;space&gt;Creation&lt;space&gt;des&lt;space&gt;tables&lt;space&gt;donnees&lt;space&gt;metier&lt;space&gt;-------&lt;lf&gt;---------------------------------------------&lt;lf&gt;WITH&lt;space&gt;&lt;lf&gt;metier&lt;space&gt;AS&lt;openparen&gt;&lt;lf&gt;SELECT&lt;space&gt;DISTINCT&lt;lf&gt;&lt;tab&gt;insee&lt;comma&gt;&lt;space&gt;&lt;lf&gt;&lt;tab&gt;&lt;apos&gt;zone&lt;space&gt;de&lt;space&gt;production&lt;space&gt;de&lt;space&gt;raisin&lt;apos&gt;::text&lt;space&gt;viti&lt;comma&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;tab&gt;lst_centre&lt;space&gt;site&lt;lf&gt;FROM&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;metier_inao.t_siqo&lt;space&gt;ts&lt;lf&gt;INNER&lt;space&gt;JOIN&lt;space&gt;metier_inao.t_aire&lt;space&gt;ta&lt;space&gt;USING&lt;openparen&gt;id_siqo&lt;closeparen&gt;&lt;lf&gt;INNER&lt;space&gt;JOIN&lt;space&gt;metier_inao.l_aire_zone&lt;space&gt;USING&lt;openparen&gt;id_aire&lt;closeparen&gt;&lt;lf&gt;INNER&lt;space&gt;JOIN&lt;space&gt;metier_inao.t_zone&lt;space&gt;tz&lt;space&gt;USING&lt;openparen&gt;id_zone&lt;closeparen&gt;&lt;lf&gt;where&lt;space&gt;type_zone&lt;space&gt;=&lt;space&gt;2&lt;lf&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;----------------------------------------------------------------------&lt;lf&gt;--&lt;space&gt;Creation&lt;space&gt;des&lt;space&gt;tables&lt;space&gt;d&lt;apos&gt;historiques&lt;space&gt;des&lt;space&gt;changements&lt;space&gt;par&lt;space&gt;ann&lt;u00e9&gt;e&lt;space&gt;-------&lt;lf&gt;----------------------------------------------------------------------&lt;lf&gt;&lt;lf&gt;histo2013&lt;space&gt;AS&lt;space&gt;&lt;openparen&gt;&lt;lf&gt;SELECT&lt;space&gt;DISTINCT&lt;space&gt;old_insee&lt;comma&gt;&lt;space&gt;new_insee&lt;comma&gt;&lt;space&gt;new_name&lt;comma&gt;&lt;space&gt;mod&lt;comma&gt;&lt;space&gt;eff&lt;lf&gt;FROM&lt;space&gt;&lt;quote&gt;cog_histo_2019&lt;quote&gt;&lt;space&gt;hist&lt;space&gt;&lt;lf&gt;WHERE&lt;space&gt;eff&lt;space&gt;=&lt;space&gt;2013&lt;space&gt;AND&lt;space&gt;mod::integer&lt;space&gt;IN&lt;openparen&gt;32&lt;comma&gt;34&lt;comma&gt;10&lt;closeparen&gt;&lt;lf&gt;ORDER&lt;space&gt;BY&lt;space&gt;old_insee&lt;comma&gt;&lt;space&gt;eff&lt;lf&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;lf&gt;histo2014&lt;space&gt;AS&lt;space&gt;&lt;openparen&gt;&lt;lf&gt;SELECT&lt;space&gt;DISTINCT&lt;space&gt;old_insee&lt;comma&gt;&lt;space&gt;new_insee&lt;comma&gt;&lt;space&gt;new_name&lt;comma&gt;&lt;space&gt;mod&lt;comma&gt;&lt;space&gt;eff&lt;lf&gt;FROM&lt;space&gt;&lt;quote&gt;cog_histo_2019&lt;quote&gt;&lt;space&gt;hist&lt;space&gt;&lt;lf&gt;WHERE&lt;space&gt;eff&lt;space&gt;=&lt;space&gt;2014&lt;space&gt;AND&lt;space&gt;mod::integer&lt;space&gt;IN&lt;openparen&gt;32&lt;comma&gt;34&lt;comma&gt;10&lt;closeparen&gt;&lt;lf&gt;ORDER&lt;space&gt;BY&lt;space&gt;old_insee&lt;comma&gt;&lt;space&gt;eff&lt;lf&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;lf&gt;histo2015&lt;space&gt;AS&lt;space&gt;&lt;openparen&gt;&lt;lf&gt;SELECT&lt;space&gt;DISTINCT&lt;space&gt;old_insee&lt;comma&gt;&lt;space&gt;new_insee&lt;comma&gt;&lt;space&gt;new_name&lt;comma&gt;&lt;space&gt;mod&lt;comma&gt;&lt;space&gt;eff&lt;lf&gt;FROM&lt;space&gt;&lt;quote&gt;cog_histo_2019&lt;quote&gt;&lt;space&gt;hist&lt;space&gt;&lt;lf&gt;WHERE&lt;space&gt;eff&lt;space&gt;=&lt;space&gt;2015&lt;space&gt;AND&lt;space&gt;mod::integer&lt;space&gt;IN&lt;openparen&gt;32&lt;comma&gt;34&lt;comma&gt;10&lt;closeparen&gt;&lt;lf&gt;ORDER&lt;space&gt;BY&lt;space&gt;old_insee&lt;comma&gt;&lt;space&gt;eff&lt;lf&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;lf&gt;histo2016&lt;space&gt;AS&lt;space&gt;&lt;openparen&gt;&lt;lf&gt;SELECT&lt;space&gt;DISTINCT&lt;space&gt;old_insee&lt;comma&gt;&lt;space&gt;new_insee&lt;comma&gt;&lt;space&gt;new_name&lt;comma&gt;&lt;space&gt;mod&lt;comma&gt;&lt;space&gt;eff&lt;lf&gt;FROM&lt;space&gt;&lt;quote&gt;cog_histo_2019&lt;quote&gt;&lt;space&gt;hist&lt;space&gt;&lt;lf&gt;WHERE&lt;space&gt;eff&lt;space&gt;=&lt;space&gt;2016&lt;space&gt;AND&lt;space&gt;mod::integer&lt;space&gt;IN&lt;openparen&gt;32&lt;comma&gt;34&lt;comma&gt;10&lt;closeparen&gt;&lt;lf&gt;ORDER&lt;space&gt;BY&lt;space&gt;old_insee&lt;comma&gt;&lt;space&gt;eff&lt;lf&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;lf&gt;histo2017&lt;space&gt;AS&lt;space&gt;&lt;openparen&gt;&lt;lf&gt;SELECT&lt;space&gt;DISTINCT&lt;space&gt;old_insee&lt;comma&gt;&lt;space&gt;new_insee&lt;comma&gt;&lt;space&gt;new_name&lt;comma&gt;&lt;space&gt;mod&lt;comma&gt;&lt;space&gt;eff&lt;lf&gt;FROM&lt;space&gt;&lt;quote&gt;cog_histo_2019&lt;quote&gt;&lt;space&gt;hist&lt;space&gt;&lt;lf&gt;WHERE&lt;space&gt;eff&lt;space&gt;=&lt;space&gt;2017&lt;space&gt;AND&lt;space&gt;mod::integer&lt;space&gt;IN&lt;openparen&gt;32&lt;comma&gt;34&lt;comma&gt;10&lt;closeparen&gt;&lt;lf&gt;ORDER&lt;space&gt;BY&lt;space&gt;old_insee&lt;comma&gt;&lt;space&gt;eff&lt;lf&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;lf&gt;histo2018&lt;space&gt;AS&lt;space&gt;&lt;openparen&gt;&lt;lf&gt;SELECT&lt;space&gt;DISTINCT&lt;space&gt;old_insee&lt;comma&gt;&lt;space&gt;new_insee&lt;comma&gt;&lt;space&gt;new_name&lt;comma&gt;&lt;space&gt;mod&lt;comma&gt;&lt;space&gt;eff&lt;lf&gt;FROM&lt;space&gt;&lt;quote&gt;cog_histo_2019&lt;quote&gt;&lt;space&gt;hist&lt;space&gt;&lt;lf&gt;WHERE&lt;space&gt;eff&lt;space&gt;=&lt;space&gt;2018&lt;space&gt;AND&lt;space&gt;mod::integer&lt;space&gt;IN&lt;openparen&gt;32&lt;comma&gt;34&lt;comma&gt;10&lt;closeparen&gt;&lt;lf&gt;ORDER&lt;space&gt;BY&lt;space&gt;old_insee&lt;comma&gt;&lt;space&gt;eff&lt;lf&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;lf&gt;histo2019&lt;space&gt;AS&lt;space&gt;&lt;openparen&gt;&lt;lf&gt;SELECT&lt;space&gt;DISTINCT&lt;space&gt;old_insee&lt;comma&gt;&lt;space&gt;new_insee&lt;comma&gt;&lt;space&gt;new_name&lt;comma&gt;&lt;space&gt;mod&lt;comma&gt;&lt;space&gt;eff&lt;lf&gt;FROM&lt;space&gt;&lt;quote&gt;cog_histo_2019&lt;quote&gt;&lt;space&gt;hist&lt;space&gt;&lt;lf&gt;WHERE&lt;space&gt;eff&lt;space&gt;=&lt;space&gt;2019&lt;space&gt;AND&lt;space&gt;mod::integer&lt;space&gt;IN&lt;openparen&gt;32&lt;comma&gt;34&lt;comma&gt;10&lt;closeparen&gt;&lt;lf&gt;ORDER&lt;space&gt;BY&lt;space&gt;old_insee&lt;comma&gt;&lt;space&gt;eff&lt;lf&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;lf&gt;----------------------------------------------------------------------&lt;lf&gt;--creation&lt;space&gt;de&lt;space&gt;la&lt;space&gt;compilation&lt;space&gt;des&lt;space&gt;changement&lt;space&gt;de&lt;space&gt;code&lt;space&gt;insee&lt;space&gt;par&lt;space&gt;ann&lt;u00e9&gt;e---&lt;lf&gt;----------------------------------------------------------------------&lt;lf&gt;tab2013&lt;space&gt;AS&lt;lf&gt;&lt;openparen&gt;SELECT&lt;space&gt;nom&lt;space&gt;nom2012&lt;comma&gt;&lt;space&gt;cog2012.insee&lt;space&gt;insee2012&lt;comma&gt;&lt;space&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_insee&lt;space&gt;is&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;insee&lt;space&gt;ELSE&lt;space&gt;new_insee&lt;space&gt;END&lt;space&gt;insee2013&lt;comma&gt;&lt;space&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_name&lt;space&gt;is&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;nom&lt;space&gt;ELSE&lt;space&gt;new_name&lt;space&gt;END&lt;space&gt;nom2013&lt;comma&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_insee&lt;space&gt;is&lt;space&gt;not&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;true&lt;space&gt;ELSE&lt;space&gt;false&lt;space&gt;END&lt;space&gt;changement&lt;lf&gt;FROM&lt;space&gt;&lt;quote&gt;cog_2012&lt;quote&gt;&lt;space&gt;cog2012&lt;lf&gt;FULL&lt;space&gt;JOIN&lt;space&gt;histo2013&lt;space&gt;ON&lt;space&gt;cog2012.insee&lt;space&gt;=&lt;space&gt;histo2013.old_insee&lt;closeparen&gt;&lt;comma&gt;&lt;lf&gt;&lt;lf&gt;tab2014&lt;space&gt;AS&lt;lf&gt;&lt;openparen&gt;SELECT&lt;space&gt;insee2012&lt;comma&gt;&lt;space&gt;nom2012&lt;comma&gt;&lt;space&gt;insee2013&lt;comma&gt;&lt;space&gt;nom2013&lt;comma&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_insee&lt;space&gt;is&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;insee2013&lt;space&gt;ELSE&lt;space&gt;new_insee&lt;space&gt;END&lt;space&gt;insee2014&lt;comma&gt;&lt;space&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_name&lt;space&gt;is&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;nom2013&lt;space&gt;ELSE&lt;space&gt;new_name&lt;space&gt;END&lt;space&gt;nom2014&lt;comma&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_insee&lt;space&gt;is&lt;space&gt;not&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;true&lt;space&gt;ELSE&lt;space&gt;changement&lt;space&gt;END&lt;space&gt;changement&lt;tab&gt;&lt;lf&gt;FROM&lt;space&gt;tab2013&lt;lf&gt;FULL&lt;space&gt;JOIN&lt;space&gt;histo2014&lt;space&gt;ON&lt;space&gt;insee2013&lt;space&gt;=&lt;space&gt;old_insee&lt;closeparen&gt;&lt;comma&gt;&lt;lf&gt;&lt;lf&gt;tab2015&lt;space&gt;AS&lt;lf&gt;&lt;openparen&gt;SELECT&lt;space&gt;insee2012&lt;comma&gt;&lt;space&gt;nom2012&lt;comma&gt;&lt;space&gt;insee2013&lt;comma&gt;&lt;space&gt;nom2013&lt;comma&gt;&lt;space&gt;insee2014&lt;comma&gt;&lt;space&gt;nom2014&lt;comma&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_insee&lt;space&gt;is&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;insee2014&lt;space&gt;ELSE&lt;space&gt;new_insee&lt;space&gt;END&lt;space&gt;insee2015&lt;comma&gt;&lt;space&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_name&lt;space&gt;is&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;nom2014&lt;space&gt;ELSE&lt;space&gt;new_name&lt;space&gt;END&lt;space&gt;nom2015&lt;comma&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_insee&lt;space&gt;is&lt;space&gt;not&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;true&lt;space&gt;ELSE&lt;space&gt;changement&lt;space&gt;END&lt;space&gt;changement&lt;tab&gt;&lt;lf&gt;FROM&lt;space&gt;tab2014&lt;lf&gt;FULL&lt;space&gt;JOIN&lt;space&gt;histo2015&lt;space&gt;ON&lt;space&gt;insee2014&lt;space&gt;=&lt;space&gt;old_insee&lt;closeparen&gt;&lt;comma&gt;&lt;lf&gt;&lt;lf&gt;tab2016&lt;space&gt;AS&lt;lf&gt;&lt;openparen&gt;SELECT&lt;space&gt;insee2012&lt;comma&gt;&lt;space&gt;nom2012&lt;comma&gt;&lt;space&gt;insee2013&lt;comma&gt;&lt;space&gt;nom2013&lt;comma&gt;&lt;space&gt;insee2014&lt;comma&gt;&lt;space&gt;nom2014&lt;comma&gt;&lt;space&gt;insee2015&lt;comma&gt;&lt;space&gt;nom2015&lt;comma&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_insee&lt;space&gt;is&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;insee2015&lt;space&gt;ELSE&lt;space&gt;new_insee&lt;space&gt;END&lt;space&gt;insee2016&lt;comma&gt;&lt;space&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_name&lt;space&gt;is&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;nom2015&lt;space&gt;ELSE&lt;space&gt;new_name&lt;space&gt;END&lt;space&gt;nom2016&lt;comma&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_insee&lt;space&gt;is&lt;space&gt;not&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;true&lt;space&gt;ELSE&lt;space&gt;changement&lt;space&gt;END&lt;space&gt;changement&lt;tab&gt;&lt;lf&gt;FROM&lt;space&gt;tab2015&lt;lf&gt;FULL&lt;space&gt;JOIN&lt;space&gt;histo2016&lt;space&gt;ON&lt;space&gt;insee2015&lt;space&gt;=&lt;space&gt;old_insee&lt;closeparen&gt;&lt;comma&gt;&lt;lf&gt;&lt;lf&gt;tab2017&lt;space&gt;AS&lt;lf&gt;&lt;openparen&gt;SELECT&lt;space&gt;insee2012&lt;comma&gt;&lt;space&gt;nom2012&lt;comma&gt;&lt;space&gt;insee2013&lt;comma&gt;&lt;space&gt;nom2013&lt;comma&gt;&lt;space&gt;insee2014&lt;comma&gt;&lt;space&gt;nom2014&lt;comma&gt;&lt;space&gt;insee2015&lt;comma&gt;&lt;space&gt;nom2015&lt;comma&gt;&lt;space&gt;insee2016&lt;comma&gt;&lt;space&gt;nom2016&lt;comma&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_insee&lt;space&gt;is&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;insee2016&lt;space&gt;ELSE&lt;space&gt;new_insee&lt;space&gt;END&lt;space&gt;insee2017&lt;comma&gt;&lt;space&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_name&lt;space&gt;is&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;nom2016&lt;space&gt;ELSE&lt;space&gt;new_name&lt;space&gt;END&lt;space&gt;nom2017&lt;comma&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_insee&lt;space&gt;is&lt;space&gt;not&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;true&lt;space&gt;ELSE&lt;space&gt;changement&lt;space&gt;END&lt;space&gt;changement&lt;tab&gt;&lt;lf&gt;FROM&lt;space&gt;tab2016&lt;lf&gt;FULL&lt;space&gt;JOIN&lt;space&gt;histo2017&lt;space&gt;ON&lt;space&gt;insee2016&lt;space&gt;=&lt;space&gt;old_insee&lt;closeparen&gt;&lt;comma&gt;&lt;lf&gt;&lt;lf&gt;tab2018&lt;space&gt;AS&lt;lf&gt;&lt;openparen&gt;SELECT&lt;space&gt;&lt;space&gt;insee2012&lt;comma&gt;&lt;space&gt;nom2012&lt;comma&gt;&lt;space&gt;insee2013&lt;comma&gt;&lt;space&gt;nom2013&lt;comma&gt;&lt;space&gt;insee2014&lt;comma&gt;&lt;space&gt;nom2014&lt;comma&gt;&lt;space&gt;insee2015&lt;comma&gt;&lt;space&gt;nom2015&lt;comma&gt;&lt;space&gt;insee2016&lt;comma&gt;&lt;space&gt;nom2016&lt;comma&gt;&lt;space&gt;insee2017&lt;comma&gt;&lt;space&gt;nom2017&lt;comma&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_insee&lt;space&gt;is&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;insee2017&lt;space&gt;ELSE&lt;space&gt;new_insee&lt;space&gt;END&lt;space&gt;insee2018&lt;comma&gt;&lt;space&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_name&lt;space&gt;is&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;nom2017&lt;space&gt;ELSE&lt;space&gt;new_name&lt;space&gt;END&lt;space&gt;nom2018&lt;comma&gt;&lt;lf&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_insee&lt;space&gt;is&lt;space&gt;not&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;true&lt;space&gt;ELSE&lt;space&gt;changement&lt;space&gt;END&lt;space&gt;changement&lt;tab&gt;&lt;lf&gt;FROM&lt;space&gt;tab2017&lt;lf&gt;FULL&lt;space&gt;JOIN&lt;space&gt;histo2018&lt;space&gt;ON&lt;space&gt;insee2017&lt;space&gt;=&lt;space&gt;old_insee&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;------------------------&lt;lf&gt;--&lt;space&gt;Requ&lt;u00ea&gt;te&lt;space&gt;finale-------&lt;lf&gt;------------------------&lt;lf&gt;SELECT&lt;space&gt;&lt;lf&gt;&lt;tab&gt;req.*&lt;comma&gt;&lt;lf&gt;&lt;tab&gt;metier.viti&lt;comma&gt;&lt;lf&gt;&lt;tab&gt;metier.site&lt;lf&gt;FROM&lt;openparen&gt;&lt;lf&gt;&lt;tab&gt;SELECT&lt;space&gt;&lt;space&gt;insee2012&lt;comma&gt;&lt;space&gt;nom2012&lt;comma&gt;&lt;space&gt;insee2013&lt;comma&gt;&lt;space&gt;nom2013&lt;comma&gt;&lt;space&gt;insee2014&lt;comma&gt;&lt;space&gt;nom2014&lt;comma&gt;&lt;space&gt;insee2015&lt;comma&gt;&lt;space&gt;nom2015&lt;comma&gt;&lt;space&gt;insee2016&lt;comma&gt;&lt;space&gt;nom2016&lt;comma&gt;&lt;space&gt;insee2017&lt;comma&gt;&lt;space&gt;nom2017&lt;comma&gt;insee2018&lt;comma&gt;nom2018&lt;comma&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_insee&lt;space&gt;is&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;insee2018&lt;space&gt;ELSE&lt;space&gt;new_insee&lt;space&gt;END&lt;space&gt;insee2019&lt;comma&gt;&lt;space&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_name&lt;space&gt;is&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;nom2018&lt;space&gt;ELSE&lt;space&gt;new_name&lt;space&gt;END&lt;space&gt;nom2019&lt;comma&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;CASE&lt;space&gt;WHEN&lt;space&gt;new_insee&lt;space&gt;is&lt;space&gt;not&lt;space&gt;null&lt;space&gt;THEN&lt;space&gt;true&lt;space&gt;ELSE&lt;space&gt;changement&lt;space&gt;END&lt;space&gt;changement&lt;lf&gt;&lt;tab&gt;FROM&lt;space&gt;tab2018&lt;lf&gt;&lt;tab&gt;FULL&lt;space&gt;JOIN&lt;space&gt;histo2019&lt;space&gt;ON&lt;space&gt;insee2018&lt;space&gt;=&lt;space&gt;old_insee&lt;closeparen&gt;req&lt;lf&gt;LEFT&lt;space&gt;JOIN&lt;space&gt;metier&lt;space&gt;ON&lt;space&gt;metier.insee&lt;space&gt;=&lt;space&gt;insee2012&lt;lf&gt;WHERE&lt;space&gt;insee2012&lt;space&gt;is&lt;space&gt;not&lt;space&gt;null&lt;lf&gt;ORDER&lt;space&gt;BY&lt;space&gt;insee2019&lt;lf&gt;"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SQLExecutor_2"/>
 #! </TRANSFORMER>
@@ -990,8 +139,8 @@
 #!   IDENTIFIER="9"
 #!   TYPE="Creator"
 #!   VERSION="5"
-#!   POSITION="-513.68690187783648 -879.979037885617"
-#!   BOUNDING_RECT="-513.68690187783648 -879.979037885617 -1 -1"
+#!   POSITION="-1957.0975623995364 -389.40809444033346"
+#!   BOUNDING_RECT="-1957.0975623995364 -389.40809444033346 -1 -1"
 #!   ORDER="500000000000006"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1011,306 +160,6 @@
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Creator"/>
 #! </TRANSFORMER>
-#! <TRANSFORMER
-#!   IDENTIFIER="11"
-#!   TYPE="AttributeManager"
-#!   VERSION="1"
-#!   POSITION="2932.5152865185432 -921.2417152742961"
-#!   BOUNDING_RECT="2932.5152865185432 -921.2417152742961 -1 -1"
-#!   ORDER="500000000000007"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="18312"
-#! >
-#!     <OUTPUT_FEAT NAME="OUTPUT"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="changement observé" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="commune viticole" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="site inao" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2012" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2012" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2013" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2013" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2014" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2014" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2015" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2015" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2016" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2016" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2017" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2017" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2018" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2018" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="changement changement&lt;space&gt;observ&lt;u00e9&gt; &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;faux&apos;BOOL_OP;OR;COMPOSITE_TEST;&lt;Unused&gt;;TEST &lt;at&gt;Value&lt;openparen&gt;changement&lt;space&gt;observ&lt;u00e9&gt;&lt;closeparen&gt; = t&apos;vrai&apos;FME_NUM_CONDITIONS2___&quot; RENAME_SET_VALUE viticole commune&lt;space&gt;viticole &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;faux&apos;BOOL_OP;OR;COMPOSITE_TEST;&lt;Unused&gt;;TEST &lt;at&gt;Value&lt;openparen&gt;commune&lt;space&gt;viticole&lt;closeparen&gt; = true&apos;vrai&apos;FME_NUM_CONDITIONS2___&quot; RENAME_SET_VALUE siqo_site site&lt;space&gt;inao  RENAME_SET_VALUE siqo_code_insee siqo_code_insee  REMOVE insee2012 insee2012  NO_OP nom2012 nom2012  NO_OP nom2013 nom2013  NO_OP insee2013 insee2013  NO_OP nom2014 nom2014  NO_OP insee2014 insee2014  NO_OP nom2015 nom2015  NO_OP insee2015 insee2015  NO_OP nom2016 nom2016  NO_OP insee2016 insee2016  NO_OP nom2017 nom2017  NO_OP insee2017 insee2017  NO_OP nom2018 nom2018  NO_OP insee2018 insee2018  NO_OP"/>
-#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
-#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
-#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#!   IDENTIFIER="14"
-#!   TYPE="StringCaseChanger"
-#!   VERSION="5"
-#!   POSITION="2372.5096864625425 -898.74149027204589"
-#!   BOUNDING_RECT="2372.5096864625425 -898.74149027204589 -1 -1"
-#!   ORDER="500000000000008"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="18312"
-#! >
-#!     <OUTPUT_FEAT NAME="OUTPUT"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="changement" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2012" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2013" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2014" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2015" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2016" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2017" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2018" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2012" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2013" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2014" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2015" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2016" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2017" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2018" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="viticole" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="siqo_site" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="siqo_code_insee" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="ATTRCHOICE" PARM_VALUE="Selected Attributes"/>
-#!     <XFORM_PARM PARM_NAME="ATTRLIST" PARM_VALUE="nom2017 nom2018 nom2012 nom2013 nom2014 nom2015 nom2016"/>
-#!     <XFORM_PARM PARM_NAME="ATTRS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="CHANGE_TYPE" PARM_VALUE="Full Title Case"/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StringCaseChanger"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#!   IDENTIFIER="17"
-#!   TYPE="FeatureMerger"
-#!   VERSION="17"
-#!   POSITION="1639.2525036361474 296.03926100989406"
-#!   BOUNDING_RECT="1639.2525036361474 296.03926100989406 -1 -1"
-#!   ORDER="500000000000011"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="18312"
-#! >
-#!     <OUTPUT_FEAT NAME="MERGED"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="changement" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2012" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2013" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2014" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2015" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2016" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2017" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2018" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2012" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2013" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2014" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2015" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2016" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2017" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2018" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="siqo_site" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="siqo_code_insee" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <OUTPUT_FEAT NAME="UNMERGED_REQUESTOR"/>
-#!     <FEAT_COLLAPSED COLLAPSED="1"/>
-#!     <XFORM_ATTR ATTR_NAME="changement" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="insee2012" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="insee2013" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="insee2014" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="insee2015" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="insee2016" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="insee2017" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="insee2018" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="nom2012" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="nom2013" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="nom2014" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="nom2015" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="nom2016" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="nom2017" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="nom2018" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <OUTPUT_FEAT NAME="USED_SUPPLIER"/>
-#!     <FEAT_COLLAPSED COLLAPSED="2"/>
-#!     <XFORM_ATTR ATTR_NAME="siqo_site" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="siqo_code_insee" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="numReferences" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <OUTPUT_FEAT NAME="UNUSED_SUPPLIER"/>
-#!     <FEAT_COLLAPSED COLLAPSED="3"/>
-#!     <XFORM_ATTR ATTR_NAME="siqo_site" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="siqo_code_insee" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
-#!     <FEAT_COLLAPSED COLLAPSED="4"/>
-#!     <XFORM_ATTR ATTR_NAME="changement" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="insee2012" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="insee2013" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="insee2014" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="insee2015" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="insee2016" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="insee2017" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="insee2018" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="nom2012" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="nom2013" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="nom2014" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="nom2015" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="nom2016" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="nom2017" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="nom2018" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="siqo_site" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="siqo_code_insee" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="Merge Supplier"/>
-#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="Use Requestor"/>
-#!     <XFORM_PARM PARM_NAME="CLEANING_TOLERANCE" PARM_VALUE="None"/>
-#!     <XFORM_PARM PARM_NAME="CONNECT_Z_MODE" PARM_VALUE="First Wins"/>
-#!     <XFORM_PARM PARM_NAME="GENERATE_LIST_GROUP" PARM_VALUE="NO"/>
-#!     <XFORM_PARM PARM_NAME="GEOM_TYPE" PARM_VALUE="Build Polygons"/>
-#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="IGNORE_NULLS" PARM_VALUE="No"/>
-#!     <XFORM_PARM PARM_NAME="JOIN_ATTRIBUTES_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="JOIN_KEYS" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;insee2012&lt;closeparen&gt; &lt;at&gt;Value&lt;openparen&gt;siqo_code_insee&lt;closeparen&gt; AUTO"/>
-#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE_MODE" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="MERGE_COUNT_ATTR" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="MERGE_TYPE" PARM_VALUE="Attributes Only"/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="PROCESS_DUPS" PARM_VALUE="YES"/>
-#!     <XFORM_PARM PARM_NAME="REJECT_NULL_MISSING_KEYS" PARM_VALUE="No"/>
-#!     <XFORM_PARM PARM_NAME="SUPPLIERS_FIRST" PARM_VALUE="No"/>
-#!     <XFORM_PARM PARM_NAME="SUPPLIER_PREFIX" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureMerger"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#!   IDENTIFIER="18"
-#!   TYPE="AttributeManager"
-#!   VERSION="1"
-#!   POSITION="885.67576066163679 217.45000686554729"
-#!   BOUNDING_RECT="885.67576066163679 217.45000686554729 -1 -1"
-#!   ORDER="500000000000012"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="18312"
-#! >
-#!     <OUTPUT_FEAT NAME="OUTPUT"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="siqo_site" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="siqo_code_insee" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="UID UID  REMOVE siqo_site siqo_site  NO_OP siqo_code_insee siqo_code_insee  NO_OP siqo_nom_com siqo_nom_com  REMOVE siqo_id_app siqo_id_app  REMOVE siqo_appellation siqo_appellation  REMOVE siqo_id_denom siqo_id_denom  REMOVE siqo_denomination siqo_denomination  REMOVE etat_general etat_general  REMOVE etat_db etat_db  REMOVE inv_cp inv_cp  REMOVE inv_np inv_np  REMOVE inv_agent inv_agent  REMOVE commentaire commentaire  REMOVE file_name file_name  REMOVE"/>
-#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
-#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
-#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager_2"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#!   IDENTIFIER="24"
-#!   TYPE="AttributeCreator"
-#!   VERSION="8"
-#!   POSITION="2319.8007220496806 116.09733913717955"
-#!   BOUNDING_RECT="2319.8007220496806 116.09733913717955 -1 -1"
-#!   ORDER="500000000000014"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="18312"
-#! >
-#!     <OUTPUT_FEAT NAME="OUTPUT"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="viticole" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="changement" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2012" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2013" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2014" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2015" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2016" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2017" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee2018" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2012" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2013" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2014" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2015" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2016" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2017" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="nom2018" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="siqo_site" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="siqo_code_insee" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; viticole SET_TO true"/>
-#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
-#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
-#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#!   IDENTIFIER="35"
-#!   TYPE="Tester"
-#!   VERSION="2"
-#!   POSITION="443.4006604216986 75.472452837735915"
-#!   BOUNDING_RECT="443.4006604216986 75.472452837735915 -1 -1"
-#!   ORDER="500000000000030"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="18312"
-#! >
-#!     <OUTPUT_FEAT NAME="PASSED"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="UID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="siqo_site" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="siqo_code_insee" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="siqo_nom_com" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="siqo_id_app" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="siqo_appellation" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="siqo_id_denom" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="siqo_denomination" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="etat_general" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="etat_db" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="inv_cp" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="inv_np" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="inv_agent" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="commentaire" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="file_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <OUTPUT_FEAT NAME="FAILED"/>
-#!     <FEAT_COLLAPSED COLLAPSED="1"/>
-#!     <XFORM_ATTR ATTR_NAME="UID" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="siqo_site" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="siqo_code_insee" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="siqo_nom_com" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="siqo_id_app" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="siqo_appellation" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="siqo_id_denom" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="siqo_denomination" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="etat_general" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="etat_db" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="inv_cp" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="inv_np" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="inv_agent" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="commentaire" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="file_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
-#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST siqo_code_insee NOT_ATTRIBUTE_IS_MISSING &quot;&quot;"/>
-#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE_GRP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester"/>
-#! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
 #! <FEAT_LINK
@@ -1319,116 +168,6 @@
 #!   TARGET_NODE="8"
 #!   SOURCE_PORT_DESC="fo 0 CREATED"
 #!   TARGET_PORT_DESC="fi 0 INITIATOR"
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="36"
-#!   SOURCE_NODE="12"
-#!   TARGET_NODE="35"
-#!   SOURCE_PORT_DESC="-1"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="21"
-#!   SOURCE_NODE="5"
-#!   TARGET_NODE="17"
-#!   SOURCE_PORT_DESC="fo 0 RESULT"
-#!   TARGET_PORT_DESC="fi 0 REQUESTOR"
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="33"
-#!   SOURCE_NODE="11"
-#!   TARGET_NODE="26"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="-1"
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="28"
-#!   SOURCE_NODE="14"
-#!   TARGET_NODE="11"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="25"
-#!   SOURCE_NODE="17"
-#!   TARGET_NODE="24"
-#!   SOURCE_PORT_DESC="fo 0 MERGED"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="20"
-#!   SOURCE_NODE="18"
-#!   TARGET_NODE="17"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 1 SUPPLIER"
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="22"
-#!   SOURCE_NODE="24"
-#!   TARGET_NODE="14"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="41"
-#!   SOURCE_NODE="35"
-#!   TARGET_NODE="18"
-#!   SOURCE_PORT_DESC="fo 0 PASSED"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="6"
-#!   SOURCE_NODE="8"
-#!   TARGET_NODE="5"
-#!   SOURCE_PORT_DESC="fo 1 INITIATOR"
-#!   TARGET_PORT_DESC="fi 0 INITIATOR"
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="34"
-#!   SOURCE_NODE="17"
-#!   TARGET_NODE="14"
-#!   SOURCE_PORT_DESC="fo 1 UNMERGED_REQUESTOR"
-#!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
@@ -1445,169 +184,15 @@
 #! </LOOKUP_TABLES>
 #! </WORKSPACE>
 FME_PYTHON_VERSION 2or3
-GUI IGNORE SourceDataset_XLSXR_1,XLSXR_IN_MANYFILE_XLSXR_1,XLSXR_IN_ADVANCED_XLSXR_1,XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_1,XLSXR_IN_READ_BLANK_AS_XLSXR_1,XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1,XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_1,DestDataset_XLSXW_1,XLSXW_OUT_FME_GROUP_NAMED1_XLSXW_1,XLSXW_OUT_OVERWRITE_FILE_XLSXW_1,XLSXW_OUT_TEMPLATEFILE_XLSXW_1,XLSXW_OUT_TEMPLATE_SHEET_XLSXW_1
-DEFAULT_MACRO SourceDataset_XLSXR \\srv-34db\data2\BDDC\0_organisation\bilan_db.xlsx
-GUI MULTIFILE SourceDataset_XLSXR Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File(s):
-DEFAULT_MACRO DestDataset_XLSXW \\srv-34db\data2\BDDC\0_organisation\bilan_cog_insee.xlsx
-GUI FILENAME DestDataset_XLSXW Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|All_files(*)|* Destination Microsoft Excel File:
-INCLUDE [ if {{$(SourceDataset_XLSXR)} == {}} { puts_real {Parameter 'SourceDataset_XLSXR' must be given a value.}; exit 1; }; ]
-INCLUDE [ if {{$(DestDataset_XLSXW)} == {}} { puts_real {Parameter 'DestDataset_XLSXW' must be given a value.}; exit 1; }; ]
 #! START_HEADER
 #! START_WB_HEADER
 READER_TYPE MULTI_READER
-MULTI_READER_TYPE{0} XLSXR
-MULTI_READER_KEYWORD{0} XLSXR_1
-MULTI_READER_GEN_DIRECTIVES{0} EXPOSE_ATTRS_GROUP,,_MERGE_SCHEMAS,YES,ALLOW_DOLLAR_SIGNS,YES,TABLELIST,,CONFIGURATION_DATASET,,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,CASE_SENSITIVE_FEATURE_TYPES,YES,SCHEMA,,EXPAND_MERGED_CELLS,Yes,XLSXR_EXPOSE_FORMAT_ATTRS,,MANYFILE,,EXCEL_COL_NAMES,YES,FORCE_DATETIME,NO,ADVANCED,,READ_BLANK_AS,Missing,SCAN_SCHEMA_IF_DYNAMIC,No,USE_SCHEMA_OTHER_FILES,No
 
-WRITER_TYPE MULTI_WRITER
-MULTI_WRITER_DATASET_ORDER BY_ID
-MULTI_WRITER_FIRST_WRITER_ID 0
-MULTI_WRITER_TYPE{0} XLSXW
-MULTI_WRITER_KEYWORD{0} XLSXW_1
+WRITER_TYPE NULL
+WRITER_KEYWORD NULL_DEST
+NULL_DEST_DATASET null
 #! END_WB_HEADER
 
-#! START_WB_HEADER
-MACRO WB_KEYWORD "XLSXR_1"
-#! END_WB_HEADER
-#! START_SOURCE_HEADER XLSXR XLSXR_1
-# ============================================================================
-# First get the dataset for the database. For Excel, it's the file name.
-# For now we'll use whatever they had when they generated this mapping file,
-# and not reprompt
-# The dataset this mapping file was generated from was:
-#! END_SOURCE_HEADER
-#! START_WB_HEADER
-DEFAULT_MACRO SourceDataset
-INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
- puts {DEFAULT_MACRO SourceDataset_XLSXR_1 $(SourceDataset)}     \
- } ]
-#! END_WB_HEADER
-#! START_SOURCE_HEADER XLSXR XLSXR_1
-DEFAULT_MACRO SourceDataset_XLSXR_1 $(SourceDataset_XLSXR)
-GUI MULTIFILE SourceDataset_XLSXR_1 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File(s):
-#GUI GROUP TABLELIST Constraints
-# TABLELIST is not shown in GUI, but is required for infrastructure
-# to not show the Table List popup
-DEFAULT_MACRO XLSXR_IN_CONFIGURATION_DATASET_XLSXR_1 
-XLSXR_1_CONFIGURATION_DATASET "$(XLSXR_IN_CONFIGURATION_DATASET_XLSXR_1)"
-# Flag to switch from old naming scheme of col_1, col_2 etc. to a, b, etc.
-# To better match up with Excel files
-DEFAULT_MACRO XLSXR_IN_EXCEL_COL_NAMES_XLSXR_1 YES
-XLSXR_1_EXCEL_COL_NAMES "$(XLSXR_IN_EXCEL_COL_NAMES_XLSXR_1)"
-DEFAULT_MACRO XLSXR_IN_FORCE_DATETIME_XLSXR_1 NO
-XLSXR_1_FORCE_DATETIME "$(XLSXR_IN_FORCE_DATETIME_XLSXR_1)"
-DEFAULT_MACRO XLSXR_IN_MANYFILE_XLSXR_1 
-GUI OPTIONAL DISCLOSUREGROUP XLSXR_IN_MANYFILE_XLSXR_1 XLSXR_IN_USE_SCHEMA_OTHER_FILES Multiple File Parameters
-DEFAULT_MACRO XLSXR_IN_USE_SCHEMA_OTHER_FILES_XLSXR_1 No
-XLSXR_1_USE_SCHEMA_OTHER_FILES "$(XLSXR_IN_USE_SCHEMA_OTHER_FILES_XLSXR_1)"
-DEFAULT_MACRO XLSXR_IN_ADVANCED_XLSXR_1 
-GUI OPTIONAL DISCLOSUREGROUP XLSXR_IN_ADVANCED_XLSXR_1 XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_1%XLSXR_IN_READ_BLANK_AS_XLSXR_1%XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1 Advanced
-DEFAULT_MACRO XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_1 No
-XLSXR_1_SCAN_SCHEMA_IF_DYNAMIC "$(XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_1)"
-GUI OPTIONAL CHECKBOX XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_1 Yes%No Scan Schema in Dynamic Workflow:
-DEFAULT_MACRO XLSXR_IN_READ_BLANK_AS_XLSXR_1 Missing
-XLSXR_1_READ_BLANK_AS "$(XLSXR_IN_READ_BLANK_AS_XLSXR_1)"
-GUI CHOICE XLSXR_IN_READ_BLANK_AS_XLSXR_1 Missing%Null Read blank cells as:
-DEFAULT_MACRO XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1 Yes
-XLSXR_1_EXPAND_MERGED_CELLS "$(XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1)"
-GUI OPTIONAL CHECKBOX XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1 Yes%No Expand Merged Cells:
-DEFAULT_MACRO XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_1 
-XLSXR_1_EXPOSE_ATTRS_GROUP "$(XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_1)"
-DEFAULT_MACRO XLSXR_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_XLSXR_1 Yes
-XLSXR_1_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(XLSXR_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_XLSXR_1)"
-DEFAULT_MACRO XLSXR_IN_CASE_SENSITIVE_FEATURE_TYPES_XLSXR_1 YES
-XLSXR_1_CASE_SENSITIVE_FEATURE_TYPES "$(XLSXR_IN_CASE_SENSITIVE_FEATURE_TYPES_XLSXR_1)"
-DEFAULT_MACRO XLSXR_IN_ALLOW_DOLLAR_SIGNS_XLSXR_1 YES
-XLSXR_1_ALLOW_DOLLAR_SIGNS "$(XLSXR_IN_ALLOW_DOLLAR_SIGNS_XLSXR_1)"
-# ===========================================================================
-DEFAULT_MACRO XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_1 
-XLSXR_1_NETWORK_AUTHENTICATION "$(XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_1)"
-GUI OPTIONAL AUTHENTICATOR XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
-# ============================================================================ 
-DEFAULT_MACRO XLSXR_IN_ATTRIBUTE_READING_XLSXR_1 DEFLINE
-XLSXR_1_ATTRIBUTE_READING "$(XLSXR_IN_ATTRIBUTE_READING_XLSXR_1)"
-# ============================================================================ 
-XLSXR_1_GENERATE_FME_BUILD_NUM 18312
-XLSXR_1_DATASET "$(SourceDataset_XLSXR_1)"
-#! END_SOURCE_HEADER
-#! START_WB_HEADER
-MACRO WB_KEYWORD "XLSXW_1"
-#! END_WB_HEADER
-#! START_DEST_HEADER XLSXW XLSXW_1
-# ============================================================================
-# First get the dataset for the database. For Excel, it's the file name.
-# For now we'll use whatever they had when they generated this mapping file,
-# and not reprompt
-#! END_DEST_HEADER
-#! START_WB_HEADER
-DEFAULT_MACRO DestDataset
-INCLUDE [ if {"$(DestDataset)" != ""} {                          \
- puts {DEFAULT_MACRO DestDataset_XLSXW_1 $(DestDataset)}         \
- } ]
-#! END_WB_HEADER
-#! START_DEST_HEADER XLSXW XLSXW_1
-DEFAULT_MACRO DestDataset_XLSXW_1 $(DestDataset_XLSXW)
-GUI FILENAME DestDataset_XLSXW_1 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|All_files(*)|* Destination Microsoft Excel File:
-# ============================================================================
-DEFAULT_MACRO XLSXW_OUT_FME_GROUP_NAMED1_XLSXW_1 
-GUI OPTIONAL DISCLOSUREGROUP XLSXW_OUT_FME_GROUP_NAMED1_XLSXW_1 XLSXW_OUT_OVERWRITE_FILE_XLSXW_1%XLSXW_OUT_TEMPLATEFILE_XLSXW_1%XLSXW_OUT_TEMPLATE_SHEET_XLSXW_1 Writer Parameters
-# Whether or not to overwrite the file
-DEFAULT_MACRO XLSXW_OUT_OVERWRITE_FILE_XLSXW_1 No
-XLSXW_1_OVERWRITE_FILE "$(XLSXW_OUT_OVERWRITE_FILE_XLSXW_1)"
-GUI ACTIVECHOICE XLSXW_OUT_OVERWRITE_FILE_XLSXW_1 Yes%No,XLSXW_OUT_TEMPLATEFILE_XLSXW_1,XLSXW_OUT_TEMPLATE_SHEET_XLSXW_1,XLSXW_OUT_+TEMPLATEFILE+<Unused> Overwrite Existing File:
-# Template file option
-DEFAULT_MACRO XLSXW_OUT_TEMPLATEFILE_XLSXW_1 
-XLSXW_1_TEMPLATEFILE "$(XLSXW_OUT_TEMPLATEFILE_XLSXW_1)"
-GUI OPTIONAL FILENAME_MUSTEXIST XLSXW_OUT_TEMPLATEFILE_XLSXW_1 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Template File:
-GUI LOOKUP XLSXW_OUT_TEMPLATEFILE_XLSXW_1 <Unused>, 
-DEFAULT_MACRO XLSXW_OUT_TEMPLATE_SHEET_XLSXW_1 
-XLSXW_1_TEMPLATE_SHEET "$(XLSXW_OUT_TEMPLATE_SHEET_XLSXW_1)"
-GUI OPTIONAL DYNAMIC_SINGLE_SELECT XLSXW_OUT_TEMPLATE_SHEET_XLSXW_1 $[XLSXW_OUT_TEMPLATEFILE_XLSXW_1],RETRIEVE_ALL_TABLE_NAMES,Yes,IGNORE_ALL_NAMED_RANGES,Yes,_FORMAT_OVERRIDE_,XLSXW Template Sheet:
-GUI LOOKUP XLSXW_OUT_TEMPLATE_SHEET_XLSXW_1 <Unused>, 
-# ============================================================================
-# Parameters whose values will be percolated to the feature types, but will not
-# remain as writer level settings
-# Default to not drop feature type first
-DEFAULT_MACRO XLSXW_OUT_DROP_TABLE_XLSXW_1 No
-XLSXW_1_DROP_TABLE "$(XLSXW_OUT_DROP_TABLE_XLSXW_1)"
-# Default to not truncate feature type first (removeallcelldata,retainformatting/headers,etc.)
-DEFAULT_MACRO XLSXW_OUT_TRUNCATE_TABLE_XLSXW_1 No
-XLSXW_1_TRUNCATE_TABLE "$(XLSXW_OUT_TRUNCATE_TABLE_XLSXW_1)"
-# Maintain compatibility with lenient attrName.* matching
-DEFAULT_MACRO XLSXW_OUT_STRICT_SCHEMA_ADDITIONAL_ATTRIBUTE_MATCHING_XLSXW_1 yes
-XLSXW_1_STRICT_SCHEMA_ADDITIONAL_ATTRIBUTE_MATCHING "$(XLSXW_OUT_STRICT_SCHEMA_ADDITIONAL_ATTRIBUTE_MATCHING_XLSXW_1)"
-# Default to write out the field names
-DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_OUT_XLSXW_1 Yes
-XLSXW_1_FIELD_NAMES_OUT "$(XLSXW_OUT_FIELD_NAMES_OUT_XLSXW_1)"
-# Default writer mode
-DEFAULT_MACRO XLSXW_OUT_WRITER_MODE_XLSXW_1 Insert
-XLSXW_1_WRITER_MODE "$(XLSXW_OUT_WRITER_MODE_XLSXW_1)"
-# Default raster writing type
-DEFAULT_MACRO XLSXW_OUT_RASTER_FORMAT_XLSXW_1 PNG
-XLSXW_1_RASTER_FORMAT "$(XLSXW_OUT_RASTER_FORMAT_XLSXW_1)"
-# ============================================================================
-# Choose excel file protection mode
-DEFAULT_MACRO XLSXW_OUT_PROTECT_SHEET_XLSXW_1 NO
-XLSXW_1_PROTECT_SHEET "$(XLSXW_OUT_PROTECT_SHEET_XLSXW_1)"
-# Whether or not to enable sheet password protection
-DEFAULT_MACRO XLSXW_OUT_PROTECT_SHEET_PASSWORD_XLSXW_1 <Unused>
-XLSXW_1_PROTECT_SHEET_PASSWORD "$(XLSXW_OUT_PROTECT_SHEET_PASSWORD_XLSXW_1)"
-# Which kind of protection level
-DEFAULT_MACRO XLSXW_OUT_PROTECT_SHEET_LEVEL_XLSXW_1 <Unused>
-XLSXW_1_PROTECT_SHEET_LEVEL "$(XLSXW_OUT_PROTECT_SHEET_LEVEL_XLSXW_1)"
-# Which kind of specific permissions will be enabled
-DEFAULT_MACRO XLSXW_OUT_PROTECT_SHEET_PERMISSIONS_XLSXW_1 <Unused>
-XLSXW_1_PROTECT_SHEET_PERMISSIONS "$(XLSXW_OUT_PROTECT_SHEET_PERMISSIONS_XLSXW_1)"
-# ============================================================================
-# Opt in for destination dataset type vs format type validation
-DEFAULT_MACRO XLSXW_OUT_DESTINATION_DATASETTYPE_VALIDATION_XLSXW_1 Yes
-XLSXW_1_DESTINATION_DATASETTYPE_VALIDATION "$(XLSXW_OUT_DESTINATION_DATASETTYPE_VALIDATION_XLSXW_1)"
-DEFAULT_MACRO XLSXW_OUT_COORDINATE_SYSTEM_GRANULARITY_XLSXW_1 FEATURE
-XLSXW_1_COORDINATE_SYSTEM_GRANULARITY "$(XLSXW_OUT_COORDINATE_SYSTEM_GRANULARITY_XLSXW_1)"
-# ============================================================================ 
-XLSXW_1_GENERATE_FME_BUILD_NUM 18312
-XLSXW_1_DATASET "$(DestDataset_XLSXW_1)"
-#! END_DEST_HEADER
 #! START_WB_HEADER
 #! END_WB_HEADER
 
@@ -1622,12 +207,6 @@ FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
 FME_GEOMETRY_HANDLING Enhanced
 FME_STROKE_MAX_DEVIATION 0
 LOG_FILTER_MASK -1
-DEFAULT_MACRO DATASET_KEYWORD_XLSXR_1 XLSXR_1
-DEFAULT_MACRO DATASET_KEYWORD_XLSXW_1 XLSXW_1
-# -------------------------------------------------------------------------
-
-XLSXR_1_READER_META_ATTRIBUTES fme_feature_type
-
 # -------------------------------------------------------------------------
 
 MULTI_READER_CONTINUE_ON_READER_FAILURE No
@@ -1636,13 +215,6 @@ MULTI_READER_CONTINUE_ON_READER_FAILURE No
 
 MACRO WORKSPACE_NAME 2_extraction_data_cog
 MACRO FME_VIEWER_APP fmedatainspector
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_XLSXR_1)   INPUT FEATURE_TYPE *    ROUTE XLSXR XLSXR_1::inventaire multi_reader_keyword,$(DATASET_KEYWORD_XLSXR_1) TO FME_GENERIC ::inventaire ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
-XLSXR_1_MERGE_DEF XLSXR_1::inventaire EXACT inventaire DEFLINE xlsx_start_row,,xlsx_end_row,,fme_attribute_reading,defined,UID,number<openparen>6<comma>0<closeparen>,siqo_site,char<openparen>12<closeparen>,siqo_code_insee,number<openparen>6<comma>0<closeparen>,siqo_nom_com,char<openparen>28<closeparen>,siqo_id_app,number<openparen>5<comma>0<closeparen>,siqo_appellation,char<openparen>28<closeparen>,siqo_id_denom,number<openparen>5<comma>0<closeparen>,siqo_denomination,char<openparen>35<closeparen>,etat_general,char<openparen>26<closeparen>,etat_db,char<openparen>11<closeparen>,inv_cp,number<openparen>9<comma>0<closeparen>,inv_np,char<openparen>11<closeparen>,inv_agent,char<openparen>11<closeparen>,commentaire,char<openparen>55<closeparen>,file_name,string
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME "inventaire (XLSXR_1) Splitter"    INPUT FEATURE_TYPE inventaire    OUTPUT FEATURE_TYPE inventaire_XLSXR_1
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
 
@@ -1663,57 +235,18 @@ FACTORY_DEF * BranchingFactory   FACTORY_NAME "Creator_CREATED Brancher -1 10"  
 # -------------------------------------------------------------------------
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   INPUT FEATURE_TYPE *  OUTPUT FEATURE_TYPE *
 # -------------------------------------------------------------------------
-MACRO SQLExecutor_2_DIRECTIVES READ_TIME_WITH_TIMEZONE Yes QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS Yes NAMED_CONNECTION srv_sig_1 SCHEMAS_FOR_TABLE_LISTING "edigeo ign_bd_cadastre ign_bd_carto ign_bd_topo mae metier_inao work cvi etalab"
+MACRO SQLExecutor_2_DIRECTIVES NAMED_CONNECTION srv_sig_1 SCHEMAS_FOR_TABLE_LISTING "edigeo ign_bd_cadastre ign_bd_carto ign_bd_topo mae metier_inao work cvi etalab" READ_TIME_WITH_TIMEZONE Yes QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS Yes
 
-FACTORY_DEF * QueryFactory    FACTORY_NAME SQLExecutor_2    INPUT  FEATURE_TYPE Creator_CREATED    QUERY_SQL            "SET<space>search_path<space>=<space>insee<semicolon><lf><lf>DROP<space>MATERIALIZED<space>VIEW<space>IF<space>EXISTS<space>insee.historique<semicolon><lf>CREATE<space>MATERIALIZED<space>VIEW<space>insee.historique<space>AS<lf><lf><lf>----------------------------------------------------------------------<lf>--<space>Creation<space>des<space>tables<space>d<apos>historiques<space>des<space>changements<space>par<space>ann<u00e9>e<space>-------<lf>----------------------------------------------------------------------<lf><lf>WITH<space>histo2013<space>AS<space><openparen><lf>SELECT<space>DISTINCT<space>old_insee<comma><space>new_insee<comma><space>new_name<comma><space>mod<comma><space>eff<lf>FROM<space><quote>cog_histo_2018<quote><space>hist<space><lf>WHERE<space>eff<space>=<space>2013<space>AND<space>mod::integer<space>IN<openparen>341<comma>100<comma>321<closeparen><lf>ORDER<space>BY<space>old_insee<comma><space>eff<lf><closeparen><comma><lf>histo2014<space>AS<space><openparen><lf>SELECT<space>DISTINCT<space>old_insee<comma><space>new_insee<comma><space>new_name<comma><space>mod<comma><space>eff<lf>FROM<space><quote>cog_histo_2018<quote><space>hist<space><lf>WHERE<space>eff<space>=<space>2014<space>AND<space>mod::integer<space>IN<openparen>341<comma>100<comma>321<closeparen><lf>ORDER<space>BY<space>old_insee<comma><space>eff<lf><closeparen><comma><lf>histo2015<space>AS<space><openparen><lf>SELECT<space>DISTINCT<space>old_insee<comma><space>new_insee<comma><space>new_name<comma><space>mod<comma><space>eff<lf>FROM<space><quote>cog_histo_2018<quote><space>hist<space><lf>WHERE<space>eff<space>=<space>2015<space>AND<space>mod::integer<space>IN<openparen>341<comma>100<comma>321<closeparen><lf>ORDER<space>BY<space>old_insee<comma><space>eff<lf><closeparen><comma><lf>histo2016<space>AS<space><openparen><lf>SELECT<space>DISTINCT<space>old_insee<comma><space>new_insee<comma><space>new_name<comma><space>mod<comma><space>eff<lf>FROM<space><quote>cog_histo_2018<quote><space>hist<space><lf>WHERE<space>eff<space>=<space>2016<space>AND<space>mod::integer<space>IN<openparen>341<comma>100<comma>321<closeparen><lf>ORDER<space>BY<space>old_insee<comma><space>eff<lf><closeparen><comma><lf>histo2017<space>AS<space><openparen><lf>SELECT<space>DISTINCT<space>old_insee<comma><space>new_insee<comma><space>new_name<comma><space>mod<comma><space>eff<lf>FROM<space><quote>cog_histo_2018<quote><space>hist<space><lf>WHERE<space>eff<space>=<space>2017<space>AND<space>mod::integer<space>IN<openparen>341<comma>100<comma>321<closeparen><lf>ORDER<space>BY<space>old_insee<comma><space>eff<lf><closeparen><comma><lf>histo2018<space>AS<space><openparen><lf>SELECT<space>DISTINCT<space>old_insee<comma><space>new_insee<comma><space>new_name<comma><space>mod<comma><space>eff<lf>FROM<space><quote>cog_histo_2018<quote><space>hist<space><lf>WHERE<space>eff<space>=<space>2018<space>AND<space>mod::integer<space>IN<openparen>341<comma>100<comma>321<closeparen><lf>ORDER<space>BY<space>old_insee<comma><space>eff<lf><closeparen><comma><lf>----------------------------------------------------------------------<lf>--creation<space>de<space>la<space>compilation<space>des<space>changement<space>de<space>code<space>insee<space>par<space>ann<u00e9>e---<lf>----------------------------------------------------------------------<lf>tab2013<space>AS<lf><openparen>SELECT<space>nom<space>nom2012<comma><space>insee<space>insee2012<comma><space><lf><tab>CASE<space>WHEN<space>new_insee<space>is<space>null<space>THEN<space>insee<space>ELSE<space>new_insee<space>END<space>insee2013<comma><space><lf><tab>CASE<space>WHEN<space>new_name<space>is<space>null<space>THEN<space>nom<space>ELSE<space>new_name<space>END<space>nom2013<comma><lf><tab>CASE<space>WHEN<space>new_insee<space>is<space>not<space>null<space>THEN<space>true<space>ELSE<space>false<space>END<space>changement<lf>FROM<space><quote>cog_2012<quote><space>cog2012<lf>FULL<space>JOIN<space>histo2013<space>ON<space>cog2012.insee<space>=<space>histo2013.old_insee<closeparen><comma><lf><lf>tab2014<space>AS<lf><openparen>SELECT<space>insee2012<comma><space>nom2012<comma><space>insee2013<comma><space>nom2013<comma><lf><tab>CASE<space>WHEN<space>new_insee<space>is<space>null<space>THEN<space>insee2013<space>ELSE<space>new_insee<space>END<space>insee2014<comma><space><lf><tab>CASE<space>WHEN<space>new_name<space>is<space>null<space>THEN<space>nom2013<space>ELSE<space>new_name<space>END<space>nom2014<comma><lf><tab>CASE<space>WHEN<space>new_insee<space>is<space>not<space>null<space>THEN<space>true<space>ELSE<space>changement<space>END<space>changement<tab><lf>FROM<space>tab2013<lf>FULL<space>JOIN<space>histo2014<space>ON<space>insee2013<space>=<space>old_insee<closeparen><comma><lf><lf>tab2015<space>AS<lf><openparen>SELECT<space>insee2012<comma><space>nom2012<comma><space>insee2013<comma><space>nom2013<comma><space>insee2014<comma><space>nom2014<comma><lf><tab>CASE<space>WHEN<space>new_insee<space>is<space>null<space>THEN<space>insee2014<space>ELSE<space>new_insee<space>END<space>insee2015<comma><space><lf><tab>CASE<space>WHEN<space>new_name<space>is<space>null<space>THEN<space>nom2014<space>ELSE<space>new_name<space>END<space>nom2015<comma><lf><tab>CASE<space>WHEN<space>new_insee<space>is<space>not<space>null<space>THEN<space>true<space>ELSE<space>changement<space>END<space>changement<tab><lf>FROM<space>tab2014<lf>FULL<space>JOIN<space>histo2015<space>ON<space>insee2014<space>=<space>old_insee<closeparen><comma><lf><lf>tab2016<space>AS<lf><openparen>SELECT<space>insee2012<comma><space>nom2012<comma><space>insee2013<comma><space>nom2013<comma><space>insee2014<comma><space>nom2014<comma><space>insee2015<comma><space>nom2015<comma><lf><tab>CASE<space>WHEN<space>new_insee<space>is<space>null<space>THEN<space>insee2015<space>ELSE<space>new_insee<space>END<space>insee2016<comma><space><lf><tab>CASE<space>WHEN<space>new_name<space>is<space>null<space>THEN<space>nom2015<space>ELSE<space>new_name<space>END<space>nom2016<comma><lf><tab>CASE<space>WHEN<space>new_insee<space>is<space>not<space>null<space>THEN<space>true<space>ELSE<space>changement<space>END<space>changement<tab><lf>FROM<space>tab2015<lf>FULL<space>JOIN<space>histo2016<space>ON<space>insee2015<space>=<space>old_insee<closeparen><comma><lf><lf>tab2017<space>AS<lf><openparen>SELECT<space>insee2012<comma><space>nom2012<comma><space>insee2013<comma><space>nom2013<comma><space>insee2014<comma><space>nom2014<comma><space>insee2015<comma><space>nom2015<comma><space>insee2016<comma><space>nom2016<comma><lf><tab>CASE<space>WHEN<space>new_insee<space>is<space>null<space>THEN<space>insee2016<space>ELSE<space>new_insee<space>END<space>insee2017<comma><space><lf><tab>CASE<space>WHEN<space>new_name<space>is<space>null<space>THEN<space>nom2016<space>ELSE<space>new_name<space>END<space>nom2017<comma><lf><tab>CASE<space>WHEN<space>new_insee<space>is<space>not<space>null<space>THEN<space>true<space>ELSE<space>changement<space>END<space>changement<tab><lf>FROM<space>tab2016<lf>FULL<space>JOIN<space>histo2017<space>ON<space>insee2016<space>=<space>old_insee<closeparen><lf><lf>SELECT<space>insee2012<comma><space>nom2012<comma><space>insee2013<comma><space>nom2013<comma><space>insee2014<comma><space>nom2014<comma><space>insee2015<comma><space>nom2015<comma><space>insee2016<comma><space>nom2016<comma><space>insee2017<comma><space>nom2017<comma><lf><tab>CASE<space>WHEN<space>new_insee<space>is<space>null<space>THEN<space>insee2017<space>ELSE<space>new_insee<space>END<space>insee2018<comma><space><lf><tab>CASE<space>WHEN<space>new_name<space>is<space>null<space>THEN<space>nom2017<space>ELSE<space>new_name<space>END<space>nom2018<comma><lf><tab>CASE<space>WHEN<space>new_insee<space>is<space>not<space>null<space>THEN<space>true<space>ELSE<space>changement<space>END<space>changement<tab><lf>FROM<space>tab2017<lf>FULL<space>JOIN<space>histo2018<space>ON<space>insee2017<space>=<space>old_insee<lf><lf><lf><lf><lf>"    READER_TYPE          POSTGRES    READER_DATASET       "srv_sig_1"    COMBINE_ATTRIBUTES   RESULT_ONLY    COMBINE_GEOMETRY     QUERY_ONLY    CONTINUE_ON_READER_ERROR YES    QUERYFCT_PROPAGATE_IDS_ON_SQL_EXECUTE YES    READER_PARAMS        $(SQLExecutor_2_DIRECTIVES)    OUTPUT RESULT FEATURE_TYPE SQLExecutor_2_RESULT        @SupplyAttributes(fme_feature_type,SQLExecutor_2)    OUTPUT QUERY FEATURE_TYPE SQLExecutor_2_INITIATOR    OUTPUT READER_ERROR FEATURE_TYPE SQLExecutor_2_<REJECTED>
+FACTORY_DEF * QueryFactory    FACTORY_NAME SQLExecutor_2    INPUT  FEATURE_TYPE Creator_CREATED    QUERY_SQL            "SET<space>search_path<space>=<space>insee<semicolon><lf><lf>DROP<space>MATERIALIZED<space>VIEW<space>IF<space>EXISTS<space>insee.historique<semicolon><lf>CREATE<space>MATERIALIZED<space>VIEW<space>insee.historique<space>AS<lf><lf><lf>---------------------------------------------<lf>--<space>Creation<space>des<space>tables<space>donnees<space>metier<space>-------<lf>---------------------------------------------<lf>WITH<space><lf>metier<space>AS<openparen><lf>SELECT<space>DISTINCT<lf><tab>insee<comma><space><lf><tab><apos>zone<space>de<space>production<space>de<space>raisin<apos>::text<space>viti<comma><space><space><lf><tab>lst_centre<space>site<lf>FROM<space><space><space><space>metier_inao.t_siqo<space>ts<lf>INNER<space>JOIN<space>metier_inao.t_aire<space>ta<space>USING<openparen>id_siqo<closeparen><lf>INNER<space>JOIN<space>metier_inao.l_aire_zone<space>USING<openparen>id_aire<closeparen><lf>INNER<space>JOIN<space>metier_inao.t_zone<space>tz<space>USING<openparen>id_zone<closeparen><lf>where<space>type_zone<space>=<space>2<lf><closeparen><comma><lf><lf><lf>----------------------------------------------------------------------<lf>--<space>Creation<space>des<space>tables<space>d<apos>historiques<space>des<space>changements<space>par<space>ann<u00e9>e<space>-------<lf>----------------------------------------------------------------------<lf><lf>histo2013<space>AS<space><openparen><lf>SELECT<space>DISTINCT<space>old_insee<comma><space>new_insee<comma><space>new_name<comma><space>mod<comma><space>eff<lf>FROM<space><quote>cog_histo_2019<quote><space>hist<space><lf>WHERE<space>eff<space>=<space>2013<space>AND<space>mod::integer<space>IN<openparen>32<comma>34<comma>10<closeparen><lf>ORDER<space>BY<space>old_insee<comma><space>eff<lf><closeparen><comma><lf>histo2014<space>AS<space><openparen><lf>SELECT<space>DISTINCT<space>old_insee<comma><space>new_insee<comma><space>new_name<comma><space>mod<comma><space>eff<lf>FROM<space><quote>cog_histo_2019<quote><space>hist<space><lf>WHERE<space>eff<space>=<space>2014<space>AND<space>mod::integer<space>IN<openparen>32<comma>34<comma>10<closeparen><lf>ORDER<space>BY<space>old_insee<comma><space>eff<lf><closeparen><comma><lf>histo2015<space>AS<space><openparen><lf>SELECT<space>DISTINCT<space>old_insee<comma><space>new_insee<comma><space>new_name<comma><space>mod<comma><space>eff<lf>FROM<space><quote>cog_histo_2019<quote><space>hist<space><lf>WHERE<space>eff<space>=<space>2015<space>AND<space>mod::integer<space>IN<openparen>32<comma>34<comma>10<closeparen><lf>ORDER<space>BY<space>old_insee<comma><space>eff<lf><closeparen><comma><lf>histo2016<space>AS<space><openparen><lf>SELECT<space>DISTINCT<space>old_insee<comma><space>new_insee<comma><space>new_name<comma><space>mod<comma><space>eff<lf>FROM<space><quote>cog_histo_2019<quote><space>hist<space><lf>WHERE<space>eff<space>=<space>2016<space>AND<space>mod::integer<space>IN<openparen>32<comma>34<comma>10<closeparen><lf>ORDER<space>BY<space>old_insee<comma><space>eff<lf><closeparen><comma><lf>histo2017<space>AS<space><openparen><lf>SELECT<space>DISTINCT<space>old_insee<comma><space>new_insee<comma><space>new_name<comma><space>mod<comma><space>eff<lf>FROM<space><quote>cog_histo_2019<quote><space>hist<space><lf>WHERE<space>eff<space>=<space>2017<space>AND<space>mod::integer<space>IN<openparen>32<comma>34<comma>10<closeparen><lf>ORDER<space>BY<space>old_insee<comma><space>eff<lf><closeparen><comma><lf>histo2018<space>AS<space><openparen><lf>SELECT<space>DISTINCT<space>old_insee<comma><space>new_insee<comma><space>new_name<comma><space>mod<comma><space>eff<lf>FROM<space><quote>cog_histo_2019<quote><space>hist<space><lf>WHERE<space>eff<space>=<space>2018<space>AND<space>mod::integer<space>IN<openparen>32<comma>34<comma>10<closeparen><lf>ORDER<space>BY<space>old_insee<comma><space>eff<lf><closeparen><comma><lf>histo2019<space>AS<space><openparen><lf>SELECT<space>DISTINCT<space>old_insee<comma><space>new_insee<comma><space>new_name<comma><space>mod<comma><space>eff<lf>FROM<space><quote>cog_histo_2019<quote><space>hist<space><lf>WHERE<space>eff<space>=<space>2019<space>AND<space>mod::integer<space>IN<openparen>32<comma>34<comma>10<closeparen><lf>ORDER<space>BY<space>old_insee<comma><space>eff<lf><closeparen><comma><lf>----------------------------------------------------------------------<lf>--creation<space>de<space>la<space>compilation<space>des<space>changement<space>de<space>code<space>insee<space>par<space>ann<u00e9>e---<lf>----------------------------------------------------------------------<lf>tab2013<space>AS<lf><openparen>SELECT<space>nom<space>nom2012<comma><space>cog2012.insee<space>insee2012<comma><space><lf><tab>CASE<space>WHEN<space>new_insee<space>is<space>null<space>THEN<space>insee<space>ELSE<space>new_insee<space>END<space>insee2013<comma><space><lf><tab>CASE<space>WHEN<space>new_name<space>is<space>null<space>THEN<space>nom<space>ELSE<space>new_name<space>END<space>nom2013<comma><lf><tab>CASE<space>WHEN<space>new_insee<space>is<space>not<space>null<space>THEN<space>true<space>ELSE<space>false<space>END<space>changement<lf>FROM<space><quote>cog_2012<quote><space>cog2012<lf>FULL<space>JOIN<space>histo2013<space>ON<space>cog2012.insee<space>=<space>histo2013.old_insee<closeparen><comma><lf><lf>tab2014<space>AS<lf><openparen>SELECT<space>insee2012<comma><space>nom2012<comma><space>insee2013<comma><space>nom2013<comma><lf><tab>CASE<space>WHEN<space>new_insee<space>is<space>null<space>THEN<space>insee2013<space>ELSE<space>new_insee<space>END<space>insee2014<comma><space><lf><tab>CASE<space>WHEN<space>new_name<space>is<space>null<space>THEN<space>nom2013<space>ELSE<space>new_name<space>END<space>nom2014<comma><lf><tab>CASE<space>WHEN<space>new_insee<space>is<space>not<space>null<space>THEN<space>true<space>ELSE<space>changement<space>END<space>changement<tab><lf>FROM<space>tab2013<lf>FULL<space>JOIN<space>histo2014<space>ON<space>insee2013<space>=<space>old_insee<closeparen><comma><lf><lf>tab2015<space>AS<lf><openparen>SELECT<space>insee2012<comma><space>nom2012<comma><space>insee2013<comma><space>nom2013<comma><space>insee2014<comma><space>nom2014<comma><lf><tab>CASE<space>WHEN<space>new_insee<space>is<space>null<space>THEN<space>insee2014<space>ELSE<space>new_insee<space>END<space>insee2015<comma><space><lf><tab>CASE<space>WHEN<space>new_name<space>is<space>null<space>THEN<space>nom2014<space>ELSE<space>new_name<space>END<space>nom2015<comma><lf><tab>CASE<space>WHEN<space>new_insee<space>is<space>not<space>null<space>THEN<space>true<space>ELSE<space>changement<space>END<space>changement<tab><lf>FROM<space>tab2014<lf>FULL<space>JOIN<space>histo2015<space>ON<space>insee2014<space>=<space>old_insee<closeparen><comma><lf><lf>tab2016<space>AS<lf><openparen>SELECT<space>insee2012<comma><space>nom2012<comma><space>insee2013<comma><space>nom2013<comma><space>insee2014<comma><space>nom2014<comma><space>insee2015<comma><space>nom2015<comma><lf><tab>CASE<space>WHEN<space>new_insee<space>is<space>null<space>THEN<space>insee2015<space>ELSE<space>new_insee<space>END<space>insee2016<comma><space><lf><tab>CASE<space>WHEN<space>new_name<space>is<space>null<space>THEN<space>nom2015<space>ELSE<space>new_name<space>END<space>nom2016<comma><lf><tab>CASE<space>WHEN<space>new_insee<space>is<space>not<space>null<space>THEN<space>true<space>ELSE<space>changement<space>END<space>changement<tab><lf>FROM<space>tab2015<lf>FULL<space>JOIN<space>histo2016<space>ON<space>insee2015<space>=<space>old_insee<closeparen><comma><lf><lf>tab2017<space>AS<lf><openparen>SELECT<space>insee2012<comma><space>nom2012<comma><space>insee2013<comma><space>nom2013<comma><space>insee2014<comma><space>nom2014<comma><space>insee2015<comma><space>nom2015<comma><space>insee2016<comma><space>nom2016<comma><lf><tab>CASE<space>WHEN<space>new_insee<space>is<space>null<space>THEN<space>insee2016<space>ELSE<space>new_insee<space>END<space>insee2017<comma><space><lf><tab>CASE<space>WHEN<space>new_name<space>is<space>null<space>THEN<space>nom2016<space>ELSE<space>new_name<space>END<space>nom2017<comma><lf><tab>CASE<space>WHEN<space>new_insee<space>is<space>not<space>null<space>THEN<space>true<space>ELSE<space>changement<space>END<space>changement<tab><lf>FROM<space>tab2016<lf>FULL<space>JOIN<space>histo2017<space>ON<space>insee2016<space>=<space>old_insee<closeparen><comma><lf><lf>tab2018<space>AS<lf><openparen>SELECT<space><space>insee2012<comma><space>nom2012<comma><space>insee2013<comma><space>nom2013<comma><space>insee2014<comma><space>nom2014<comma><space>insee2015<comma><space>nom2015<comma><space>insee2016<comma><space>nom2016<comma><space>insee2017<comma><space>nom2017<comma><lf><tab>CASE<space>WHEN<space>new_insee<space>is<space>null<space>THEN<space>insee2017<space>ELSE<space>new_insee<space>END<space>insee2018<comma><space><lf><tab>CASE<space>WHEN<space>new_name<space>is<space>null<space>THEN<space>nom2017<space>ELSE<space>new_name<space>END<space>nom2018<comma><lf><tab>CASE<space>WHEN<space>new_insee<space>is<space>not<space>null<space>THEN<space>true<space>ELSE<space>changement<space>END<space>changement<tab><lf>FROM<space>tab2017<lf>FULL<space>JOIN<space>histo2018<space>ON<space>insee2017<space>=<space>old_insee<closeparen><lf><lf>------------------------<lf>--<space>Requ<u00ea>te<space>finale-------<lf>------------------------<lf>SELECT<space><lf><tab>req.*<comma><lf><tab>metier.viti<comma><lf><tab>metier.site<lf>FROM<openparen><lf><tab>SELECT<space><space>insee2012<comma><space>nom2012<comma><space>insee2013<comma><space>nom2013<comma><space>insee2014<comma><space>nom2014<comma><space>insee2015<comma><space>nom2015<comma><space>insee2016<comma><space>nom2016<comma><space>insee2017<comma><space>nom2017<comma>insee2018<comma>nom2018<comma><lf><tab><tab>CASE<space>WHEN<space>new_insee<space>is<space>null<space>THEN<space>insee2018<space>ELSE<space>new_insee<space>END<space>insee2019<comma><space><lf><tab><tab>CASE<space>WHEN<space>new_name<space>is<space>null<space>THEN<space>nom2018<space>ELSE<space>new_name<space>END<space>nom2019<comma><lf><tab><tab>CASE<space>WHEN<space>new_insee<space>is<space>not<space>null<space>THEN<space>true<space>ELSE<space>changement<space>END<space>changement<lf><tab>FROM<space>tab2018<lf><tab>FULL<space>JOIN<space>histo2019<space>ON<space>insee2018<space>=<space>old_insee<closeparen>req<lf>LEFT<space>JOIN<space>metier<space>ON<space>metier.insee<space>=<space>insee2012<lf>WHERE<space>insee2012<space>is<space>not<space>null<lf>ORDER<space>BY<space>insee2019<lf>"    READER_TYPE          POSTGRES    READER_DATASET       "srv_sig_1"    COMBINE_ATTRIBUTES   RESULT_ONLY    COMBINE_GEOMETRY     QUERY_ONLY    CONTINUE_ON_READER_ERROR YES    QUERYFCT_PROPAGATE_IDS_ON_SQL_EXECUTE YES    READER_PARAMS        $(SQLExecutor_2_DIRECTIVES)    OUTPUT RESULT FEATURE_TYPE SQLExecutor_2_RESULT        @SupplyAttributes(fme_feature_type,SQLExecutor_2)    OUTPUT QUERY FEATURE_TYPE SQLExecutor_2_INITIATOR    OUTPUT READER_ERROR FEATURE_TYPE SQLExecutor_2_<REJECTED>
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "SQLExecutor_2 RESULT Transformer Output Nuker"   INPUT FEATURE_TYPE SQLExecutor_2_RESULT
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SQLExecutor_2 INITIATOR Transformer Output Nuker"   INPUT FEATURE_TYPE SQLExecutor_2_INITIATOR
 DEFAULT_MACRO _WB_BYPASS_TERMINATION No
 FACTORY_DEF * TeeFactory FACTORY_NAME SQLExecutor_2_<Rejected> INPUT FEATURE_TYPE SQLExecutor_2_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, SQLExecutor_2<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
 # -------------------------------------------------------------------------
-MACRO SQLExecutor_DIRECTIVES READ_TIME_WITH_TIMEZONE Yes QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS Yes SCHEMAS_FOR_TABLE_LISTING "edigeo ign_bd_cadastre ign_bd_carto ign_bd_topo mae metier_inao work cvi etalab" NAMED_CONNECTION srv_sig_1
 
-FACTORY_DEF * QueryFactory    FACTORY_NAME SQLExecutor    INPUT  FEATURE_TYPE SQLExecutor_2_INITIATOR    QUERY_SQL            "SELECT<space>*<space>FROM<space>insee.historique"    READER_TYPE          POSTGRES    READER_DATASET       "srv_sig_1"    COMBINE_ATTRIBUTES   RESULT_ONLY    COMBINE_GEOMETRY     QUERY_ONLY    CONTINUE_ON_READER_ERROR YES    QUERYFCT_PROPAGATE_IDS_ON_SQL_EXECUTE YES    READER_PARAMS        $(SQLExecutor_DIRECTIVES)    OUTPUT RESULT FEATURE_TYPE SQLExecutor_RESULT        @SupplyAttributes(fme_feature_type,SQLExecutor)    OUTPUT QUERY FEATURE_TYPE SQLExecutor_INITIATOR    OUTPUT READER_ERROR FEATURE_TYPE SQLExecutor_<REJECTED>
-
-FACTORY_DEF * TeeFactory   FACTORY_NAME "SQLExecutor INITIATOR Transformer Output Nuker"   INPUT FEATURE_TYPE SQLExecutor_INITIATOR
-DEFAULT_MACRO _WB_BYPASS_TERMINATION No
-FACTORY_DEF * TeeFactory FACTORY_NAME SQLExecutor_<Rejected> INPUT FEATURE_TYPE SQLExecutor_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, SQLExecutor<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TestFactory    FACTORY_NAME Tester    INPUT  FEATURE_TYPE inventaire_XLSXR_1    TEST siqo_code_insee NOT_ATTRIBUTE_IS_MISSING "" ENCODED    BOOLEAN_OPERATOR OR    OUTPUT PASSED FEATURE_TYPE Tester_PASSED
-# -------------------------------------------------------------------------
-
-
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeManager_2    INPUT  FEATURE_TYPE Tester_PASSED    MULTI_FEATURE_MODE NO     NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "UID" "UID" "" "REMOVE" }      ATTR_ACTION { "siqo_nom_com" "siqo_nom_com" "" "REMOVE" }      ATTR_ACTION { "siqo_id_app" "siqo_id_app" "" "REMOVE" }      ATTR_ACTION { "siqo_appellation" "siqo_appellation" "" "REMOVE" }      ATTR_ACTION { "siqo_id_denom" "siqo_id_denom" "" "REMOVE" }      ATTR_ACTION { "siqo_denomination" "siqo_denomination" "" "REMOVE" }      ATTR_ACTION { "etat_general" "etat_general" "" "REMOVE" }      ATTR_ACTION { "etat_db" "etat_db" "" "REMOVE" }      ATTR_ACTION { "inv_cp" "inv_cp" "" "REMOVE" }      ATTR_ACTION { "inv_np" "inv_np" "" "REMOVE" }      ATTR_ACTION { "inv_agent" "inv_agent" "" "REMOVE" }      ATTR_ACTION { "commentaire" "commentaire" "" "REMOVE" }      ATTR_ACTION { "file_name" "file_name" "" "REMOVE" }    OUTPUT OUTPUT FEATURE_TYPE AttributeManager_2_OUTPUT
-
-# -------------------------------------------------------------------------
-
-INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {POLYGONS} == {POLYGONS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {POLYGONS} == {AGGREGATES}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {POLYGONS} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {POLYGONS} == {POLYGONS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {POLYGONS} == {AGGREGATES}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {POLYGONS} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
-
-FACTORY_DEF {*} ReferenceFactory    FACTORY_NAME FeatureMerger    INPUT REFERENCER FEATURE_TYPE SQLExecutor_RESULT    INPUT REFERENCEE FEATURE_TYPE AttributeManager_2_OUTPUT    CONNECT_Z_MODE FIRST_WINS    REFERENCE_INFO $(FeatureMerger_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>insee2012<closeparen>,FeatureMerger) @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>siqo_code_insee<closeparen>,FeatureMerger) AUTO    ATTR_ACCUM_MODE "HANDLE_CONFLICT"    ATTR_CONFLICT_RES "REQUESTOR_IF_CONFLICT"    IGNORE_NULLS "No"    HANDLE_NULL_MISSING_KEYS_LIKE_FME2013 No    LIST_ATTRS_TO_INCLUDE { <Unused> }    LIST_ATTRS_TO_INCLUDE_MODE <Unused>    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES YES    REFERENCEES_FIRST No    REJECT_INVALID_GEOM YES    CLEANING_TOLERANCE NONE    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_MERGED    OUTPUT INCOMPLETE FEATURE_TYPE FeatureMerger_UNMERGED_REQUESTOR    OUTPUT REJECTED FEATURE_TYPE FeatureMerger_<REJECTED>
-
-DEFAULT_MACRO _WB_BYPASS_TERMINATION No
-FACTORY_DEF * TeeFactory FACTORY_NAME FeatureMerger_<Rejected> INPUT FEATURE_TYPE FeatureMerger_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, FeatureMerger<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
-# -------------------------------------------------------------------------
-
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator    INPUT  FEATURE_TYPE FeatureMerger_MERGED    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "viticole" "SET_TO" "true" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT
-
-
-# -------------------------------------------------------------------------
-INCLUDE [          if { ({Selected Attributes} == {All Attributes}) } {             puts {MACRO StringCaseChanger_func @RenameAttributes(PERFORM_OPERATION,value,.*,fulltitle,"-_")};          } else {             puts {MACRO StringCaseChanger_func @RenameAttributes(LIST_ATTR, "value", "nom2017 nom2018 nom2012 nom2013 nom2014 nom2015 nom2016",fulltitle,"-_")};          }         ]
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringCaseChanger    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT    INPUT  FEATURE_TYPE FeatureMerger_UNMERGED_REQUESTOR    OUTPUT FEATURE_TYPE StringCaseChanger_OUTPUT         $(StringCaseChanger_func)
-
-# -------------------------------------------------------------------------
-
-
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeManager    INPUT  FEATURE_TYPE StringCaseChanger_OUTPUT    MULTI_FEATURE_MODE NO     NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "changement" "changement<space>observ<u00e9>" "FME_CONDITIONAL:DEFAULT_VALUE'faux'BOOL_OP;OR;COMPOSITE_TEST;<Unused>;TEST <at>Value<openparen>changement<space>observ<u00e9><closeparen> = t'vrai'FME_NUM_CONDITIONS2___" "RENAME_SET_VALUE" }      ATTR_ACTION { "viticole" "commune<space>viticole" "FME_CONDITIONAL:DEFAULT_VALUE'faux'BOOL_OP;OR;COMPOSITE_TEST;<Unused>;TEST <at>Value<openparen>commune<space>viticole<closeparen> = true'vrai'FME_NUM_CONDITIONS2___" "RENAME_SET_VALUE" }      ATTR_ACTION { "siqo_site" "site<space>inao" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "siqo_code_insee" "siqo_code_insee" "" "REMOVE" }    OUTPUT OUTPUT FEATURE_TYPE AttributeManager_OUTPUT
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeManager_OUTPUT TO XLSXW __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>historique2<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
 
-# -------------------------------------------------------------------------
-XLSXW_1_DEF historique2   xlsx_drop_sheet              Yes   xlsx_trunc_sheet             Yes   xlsx_sheet_order             ""   xlsx_freeze_end_row          ""   xlsx_names_are_positions     No   xlsx_field_names_out         Yes   xlsx_start_col               ""   xlsx_start_row               ""   xlsx_offset_col              ""   xlsx_offset_row              ""   xlsx_raster_type             PNG   xlsx_table_writer_mode       Insert   xlsx_row_id_column           ""   xlsx_protect_sheet           NO   xlsx_protect_sheet_level     <Unused>   xlsx_protect_sheet_password  <Unused>   xlsx_protect_sheet_permissions <Unused>   "changement observé"         auto(20,version<semicolon>1<semicolon>number_format_string<semicolon><semicolon>font<semicolon><semicolon>font_color<semicolon><semicolon>background_color<semicolon><semicolon>pattern_color<semicolon><semicolon>pattern_style<semicolon><semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>CELL_BORDER_COLOR<semicolon><semicolon>CELL_BORDER_STYLE<semicolon><semicolon>text_alignment<semicolon>NO<semicolon>horizontal_alignment<semicolon><semicolon>vertical_alignment<semicolon><semicolon>indent<semicolon><semicolon>text_orientation<semicolon><semicolon>text_control<semicolon><semicolon>cell_protection<semicolon>NO<semicolon>hide_cells<semicolon><semicolon>lock_cells<semicolon>)   "commune viticole"           auto(20,version<semicolon>1<semicolon>number_format_string<semicolon><semicolon>font<semicolon><semicolon>font_color<semicolon><semicolon>background_color<semicolon><semicolon>pattern_color<semicolon><semicolon>pattern_style<semicolon><semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>CELL_BORDER_COLOR<semicolon><semicolon>CELL_BORDER_STYLE<semicolon><semicolon>text_alignment<semicolon>NO<semicolon>horizontal_alignment<semicolon><semicolon>vertical_alignment<semicolon><semicolon>indent<semicolon><semicolon>text_orientation<semicolon><semicolon>text_control<semicolon><semicolon>cell_protection<semicolon>NO<semicolon>hide_cells<semicolon><semicolon>lock_cells<semicolon>)   "site inao"                  auto(20,version<semicolon>1<semicolon>number_format_string<semicolon><semicolon>font<semicolon><semicolon>font_color<semicolon><semicolon>background_color<semicolon><semicolon>pattern_color<semicolon><semicolon>pattern_style<semicolon><semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>CELL_BORDER_COLOR<semicolon><semicolon>CELL_BORDER_STYLE<semicolon><semicolon>text_alignment<semicolon>NO<semicolon>horizontal_alignment<semicolon><semicolon>vertical_alignment<semicolon><semicolon>indent<semicolon><semicolon>text_orientation<semicolon><semicolon>text_control<semicolon><semicolon>cell_protection<semicolon>NO<semicolon>hide_cells<semicolon><semicolon>lock_cells<semicolon>)   insee2012                    auto(20,version<semicolon>1<semicolon>number_format_string<semicolon><semicolon>font<semicolon><semicolon>font_color<semicolon><semicolon>background_color<semicolon><semicolon>pattern_color<semicolon><semicolon>pattern_style<semicolon><semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>CELL_BORDER_COLOR<semicolon><semicolon>CELL_BORDER_STYLE<semicolon><semicolon>text_alignment<semicolon>NO<semicolon>horizontal_alignment<semicolon><semicolon>vertical_alignment<semicolon><semicolon>indent<semicolon><semicolon>text_orientation<semicolon><semicolon>text_control<semicolon><semicolon>cell_protection<semicolon>NO<semicolon>hide_cells<semicolon><semicolon>lock_cells<semicolon>)   nom2012                      auto(20,version<semicolon>1<semicolon>number_format_string<semicolon><semicolon>font<semicolon><semicolon>font_color<semicolon><semicolon>background_color<semicolon><semicolon>pattern_color<semicolon><semicolon>pattern_style<semicolon><semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>CELL_BORDER_COLOR<semicolon><semicolon>CELL_BORDER_STYLE<semicolon><semicolon>text_alignment<semicolon>NO<semicolon>horizontal_alignment<semicolon><semicolon>vertical_alignment<semicolon><semicolon>indent<semicolon><semicolon>text_orientation<semicolon><semicolon>text_control<semicolon><semicolon>cell_protection<semicolon>NO<semicolon>hide_cells<semicolon><semicolon>lock_cells<semicolon>)   nom2013                      auto(20,version<semicolon>1<semicolon>number_format_string<semicolon><semicolon>font<semicolon><semicolon>font_color<semicolon><semicolon>background_color<semicolon><semicolon>pattern_color<semicolon><semicolon>pattern_style<semicolon><semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>CELL_BORDER_COLOR<semicolon><semicolon>CELL_BORDER_STYLE<semicolon><semicolon>text_alignment<semicolon>NO<semicolon>horizontal_alignment<semicolon><semicolon>vertical_alignment<semicolon><semicolon>indent<semicolon><semicolon>text_orientation<semicolon><semicolon>text_control<semicolon><semicolon>cell_protection<semicolon>NO<semicolon>hide_cells<semicolon><semicolon>lock_cells<semicolon>)   insee2013                    auto(20,version<semicolon>1<semicolon>number_format_string<semicolon><semicolon>font<semicolon><semicolon>font_color<semicolon><semicolon>background_color<semicolon><semicolon>pattern_color<semicolon><semicolon>pattern_style<semicolon><semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>CELL_BORDER_COLOR<semicolon><semicolon>CELL_BORDER_STYLE<semicolon><semicolon>text_alignment<semicolon>NO<semicolon>horizontal_alignment<semicolon><semicolon>vertical_alignment<semicolon><semicolon>indent<semicolon><semicolon>text_orientation<semicolon><semicolon>text_control<semicolon><semicolon>cell_protection<semicolon>NO<semicolon>hide_cells<semicolon><semicolon>lock_cells<semicolon>)   nom2014                      auto(20,version<semicolon>1<semicolon>number_format_string<semicolon><semicolon>font<semicolon><semicolon>font_color<semicolon><semicolon>background_color<semicolon><semicolon>pattern_color<semicolon><semicolon>pattern_style<semicolon><semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>CELL_BORDER_COLOR<semicolon><semicolon>CELL_BORDER_STYLE<semicolon><semicolon>text_alignment<semicolon>NO<semicolon>horizontal_alignment<semicolon><semicolon>vertical_alignment<semicolon><semicolon>indent<semicolon><semicolon>text_orientation<semicolon><semicolon>text_control<semicolon><semicolon>cell_protection<semicolon>NO<semicolon>hide_cells<semicolon><semicolon>lock_cells<semicolon>)   insee2014                    auto(20,version<semicolon>1<semicolon>number_format_string<semicolon><semicolon>font<semicolon><semicolon>font_color<semicolon><semicolon>background_color<semicolon><semicolon>pattern_color<semicolon><semicolon>pattern_style<semicolon><semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>CELL_BORDER_COLOR<semicolon><semicolon>CELL_BORDER_STYLE<semicolon><semicolon>text_alignment<semicolon>NO<semicolon>horizontal_alignment<semicolon><semicolon>vertical_alignment<semicolon><semicolon>indent<semicolon><semicolon>text_orientation<semicolon><semicolon>text_control<semicolon><semicolon>cell_protection<semicolon>NO<semicolon>hide_cells<semicolon><semicolon>lock_cells<semicolon>)   nom2015                      auto(20,version<semicolon>1<semicolon>number_format_string<semicolon><semicolon>font<semicolon><semicolon>font_color<semicolon><semicolon>background_color<semicolon><semicolon>pattern_color<semicolon><semicolon>pattern_style<semicolon><semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>CELL_BORDER_COLOR<semicolon><semicolon>CELL_BORDER_STYLE<semicolon><semicolon>text_alignment<semicolon>NO<semicolon>horizontal_alignment<semicolon><semicolon>vertical_alignment<semicolon><semicolon>indent<semicolon><semicolon>text_orientation<semicolon><semicolon>text_control<semicolon><semicolon>cell_protection<semicolon>NO<semicolon>hide_cells<semicolon><semicolon>lock_cells<semicolon>)   insee2015                    auto(20,version<semicolon>1<semicolon>number_format_string<semicolon><semicolon>font<semicolon><semicolon>font_color<semicolon><semicolon>background_color<semicolon><semicolon>pattern_color<semicolon><semicolon>pattern_style<semicolon><semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>CELL_BORDER_COLOR<semicolon><semicolon>CELL_BORDER_STYLE<semicolon><semicolon>text_alignment<semicolon>NO<semicolon>horizontal_alignment<semicolon><semicolon>vertical_alignment<semicolon><semicolon>indent<semicolon><semicolon>text_orientation<semicolon><semicolon>text_control<semicolon><semicolon>cell_protection<semicolon>NO<semicolon>hide_cells<semicolon><semicolon>lock_cells<semicolon>)   nom2016                      auto(20,version<semicolon>1<semicolon>number_format_string<semicolon><semicolon>font<semicolon><semicolon>font_color<semicolon><semicolon>background_color<semicolon><semicolon>pattern_color<semicolon><semicolon>pattern_style<semicolon><semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>CELL_BORDER_COLOR<semicolon><semicolon>CELL_BORDER_STYLE<semicolon><semicolon>text_alignment<semicolon>NO<semicolon>horizontal_alignment<semicolon><semicolon>vertical_alignment<semicolon><semicolon>indent<semicolon><semicolon>text_orientation<semicolon><semicolon>text_control<semicolon><semicolon>cell_protection<semicolon>NO<semicolon>hide_cells<semicolon><semicolon>lock_cells<semicolon>)   insee2016                    auto(20,version<semicolon>1<semicolon>number_format_string<semicolon><semicolon>font<semicolon><semicolon>font_color<semicolon><semicolon>background_color<semicolon><semicolon>pattern_color<semicolon><semicolon>pattern_style<semicolon><semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>CELL_BORDER_COLOR<semicolon><semicolon>CELL_BORDER_STYLE<semicolon><semicolon>text_alignment<semicolon>NO<semicolon>horizontal_alignment<semicolon><semicolon>vertical_alignment<semicolon><semicolon>indent<semicolon><semicolon>text_orientation<semicolon><semicolon>text_control<semicolon><semicolon>cell_protection<semicolon>NO<semicolon>hide_cells<semicolon><semicolon>lock_cells<semicolon>)   nom2017                      auto(20,version<semicolon>1<semicolon>number_format_string<semicolon><semicolon>font<semicolon><semicolon>font_color<semicolon><semicolon>background_color<semicolon><semicolon>pattern_color<semicolon><semicolon>pattern_style<semicolon><semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>CELL_BORDER_COLOR<semicolon><semicolon>CELL_BORDER_STYLE<semicolon><semicolon>text_alignment<semicolon>NO<semicolon>horizontal_alignment<semicolon><semicolon>vertical_alignment<semicolon><semicolon>indent<semicolon><semicolon>text_orientation<semicolon><semicolon>text_control<semicolon><semicolon>cell_protection<semicolon>NO<semicolon>hide_cells<semicolon><semicolon>lock_cells<semicolon>)   insee2017                    auto(20,version<semicolon>1<semicolon>number_format_string<semicolon><semicolon>font<semicolon><semicolon>font_color<semicolon><semicolon>background_color<semicolon><semicolon>pattern_color<semicolon><semicolon>pattern_style<semicolon><semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>CELL_BORDER_COLOR<semicolon><semicolon>CELL_BORDER_STYLE<semicolon><semicolon>text_alignment<semicolon>NO<semicolon>horizontal_alignment<semicolon><semicolon>vertical_alignment<semicolon><semicolon>indent<semicolon><semicolon>text_orientation<semicolon><semicolon>text_control<semicolon><semicolon>cell_protection<semicolon>NO<semicolon>hide_cells<semicolon><semicolon>lock_cells<semicolon>)   nom2018                      auto(20,version<semicolon>1<semicolon>number_format_string<semicolon><semicolon>font<semicolon><semicolon>font_color<semicolon><semicolon>background_color<semicolon><semicolon>pattern_color<semicolon><semicolon>pattern_style<semicolon><semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>CELL_BORDER_COLOR<semicolon><semicolon>CELL_BORDER_STYLE<semicolon><semicolon>text_alignment<semicolon>NO<semicolon>horizontal_alignment<semicolon><semicolon>vertical_alignment<semicolon><semicolon>indent<semicolon><semicolon>text_orientation<semicolon><semicolon>text_control<semicolon><semicolon>cell_protection<semicolon>NO<semicolon>hide_cells<semicolon><semicolon>lock_cells<semicolon>)   insee2018                    auto(20,version<semicolon>1<semicolon>number_format_string<semicolon><semicolon>font<semicolon><semicolon>font_color<semicolon><semicolon>background_color<semicolon><semicolon>pattern_color<semicolon><semicolon>pattern_style<semicolon><semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>CELL_BORDER_COLOR<semicolon><semicolon>CELL_BORDER_STYLE<semicolon><semicolon>text_alignment<semicolon>NO<semicolon>horizontal_alignment<semicolon><semicolon>vertical_alignment<semicolon><semicolon>indent<semicolon><semicolon>text_orientation<semicolon><semicolon>text_control<semicolon><semicolon>cell_protection<semicolon>NO<semicolon>hide_cells<semicolon><semicolon>lock_cells<semicolon>)
