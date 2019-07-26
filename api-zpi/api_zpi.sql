@@ -1,24 +1,4 @@
-﻿-- 1. Générer la liste des communes de l'aire-géo avec geom sur base de 2011 (commune_histo)
--- 2. Générer la liste des api à générer en fonction des aire-géo disponible dans la base de donnée (cf. fichier excel)
--- 3. Appliquer la requête suivante dans une boucle plpgsl se reposant sur la liste des api à générer (cf. add_api())
-
--- WITH lst_com_api_base AS(
--- 	SELECT *
--- 	FROM api_ag
--- 	WHERE id_api = 1
--- 	),
--- 	lst_com_ag AS(
--- 	SELECT * 
--- 	FROM data_ag
--- 	WHERE id_siqo = '01260242')
--- 
--- SELECT cab.insee, cab.nom, cab.annee, cab.geom
--- FROM lst_com_api_base cab
--- FULL JOIN lst_com_ag lca ON lca.insee = cab.insee
--- WHERE lca.id_siqo is null
-
-
-DROP FUNCTION IF EXISTS ign_admin_express.add_api();
+﻿DROP FUNCTION IF EXISTS ign_admin_express.add_api();
 CREATE FUNCTION ign_admin_express.add_api()
 RETURNS TABLE(
 	lbl_aire text,
