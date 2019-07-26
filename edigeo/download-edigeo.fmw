@@ -1,62 +1,57 @@
 #! <?xml version="1.0" encoding="UTF-8" ?>
 #! <WORKSPACE
-#    
-#    
 #    Command-line to run this workspace:
+#        "C:\Program Files\FME\fme.exe" \\SRV-34DB\data2\BDDC\@_martin\1_integration-data\edigeo\download-edigeo.fmw
+#              --date_version "latest"
+#              --sortie "C:\Users\baussier\Desktop\edigeo"
+#              --type "parcelles"
 #    
-#    
-#    "C:\Program Files\FME\fme.exe" \\NAS-34D2\Data2\Data2\BDDC\6_traitements-fme\download-edigeo.fmw
-#          --departement "84"
-#          --date_version "latest"
-#          --sortie "C:\Users\baussier\Desktop\edigeo"
-#          --type "parcelles"
-#    
-#    
-#!   FME_REPROJECTION_ENGINE="FME"
-#!   END_TCL=""
-#!   HISTORY=""
-#!   FME_DOCUMENT_PRIORGUID="476bbc80-badc-4b3d-a9ad-32ea35d26319,e0622a07-7570-423e-bc43-b39cd85db9d3,65caf6c4-07f8-4c0c-9ebb-eb9aa5e670a1"
-#!   ZOOM_SCALE="57"
-#!   SHOW_INFO_NODES="true"
-#!   REQUIREMENTS_KEYWORD=""
-#!   LOG_MAX_RECORDED_FEATURES="200"
-#!   IGNORE_READER_FAILURE="No"
-#!   SOURCE="NONE"
-#!   LOG_FILE=""
-#!   LAST_SAVE_DATE="2018-01-26T17:03:05"
-#!   WORKSPACE_VERSION="1"
-#!   CATEGORY=""
-#!   REDIRECT_TERMINATORS="NONE"
-#!   VIEW_POSITION="-2706.17 -4.38601"
-#!   DESTINATION="NONE"
-#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
-#!   PYTHON_COMPATIBILITY="27"
-#!   USAGE=""
-#!   TERMINATE_REJECTED="YES"
-#!   FME_GEOMETRY_HANDLING="Enhanced"
-#!   REQUIREMENTS=""
-#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
-#!   LAST_SAVE_BUILD="FME(R) 2016.1.1.0 (20160722 - Build 16609 - WIN64)"
-#!   BEGIN_TCL=""
-#!   DOC_TOP_LEFT="-1506.26 -581.971"
-#!   FME_BUILD_NUM="16609"
-#!   DOC_EXTENTS="2849.38 185.782"
-#!   WARN_INVALID_XFORM_PARAM="Yes"
-#!   EXPLICIT_BOOKMARK_ORDER="false"
-#!   FME_DOCUMENT_GUID="a4e4dcb8-257c-475e-9365-62c63463522d"
-#!   LEGAL_TERMS_CONDITIONS=""
 #!   ATTR_TYPE_ENCODING="SDF"
-#!   SHOW_ANNOTATIONS="true"
-#!   DESTINATION_ROUTING_FILE=""
 #!   BEGIN_PYTHON=""
-#!   END_PYTHON=""
-#!   PASSWORD=""
-#!   FME_STROKE_MAX_DEVIATION="0"
-#!   SOURCE_ROUTING_FILE=""
-#!   TITLE=""
-#!   MAX_LOG_FEATURES="200"
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
 #!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="3280.38 256.783"
+#!   DOC_TOP_LEFT="-1506.26 -652.971"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="19238"
+#!   FME_DOCUMENT_GUID="28d09923-d6bf-4ea5-96f5-25dad25bd3e0"
+#!   FME_DOCUMENT_PRIORGUID="476bbc80-badc-4b3d-a9ad-32ea35d26319,e0622a07-7570-423e-bc43-b39cd85db9d3,65caf6c4-07f8-4c0c-9ebb-eb9aa5e670a1,a4e4dcb8-257c-475e-9365-62c63463522d"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_REPROJECTION_ENGINE="FME"
 #!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2019.0.0.0 (20190328 - Build 19238 - WIN64)"
+#!   LAST_SAVE_DATE="2019-07-25T16:55:03"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="37"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="-3644.77 587.725"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="57"
 #! >
 #! <DATASETS>
 #! </DATASETS>
@@ -69,11 +64,6 @@
 #! <FMESERVER>
 #! </FMESERVER>
 #! <GLOBAL_PARAMETERS>
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR departement departement (séparé par des virgules) :"
-#!   DEFAULT_VALUE="84"
-#!   IS_STAND_ALONE="true"
-#! />
 #! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR date_version date de version:"
 #!   DEFAULT_VALUE="latest"
@@ -101,12 +91,12 @@
 #!   IDENTIFIER="2"
 #!   TYPE="HTTPCaller"
 #!   VERSION="1"
-#!   POSITION="1343.12 -581.971"
-#!   BOUNDING_RECT="1343.12 -581.971 -1 -1"
-#!   ORDER="5e+14"
+#!   POSITION="1343.1199999999999 -581.971"
+#!   BOUNDING_RECT="1343.1199999999999 -581.971 431 71"
+#!   ORDER="500000000000000"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="16609"
+#!   LAST_PARM_EDIT="19238"
 #! >
 #!     <OUTPUT_FEAT NAME="Output"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -114,79 +104,76 @@
 #!     <XFORM_ATTR ATTR_NAME="date" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="repertoire_sortie" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="type" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee_dep" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="lst_dep" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_element_index" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="code_dept" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_headers{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_headers{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_response_file_path" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_http_status_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <OUTPUT_FEAT NAME="&lt;Rejected&gt;"/>
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
 #!     <XFORM_ATTR ATTR_NAME="departement" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="date" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="repertoire_sortie" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="type" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="insee_dep" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="lst_dep" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="_element_index" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="code_dept" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_error" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_headers{}.name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_headers{}.value" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_response_file_path" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_http_status_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_PARM PARM_NAME="VERIFY_SSL_CERTIFICATES" PARM_VALUE="Yes"/>
-#!     <XFORM_PARM PARM_NAME="TARGET_ATTR_ENCODING" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="AUTH_USERNAME" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="OUTPUT_FILENAME" PARM_VALUE="@Value(repertoire_sortie)\@Value(lst_dep)_@Value(type).json.gz "/>
-#!     <XFORM_PARM PARM_NAME="UPLOAD_CONTENT_TYPE" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="UPLOAD_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ADDITIONAL_PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ADDITIONAL_URL_PARAMETERS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ADVANCED_REQUEST_PARAMETERS" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="ADVANCED_RESPONSE_PARAMETERS" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="AUTH_METHOD" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="AUTH_NAMED_CONNECTION" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="TARGET_URL" PARM_VALUE="https:&lt;solidus&gt;&lt;solidus&gt;cadastre.data.gouv.fr&lt;solidus&gt;data&lt;solidus&gt;etalab-cadastre&lt;solidus&gt;&lt;at&gt;Value&lt;openparen&gt;date&lt;closeparen&gt;&lt;solidus&gt;geojson&lt;solidus&gt;departements&lt;solidus&gt;&lt;at&gt;Value&lt;openparen&gt;lst_dep&lt;closeparen&gt;&lt;solidus&gt;cadastre-&lt;at&gt;Value&lt;openparen&gt;lst_dep&lt;closeparen&gt;-&lt;at&gt;Value&lt;openparen&gt;type&lt;closeparen&gt;.json.gz"/>
-#!     <XFORM_PARM PARM_NAME="UPLOAD_FILE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="AUTH_PASSWORD" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="AUTH_USERNAME" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="CONNECTION_TIMEOUT_LENGTH" PARM_VALUE="60"/>
 #!     <XFORM_PARM PARM_NAME="CUSTOM_HEADERS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="FILE_PATH_ATTR" PARM_VALUE="_response_file_path"/>
-#!     <XFORM_PARM PARM_NAME="HTTP_METHOD" PARM_VALUE="GET"/>
-#!     <XFORM_PARM PARM_NAME="FILE_TYPE" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="HTTPCaller"/>
-#!     <XFORM_PARM PARM_NAME="RESPONSE_FILE_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
-#!     <XFORM_PARM PARM_NAME="ERROR_ATTR" PARM_VALUE="_error"/>
-#!     <XFORM_PARM PARM_NAME="STATUS_CODE_ATTR" PARM_VALUE="_http_status_code"/>
-#!     <XFORM_PARM PARM_NAME="ADDITIONAL_PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="AUTH_PASSWORD" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="CUSTOM_HEADERS_GROUP" PARM_VALUE="NO"/>
-#!     <XFORM_PARM PARM_NAME="TARGET_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="MULTIPARTS" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="RESPONSE_HEADER_LIST_ATTR" PARM_VALUE="_headers"/>
-#!     <XFORM_PARM PARM_NAME="UPLOAD_BODY" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="SAVE_MULTI" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="ERROR_ATTR" PARM_VALUE="_error"/>
+#!     <XFORM_PARM PARM_NAME="FILE_PATH_ATTR" PARM_VALUE="_response_file_path"/>
+#!     <XFORM_PARM PARM_NAME="FILE_TYPE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="FOLLOW_REDIRECTS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="HTTPURL_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="HTTP_AUTH_GROUP" PARM_VALUE="NO"/>
-#!     <XFORM_PARM PARM_NAME="AUTH_METHOD" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="HTTP_METHOD" PARM_VALUE="GET"/>
+#!     <XFORM_PARM PARM_NAME="HTTP_RESPONSE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="MULTIPARTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTIPART_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_DIRNAME" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_FILENAME" PARM_VALUE="@Value(repertoire_sortie)\@Value(code_dept)_@Value(type).json.gz "/>
+#!     <XFORM_PARM PARM_NAME="RESPONSE_FILE_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="RESPONSE_HEADER_LIST_ATTR" PARM_VALUE="_headers"/>
+#!     <XFORM_PARM PARM_NAME="SAVE_FILE" PARM_VALUE="File"/>
+#!     <XFORM_PARM PARM_NAME="SAVE_MULTI" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="STATUS_CODE_ATTR" PARM_VALUE="_http_status_code"/>
+#!     <XFORM_PARM PARM_NAME="TARGET_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TARGET_ATTR_ENCODING" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TARGET_URL" PARM_VALUE="https:&lt;solidus&gt;&lt;solidus&gt;cadastre.data.gouv.fr&lt;solidus&gt;data&lt;solidus&gt;etalab-cadastre&lt;solidus&gt;&lt;at&gt;Value&lt;openparen&gt;date&lt;closeparen&gt;&lt;solidus&gt;geojson&lt;solidus&gt;departements&lt;solidus&gt;&lt;at&gt;Value&lt;openparen&gt;code_dept&lt;closeparen&gt;&lt;solidus&gt;cadastre-&lt;at&gt;Value&lt;openparen&gt;code_dept&lt;closeparen&gt;-&lt;at&gt;Value&lt;openparen&gt;type&lt;closeparen&gt;.json.gz"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFER_TIMEOUT_LENGTH" PARM_VALUE="90"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="UPLOAD_BODY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="UPLOAD_CONTENT_TYPE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="UPLOAD_FILE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="UPLOAD_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="UPLOAD_TYPE" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="USE_COOKIES" PARM_VALUE="No"/>
-#!     <XFORM_PARM PARM_NAME="HTTP_RESPONSE_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="TRANSFER_TIMEOUT_LENGTH" PARM_VALUE="90"/>
-#!     <XFORM_PARM PARM_NAME="OUTPUT_DIRNAME" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="SAVE_FILE" PARM_VALUE="File"/>
-#!     <XFORM_PARM PARM_NAME="FOLLOW_REDIRECTS" PARM_VALUE="Yes"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ADVANCED_REQUEST_PARAMETERS" PARM_VALUE="NO"/>
-#!     <XFORM_PARM PARM_NAME="HTTPURL_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ADVANCED_RESPONSE_PARAMETERS" PARM_VALUE="NO"/>
-#!     <XFORM_PARM PARM_NAME="ADDITIONAL_URL_PARAMETERS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="MULTIPART_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VERIFY_SSL_CERTIFICATES" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="HTTPCaller"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="4"
 #!   TYPE="AttributeCreator"
 #!   VERSION="8"
-#!   POSITION="-430.478 -506.137"
-#!   BOUNDING_RECT="-430.478 -506.137 -1 -1"
-#!   ORDER="5e+14"
+#!   POSITION="-518.1981754473685 -456.18799999999999"
+#!   BOUNDING_RECT="-518.1981754473685 -456.18799999999999 431 71"
+#!   ORDER="500000000000000"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="16609"
+#!   LAST_PARM_EDIT="19238"
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -194,114 +181,53 @@
 #!     <XFORM_ATTR ATTR_NAME="date" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="repertoire_sortie" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="type" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee_dep" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_ATTR ATTR_NAME="code_dept" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; departement SET_TO &lt;at&gt;Value&lt;openparen&gt;code_dept&lt;closeparen&gt;  date SET_TO $(date_version)  repertoire_sortie SET_TO $(sortie)  type SET_TO $(type)"/>
 #!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; departement SET_TO &lt;at&gt;Value&lt;openparen&gt;insee_dep&lt;closeparen&gt;  date SET_TO $(date_version)  repertoire_sortie SET_TO $(sortie)  type SET_TO $(type)"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#!   IDENTIFIER="8"
-#!   TYPE="AttributeSplitter"
-#!   VERSION="3"
-#!   POSITION="157.028 -535.137"
-#!   BOUNDING_RECT="157.028 -535.137 -1 -1"
-#!   ORDER="5e+14"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="16609"
-#! >
-#!     <OUTPUT_FEAT NAME="OUTPUT"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="departement" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="date" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="repertoire_sortie" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="type" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee_dep" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="lst_dep{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="DELIMITER" PARM_VALUE="&lt;comma&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeSplitter"/>
-#!     <XFORM_PARM PARM_NAME="ATTR_NAME" PARM_VALUE="departement"/>
-#!     <XFORM_PARM PARM_NAME="DROP_EMPTY_PARTS" PARM_VALUE="No"/>
-#!     <XFORM_PARM PARM_NAME="TRIM_OPTION" PARM_VALUE="Both"/>
-#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="lst_dep"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#!   IDENTIFIER="11"
-#!   TYPE="ListExploder"
-#!   VERSION="5"
-#!   POSITION="692.031 -581.971"
-#!   BOUNDING_RECT="692.031 -581.971 -1 -1"
-#!   ORDER="5e+14"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="16609"
-#! >
-#!     <OUTPUT_FEAT NAME="ELEMENTS"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="departement" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="date" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="repertoire_sortie" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="type" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="insee_dep" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="lst_dep" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_element_index" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
-#!     <FEAT_COLLAPSED COLLAPSED="1"/>
-#!     <XFORM_ATTR ATTR_NAME="departement" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="date" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="repertoire_sortie" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="type" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="insee_dep" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="lst_dep" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ListExploder"/>
-#!     <XFORM_PARM PARM_NAME="LIST_ATTR" PARM_VALUE="lst_dep{}"/>
-#!     <XFORM_PARM PARM_NAME="INDEX_ATTR" PARM_VALUE="_element_index"/>
-#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="Merge Incoming List"/>
-#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="Use Incoming List"/>
-#!     <XFORM_PARM PARM_NAME="INCOMING_PREFIX" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="10"
 #!   TYPE="SQLCreator"
 #!   VERSION="3"
-#!   POSITION="-1506.26 -396.188"
-#!   BOUNDING_RECT="-1506.26 -396.188 -1 -1"
-#!   ORDER="5e+14"
+#!   POSITION="-1506.26 -396.18799999999999"
+#!   BOUNDING_RECT="-1506.26 -396.18799999999999 431 71"
+#!   ORDER="500000000000000"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="16609"
+#!   LAST_PARM_EDIT="19238"
 #! >
 #!     <OUTPUT_FEAT NAME="RESULT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="insee_dep" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="code_dept" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
 #!     <XFORM_ATTR ATTR_NAME="_reader_error" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="insee_dep" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="code_dept" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="srv_sig"/>
+#!     <XFORM_PARM PARM_NAME="DB_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="EXPOSED_ATTRIBUTE_LIST" PARM_VALUE="code_dept"/>
+#!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="POSTGRES"/>
-#!     <XFORM_PARM PARM_NAME="POSTGRES_SCHEMAS_FOR_TABLE_LISTING" PARM_VALUE="work source"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="POSTGRES_READ_TIME_WITH_TIMEZONE,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_CREATE_FEATURE_TABLES_FROM_DATA,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_SCHEMAS_FOR_TABLE_LISTING,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Schemas&lt;space&gt;for&lt;space&gt;Table&lt;space&gt;Listing:,POSTGRES_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Connection:"/>
 #!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="local"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_CREATE_FEATURE_TABLES_FROM_DATA" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_NAMED_CONNECTION" PARM_VALUE="srv_sig"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_READ_TIME_WITH_TIMEZONE" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_SCHEMAS_FOR_TABLE_LISTING" PARM_VALUE="cvi edigeo etalab ign_bd_cadastre ign_bd_carto ign_bd_topo mae metier_inao work"/>
+#!     <XFORM_PARM PARM_NAME="SQL_STATEMENT" PARM_VALUE="select&lt;space&gt;distinct&lt;space&gt;code_dept&lt;space&gt;from&lt;space&gt;&lt;quote&gt;ign_bd_carto&lt;quote&gt;.&lt;quote&gt;departement&lt;quote&gt;&lt;lf&gt;order&lt;space&gt;by&lt;space&gt;code_dept&lt;lf&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SQLCreator"/>
-#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="POSTGRES_SCHEMAS_FOR_TABLE_LISTING,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Schemas&lt;space&gt;for&lt;space&gt;Table&lt;space&gt;Listing:,POSTGRES_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Connection:,POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;"/>
-#!     <XFORM_PARM PARM_NAME="EXPOSED_ATTRIBUTE_LIST" PARM_VALUE="insee_dep"/>
-#!     <XFORM_PARM PARM_NAME="POSTGRES_NAMED_CONNECTION" PARM_VALUE="local"/>
-#!     <XFORM_PARM PARM_NAME="SQL_STATEMENT" PARM_VALUE="select&lt;space&gt;distinct&lt;space&gt;insee_dep&lt;space&gt;from&lt;space&gt;&lt;quote&gt;source&lt;quote&gt;.&lt;quote&gt;departement&lt;quote&gt;&lt;lf&gt;"/>
 #! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
@@ -317,32 +243,10 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="9"
+#!   IDENTIFIER="15"
 #!   SOURCE_NODE="4"
-#!   TARGET_NODE="8"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="12"
-#!   SOURCE_NODE="8"
-#!   TARGET_NODE="11"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="14"
-#!   SOURCE_NODE="11"
 #!   TARGET_NODE="2"
-#!   SOURCE_PORT_DESC="fo 0 ELEMENTS"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
@@ -359,9 +263,8 @@
 #! <LOOKUP_TABLES>
 #! </LOOKUP_TABLES>
 #! </WORKSPACE>
-FME_PYTHON_VERSION 27
-DEFAULT_MACRO departement 84
-GUI OPTIONAL TEXT departement departement (séparé par des virgules) :
+
+FME_PYTHON_VERSION 37
 DEFAULT_MACRO date_version latest
 GUI OPTIONAL TEXT date_version date de version:
 DEFAULT_MACRO sortie C:\Users\baussier\Desktop\edigeo
@@ -370,29 +273,24 @@ DEFAULT_MACRO type parcelles
 GUI OPTIONAL CHOICE type parcelles%feuilles%sections%communes%batiments type :
 #! START_HEADER
 #! START_WB_HEADER
-READER_TYPE NULL
-READER_KEYWORD NULL_SOURCE
-NULL_SOURCE_DATASET null
-
+READER_TYPE MULTI_READER
 WRITER_TYPE NULL
 WRITER_KEYWORD NULL_DEST
 NULL_DEST_DATASET null
 #! END_WB_HEADER
-
 #! START_WB_HEADER
 #! END_WB_HEADER
-
 #! END_HEADER
 
 LOG_FILENAME "$(FME_MF_DIR)download-edigeo.log"
 LOG_APPEND NO
+LOG_FILTER_MASK -1
 LOG_MAX_FEATURES 200
 LOG_MAX_RECORDED_FEATURES 200
 FME_REPROJECTION_ENGINE FME
 FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
 FME_GEOMETRY_HANDLING Enhanced
 FME_STROKE_MAX_DEVIATION 0
-LOG_FILTER_MASK -1
 # -------------------------------------------------------------------------
 
 MULTI_READER_CONTINUE_ON_READER_FAILURE No
@@ -403,40 +301,21 @@ MACRO WORKSPACE_NAME download-edigeo
 MACRO FME_VIEWER_APP fmedatainspector
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
-MACRO SQLCreator_DIRECTIVES SCHEMAS_FOR_TABLE_LISTING "work source" NAMED_CONNECTION local QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS Yes
-
+MACRO SQLCreator_DIRECTIVES READ_TIME_WITH_TIMEZONE Yes CREATE_FEATURE_TABLES_FROM_DATA Yes QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS Yes SCHEMAS_FOR_TABLE_LISTING "cvi edigeo etalab ign_bd_cadastre ign_bd_carto ign_bd_topo mae metier_inao work" NAMED_CONNECTION srv_sig
 FACTORY_DEF * CreationFactory    FACTORY_NAME SQLCreator_Creator    OUTPUT FEATURE_TYPE _____CREATED______
-FACTORY_DEF * QueryFactory    FACTORY_NAME SQLCreator    INPUT FEATURE_TYPE _____CREATED______    QUERY_SQL            select<space>distinct<space>insee_dep<space>from<space><quote>source<quote>.<quote>departement<quote><lf>    COMBINE_ATTRIBUTES   RESULT_ONLY    COMBINE_GEOMETRY     RESULT_ONLY    READER_TYPE          POSTGRES    READER_DATASET       "local"    READER_PARAMS        $(SQLCreator_DIRECTIVES)    CONTINUE_ON_READER_ERROR YES    OUTPUT RESULT FEATURE_TYPE SQLCreator_RESULT        @SupplyAttributes(fme_feature_type,SQLCreator)    OUTPUT READER_ERROR FEATURE_TYPE SQLCreator_<REJECTED>
-
-FACTORY_DEF * TeeFactory   FACTORY_NAME "SQLCreator <REJECTED> Output Nuker"   INPUT FEATURE_TYPE SQLCreator_<REJECTED>
-FACTORY_DEF * BranchingFactory   FACTORY_NAME "SQLCreator_RESULT Brancher -1 13"   INPUT FEATURE_TYPE SQLCreator_RESULT   TARGET_FACTORY "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   OUTPUT PASSED FEATURE_TYPE *     @RemoveAttributes("SQLCreator_RESULT Brancher -1 13".BranchingFactory.Count)
+FACTORY_DEF * QueryFactory    FACTORY_NAME SQLCreator    INPUT FEATURE_TYPE _____CREATED______    QUERY_SQL            select<space>distinct<space>code_dept<space>from<space><quote>ign_bd_carto<quote>.<quote>departement<quote><lf>order<space>by<space>code_dept<lf>    COMBINE_ATTRIBUTES   RESULT_ONLY    COMBINE_GEOMETRY     RESULT_ONLY    READER_TYPE          POSTGRES    READER_DATASET       "srv_sig"    READER_PARAMS        $(SQLCreator_DIRECTIVES)    QUERYFCT_PROPAGATE_IDS_ON_SQL_EXECUTE YES    CONTINUE_ON_READER_ERROR YES    OUTPUT RESULT FEATURE_TYPE SQLCreator_RESULT        @SupplyAttributes(fme_feature_type,SQLCreator)    OUTPUT READER_ERROR FEATURE_TYPE SQLCreator_<REJECTED>
+FACTORY_DEF * BranchingFactory   FACTORY_NAME "SQLCreator_RESULT Brancher -1 13"   INPUT FEATURE_TYPE SQLCreator_RESULT   TARGET_FACTORY "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   MAXIMUM_COUNT None   OUTPUT PASSED FEATURE_TYPE *
 DEFAULT_MACRO _WB_BYPASS_TERMINATION No
-FACTORY_DEF * TeeFactory FACTORY_NAME SQLCreator_<Rejected> INPUT FEATURE_TYPE SQLCreator_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, SQLCreator<space>output<space>a<space><lt>Rejected<gt><space>feature.)
+FACTORY_DEF * TeeFactory FACTORY_NAME SQLCreator_<Rejected> INPUT FEATURE_TYPE SQLCreator_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, SQLCreator<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
 # -------------------------------------------------------------------------
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   INPUT FEATURE_TYPE *  OUTPUT FEATURE_TYPE *
 # -------------------------------------------------------------------------
-
-FACTORY_DEF * AttrSetFactory    FACTORY_NAME AttributeCreator    INPUT  FEATURE_TYPE SQLCreator_RESULT    MULTI_FEATURE_MODE NO 	 NULL_ATTR_MODE NO_OP 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION "" "departement" "SET_TO" "<at>Value<openparen>insee_dep<closeparen>"     ATTR_ACTION "" "date" "SET_TO" "$(date_version$encode)"     ATTR_ACTION "" "repertoire_sortie" "SET_TO" "$(sortie$encode)"     ATTR_ACTION "" "type" "SET_TO" "$(type$encode)"    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT
-
-
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator    INPUT  FEATURE_TYPE SQLCreator_RESULT    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "departement" "SET_TO" "<at>Value<openparen>code_dept<closeparen>" }      ATTR_ACTION { "" "date" "SET_TO" "$(date_version$encode)" }      ATTR_ACTION { "" "repertoire_sortie" "SET_TO" "$(sortie$encode)" }      ATTR_ACTION { "" "type" "SET_TO" "$(type$encode)" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT
 # -------------------------------------------------------------------------
-
-Tcl2 set AttributeSplitter_3b5d091c_4004_40c1_9f71_e385802d48b43_splitDelim [FME_DecodeText {<comma>}];      if { [regexp {^([1-9][0-9]*s)+$} [set AttributeSplitter_3b5d091c_4004_40c1_9f71_e385802d48b43_splitDelim]] }      {         set AttributeSplitter_3b5d091c_4004_40c1_9f71_e385802d48b43_splitWidths [split [regsub -all {s$} {<comma>} {}] s];         proc AttributeSplitter_doSplit {}         {            global AttributeSplitter_3b5d091c_4004_40c1_9f71_e385802d48b43_splitWidths;            set source [FME_GetAttribute [FME_DecodeText {departement}]];            set attrNum 0;            set listName [FME_DecodeText {lst_dep}];            set attrPos 0;            set keepEmptyParts [string equal {No} {No}];            foreach width [set AttributeSplitter_3b5d091c_4004_40c1_9f71_e385802d48b43_splitWidths]            {               set endPos [expr $attrPos + $width - 1];               set bit [string range $source $attrPos $endPos];               set part [string trim $bit];               if { $keepEmptyParts || $part != \"\" } {                  FME_SetAttribute "$listName{$attrNum}" $part;                  incr attrNum;               };               incr attrPos $width;            };         };      }      else      {         proc AttributeSplitter_doSplit {}         {            global AttributeSplitter_3b5d091c_4004_40c1_9f71_e385802d48b43_splitDelim;            set delim [set AttributeSplitter_3b5d091c_4004_40c1_9f71_e385802d48b43_splitDelim];            set delimLength [string length $delim];            set source [FME_GetAttribute [FME_DecodeText {departement}]];            set keepEmptyParts [string equal {No} {No}];            set bits {};            set startIndex 0;            set nextIndex [string first $delim $source $startIndex];            while {$nextIndex >= 0} {              lappend bits [string range $source $startIndex [expr $nextIndex-1]];              set startIndex [expr $nextIndex + $delimLength];              set nextIndex [string first $delim $source $startIndex];            };            lappend bits [string range $source $startIndex end];            set listName [FME_DecodeText {lst_dep}];            set attrNum 0;            foreach bit $bits            {               set trimmedPart [string trim $bit];               if { $keepEmptyParts || $trimmedPart != \"\" } {                  FME_SetAttribute "$listName{$attrNum}" $trimmedPart;                  incr attrNum;               };            }          }       }
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeSplitter    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT    OUTPUT FEATURE_TYPE AttributeSplitter_OUTPUT         @Tcl2(AttributeSplitter_doSplit)
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * ElementFactory    FACTORY_NAME ListExploder    INPUT  FEATURE_TYPE AttributeSplitter_OUTPUT    LIST_NAME "lst_dep{}"    ELEMENT_NUMBER_FIELD "_element_index"    CLONE_GEOMETRY    ATTR_ACCUM_MODE "HANDLE_CONFLICT"    ATTR_CONFLICT_RES "INCOMING_IF_CONFLICT"    INCOMING_PREFIX "<Unused>"    OUTPUT ELEMENT FEATURE_TYPE ListExploder_ELEMENTS         @RemoveAttributes(ElementFactory.baseCloned)
+FACTORY_DEF * HTTPFactory    FACTORY_NAME HTTPCaller       INPUT  FEATURE_TYPE AttributeCreator_OUTPUT    TARGET_URL "@EvaluateExpression(FDIV,STRING_ENCODED,https:<solidus><solidus>cadastre.data.gouv.fr<solidus>data<solidus>etalab-cadastre<solidus><at>Value<openparen>date<closeparen><solidus>geojson<solidus>departements<solidus><at>Value<openparen>code_dept<closeparen><solidus>cadastre-<at>Value<openparen>code_dept<closeparen>-<at>Value<openparen>type<closeparen>.json.gz,HTTPCaller)"    HTTP_METHOD GET    SAVE_FILE YES    OUTPUT_FILENAME "@EvaluateExpression(FDIV,STRING,<at>Value<openparen>repertoire_sortie<closeparen><backslash><at>Value<openparen>code_dept<closeparen>_<at>Value<openparen>type<closeparen>.json.gz<space>,HTTPCaller)"    OUTPUT_DIRECTORY "<Unused>"    FILE_EXTENSION "<Unused>"    TARGET_ATTR "<Unused>"    FILE_PATH_ATTR "_response_file_path"    UPLOAD_FILE "<Unused>"    UPLOAD_BODY "<Unused>"    MULTIPART_UPLOAD <Unused>    UPLOAD_CONTENT_TYPE "<Unused>"    COMBINED_MULTIPART_TABLE    REQUEST_HEADER_TABLE    ADDITIONAL_URL_PARAMETERS    AUTH_USERNAME "<Unused>"    AUTH_PASSWORD "<Unused>"    AUTH_METHOD "<Unused>"    TARGET_ATTRIBUTE_ENCODING <Unused>    RESPONSE_HEADER_LIST_ATTR "_headers"    STATUS_CODE_ATTR "_http_status_code"    ERROR_ATTR "_error"    CONNECTION_TIMEOUT_LENGTH 60    TRANSFER_TIMEOUT_LENGTH 90    FOLLOW_REDIRECTS Yes    VERIFY_SSL_CERTIFICATES Yes    NAMED_CONNECTION "<Unused>"    USE_COOKIES No    OUTPUT OUTPUT FEATURE_TYPE HTTPCaller_Output    OUTPUT REJECTED FEATURE_TYPE HTTPCaller_<REJECTED>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "HTTPCaller Output Transformer Output Nuker"   INPUT FEATURE_TYPE HTTPCaller_Output
 DEFAULT_MACRO _WB_BYPASS_TERMINATION No
-FACTORY_DEF * TeeFactory FACTORY_NAME ListExploder_<Rejected> INPUT FEATURE_TYPE ListExploder_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, ListExploder<space>output<space>a<space><lt>Rejected<gt><space>feature.)
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * HTTPFactory    FACTORY_NAME HTTPCaller       INPUT  FEATURE_TYPE ListExploder_ELEMENTS    TARGET_URL "@EvaluateExpression(FDIV,STRING_ENCODED,https:<solidus><solidus>cadastre.data.gouv.fr<solidus>data<solidus>etalab-cadastre<solidus><at>Value<openparen>date<closeparen><solidus>geojson<solidus>departements<solidus><at>Value<openparen>lst_dep<closeparen><solidus>cadastre-<at>Value<openparen>lst_dep<closeparen>-<at>Value<openparen>type<closeparen>.json.gz,HTTPCaller)"    HTTP_METHOD GET    SAVE_FILE YES    OUTPUT_FILENAME "@EvaluateExpression(FDIV,STRING,<at>Value<openparen>repertoire_sortie<closeparen><backslash><at>Value<openparen>lst_dep<closeparen>_<at>Value<openparen>type<closeparen>.json.gz<space>,HTTPCaller)"    OUTPUT_DIRECTORY "<Unused>"    FILE_EXTENSION "<Unused>"    TARGET_ATTR "<Unused>"    FILE_PATH_ATTR "_response_file_path"    UPLOAD_FILE "<Unused>"    UPLOAD_BODY "<Unused>"    MULTIPART_UPLOAD <Unused>    UPLOAD_CONTENT_TYPE "<Unused>"    COMBINED_MULTIPART_TABLE    REQUEST_HEADER_TABLE    ADDITIONAL_URL_PARAMETERS    AUTH_USERNAME "<Unused>"    AUTH_PASSWORD "<Unused>"    AUTH_METHOD "<Unused>"    TARGET_ATTRIBUTE_ENCODING <Unused>    RESPONSE_HEADER_LIST_ATTR "_headers"    STATUS_CODE_ATTR "_http_status_code"    ERROR_ATTR "_error"    CONNECTION_TIMEOUT_LENGTH 60    TRANSFER_TIMEOUT_LENGTH 90    FOLLOW_REDIRECTS Yes    VERIFY_SSL_CERTIFICATES Yes    NAMED_CONNECTION "<Unused>"    USE_COOKIES No    OUTPUT OUTPUT FEATURE_TYPE HTTPCaller_Output    OUTPUT REJECTED FEATURE_TYPE HTTPCaller_<Rejected>
-
-FACTORY_DEF * TeeFactory   FACTORY_NAME "HTTPCaller Output Output Nuker"   INPUT FEATURE_TYPE HTTPCaller_Output
-FACTORY_DEF * TeeFactory   FACTORY_NAME "HTTPCaller <Rejected> Output Nuker"   INPUT FEATURE_TYPE HTTPCaller_<Rejected>
-DEFAULT_MACRO _WB_BYPASS_TERMINATION No
-FACTORY_DEF * TeeFactory FACTORY_NAME HTTPCaller_<Rejected> INPUT FEATURE_TYPE HTTPCaller_<Rejected>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, HTTPCaller<space>output<space>a<space><lt>Rejected<gt><space>feature.)
+FACTORY_DEF * TeeFactory FACTORY_NAME HTTPCaller_<Rejected> INPUT FEATURE_TYPE HTTPCaller_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, HTTPCaller<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
